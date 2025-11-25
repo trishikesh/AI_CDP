@@ -1,0 +1,1001 @@
+Store_ID,Store_Name,City,Inventory_Level,Low_Stock_Alerts,Anomalies,Daily_Consumption,Machine_Downtime_Minutes,Temperature_Celsius,Humidity_Percent,Customer_Footfall,Date
+STORE-101,Starbucks Andheri,Hyderabad,223,NO,Mismatch,148,10,21.38,67,572,2024-01-18
+STORE-102,Starbucks CyberHub,Bangalore,441,NO,None,150,109,20.52,51,448,2024-10-19
+STORE-103,Starbucks Andheri,Bangalore,295,NO,None,39,68,18.63,58,1096,2024-07-20
+STORE-104,Starbucks Indiranagar,Delhi,442,NO,None,68,30,27.46,43,161,2024-02-19
+STORE-105,Starbucks Indiranagar,Mumbai,345,NO,Unexpected Drop,132,80,22.66,69,144,2024-07-11
+STORE-106,Starbucks Connaught Place,Bangalore,178,NO,Unexpected Drop,110,51,18.49,49,1183,2024-03-02
+STORE-107,Starbucks Andheri,Mumbai,392,NO,Mismatch,63,95,27.35,51,290,2024-10-02
+STORE-108,Starbucks Jubilee Hills,Hyderabad,264,NO,Mismatch,68,52,19.04,58,565,2024-03-26
+STORE-109,Starbucks Jubilee Hills,Hyderabad,375,NO,Unexpected Drop,72,117,23.45,50,909,2024-03-01
+STORE-110,Starbucks Indiranagar,Bangalore,430,NO,Unexpected Drop,37,97,22.2,48,611,2024-04-29
+STORE-111,Starbucks Connaught Place,Mumbai,461,NO,None,112,98,26.79,51,792,2024-10-10
+STORE-112,Starbucks CyberHub,Mumbai,457,NO,Unexpected Drop,33,96,19.82,56,452,2024-03-29
+STORE-113,Starbucks Banjara Hills,Bangalore,95,YES,Unexpected Drop,25,99,27.59,62,210,2024-02-18
+STORE-114,Starbucks Jubilee Hills,Bangalore,204,NO,Mismatch,127,101,27.84,45,877,2024-09-05
+STORE-115,Starbucks MG Road,Bangalore,202,NO,Mismatch,26,74,23.08,52,990,2024-01-04
+STORE-116,Starbucks Andheri,Mumbai,182,NO,Mismatch,147,67,25.62,70,465,2024-02-22
+STORE-117,Starbucks Jubilee Hills,Hyderabad,137,NO,Mismatch,130,89,19.24,57,380,2024-02-23
+STORE-118,Starbucks Connaught Place,Bangalore,174,NO,Mismatch,38,91,24.08,56,1115,2024-09-17
+STORE-119,Starbucks Connaught Place,Delhi,260,NO,Unexpected Drop,58,26,23.19,54,1137,2024-02-26
+STORE-120,Starbucks Indiranagar,Delhi,138,NO,Mismatch,66,43,23.54,47,570,2024-07-06
+STORE-121,Starbucks Connaught Place,Delhi,242,NO,None,99,54,25.11,40,747,2024-09-26
+STORE-122,Starbucks Indiranagar,Hyderabad,56,YES,Mismatch,47,105,27.72,56,413,2024-01-14
+STORE-123,Starbucks Indiranagar,Delhi,135,NO,Unexpected Drop,75,71,24.7,51,780,2024-02-11
+STORE-124,Starbucks Bandra,Mumbai,268,NO,Mismatch,144,112,23.67,45,254,2024-07-19
+STORE-125,Starbucks CyberHub,Bangalore,124,NO,Unexpected Drop,48,44,27.45,65,904,2024-01-15
+STORE-126,Starbucks Bandra,Delhi,59,YES,Mismatch,128,59,18.38,49,590,2024-03-09
+STORE-127,Starbucks Indiranagar,Bangalore,310,NO,None,83,26,19.98,69,519,2024-07-14
+STORE-128,Starbucks Bandra,Bangalore,216,NO,Unexpected Drop,122,96,27.47,42,613,2024-05-02
+STORE-129,Starbucks CyberHub,Delhi,69,YES,None,27,62,25.71,58,971,2024-06-19
+STORE-130,Starbucks Andheri,Hyderabad,335,NO,Mismatch,125,14,25.89,45,109,2024-08-30
+STORE-131,Starbucks Jubilee Hills,Mumbai,283,NO,Mismatch,138,106,27.29,63,801,2024-10-19
+STORE-132,Starbucks Jubilee Hills,Bangalore,374,NO,None,84,0,22.29,44,414,2024-06-16
+STORE-133,Starbucks Indiranagar,Mumbai,229,NO,None,84,16,20.61,55,721,2024-01-08
+STORE-134,Starbucks MG Road,Hyderabad,191,NO,Mismatch,137,41,22.45,45,612,2024-05-22
+STORE-135,Starbucks Jubilee Hills,Hyderabad,176,NO,None,112,109,27.9,69,893,2024-10-13
+STORE-136,Starbucks Connaught Place,Mumbai,261,NO,Unexpected Drop,69,7,26.9,48,374,2024-09-30
+STORE-137,Starbucks Indiranagar,Delhi,418,NO,None,38,86,18.55,53,712,2024-02-21
+STORE-138,Starbucks MG Road,Bangalore,498,NO,Mismatch,44,81,24.94,48,1080,2024-04-14
+STORE-139,Starbucks CyberHub,Delhi,83,YES,None,146,70,26.21,52,492,2024-09-28
+STORE-140,Starbucks Banjara Hills,Bangalore,213,NO,Unexpected Drop,69,64,20.17,70,847,2024-01-01
+STORE-141,Starbucks MG Road,Delhi,431,NO,Unexpected Drop,42,58,21.17,58,638,2024-06-02
+STORE-142,Starbucks Connaught Place,Mumbai,83,YES,Mismatch,83,40,24.78,47,236,2024-03-27
+STORE-143,Starbucks CyberHub,Hyderabad,362,NO,Mismatch,31,60,23.9,44,324,2024-01-19
+STORE-144,Starbucks Banjara Hills,Mumbai,296,NO,Unexpected Drop,135,47,19.58,68,183,2024-10-07
+STORE-145,Starbucks Banjara Hills,Bangalore,322,NO,Unexpected Drop,144,45,18.58,41,1018,2024-01-14
+STORE-146,Starbucks Bandra,Hyderabad,166,NO,Unexpected Drop,58,75,20.95,46,616,2024-10-10
+STORE-147,Starbucks Jubilee Hills,Mumbai,248,NO,Mismatch,128,86,19.24,63,533,2024-09-09
+STORE-148,Starbucks Andheri,Mumbai,453,NO,Mismatch,40,25,18.78,41,726,2024-06-26
+STORE-149,Starbucks Andheri,Delhi,303,NO,Mismatch,114,73,22.91,52,458,2024-09-07
+STORE-150,Starbucks MG Road,Delhi,274,NO,None,136,63,23.65,60,301,2024-06-07
+STORE-151,Starbucks Indiranagar,Delhi,362,NO,Mismatch,142,77,18.37,53,1184,2024-07-04
+STORE-152,Starbucks Indiranagar,Hyderabad,69,YES,None,82,72,24.46,44,1093,2024-08-26
+STORE-153,Starbucks Connaught Place,Mumbai,454,NO,None,91,87,24.68,55,554,2024-02-01
+STORE-154,Starbucks CyberHub,Mumbai,345,NO,Mismatch,32,39,23.06,70,144,2024-08-11
+STORE-155,Starbucks Indiranagar,Mumbai,257,NO,Unexpected Drop,84,101,21.65,40,406,2024-06-30
+STORE-156,Starbucks Banjara Hills,Bangalore,369,NO,Unexpected Drop,110,11,26.43,53,771,2024-05-30
+STORE-157,Starbucks CyberHub,Delhi,128,NO,None,102,117,25.24,43,511,2024-10-14
+STORE-158,Starbucks Indiranagar,Mumbai,394,NO,Mismatch,29,106,21.67,61,558,2024-07-25
+STORE-159,Starbucks Andheri,Mumbai,267,NO,Unexpected Drop,141,105,21.65,69,923,2024-09-23
+STORE-160,Starbucks Indiranagar,Mumbai,198,NO,None,20,72,19.55,49,586,2024-01-08
+STORE-161,Starbucks Bandra,Mumbai,393,NO,Unexpected Drop,72,29,23.7,54,366,2024-08-11
+STORE-162,Starbucks Banjara Hills,Mumbai,365,NO,Unexpected Drop,140,66,27.78,46,254,2024-07-29
+STORE-163,Starbucks CyberHub,Delhi,320,NO,Unexpected Drop,136,8,21.05,64,1143,2024-06-20
+STORE-164,Starbucks Jubilee Hills,Hyderabad,391,NO,Mismatch,91,27,27.22,60,161,2024-06-04
+STORE-165,Starbucks Indiranagar,Hyderabad,444,NO,Unexpected Drop,68,21,26.86,60,765,2024-05-11
+STORE-166,Starbucks Bandra,Delhi,246,NO,Mismatch,87,10,18,69,548,2024-03-02
+STORE-167,Starbucks Andheri,Delhi,339,NO,Unexpected Drop,70,52,21.64,43,1064,2024-08-10
+STORE-168,Starbucks Andheri,Bangalore,365,NO,Unexpected Drop,148,62,23.69,50,367,2024-09-02
+STORE-169,Starbucks Indiranagar,Delhi,297,NO,Mismatch,37,99,22.74,47,433,2024-06-30
+STORE-170,Starbucks Andheri,Delhi,142,NO,Mismatch,78,76,20.32,70,686,2024-05-22
+STORE-171,Starbucks Indiranagar,Bangalore,79,YES,Unexpected Drop,29,62,22.35,61,157,2024-03-16
+STORE-172,Starbucks CyberHub,Bangalore,78,YES,Unexpected Drop,105,117,23.23,55,600,2024-08-30
+STORE-173,Starbucks Banjara Hills,Delhi,452,NO,None,92,94,24.71,41,653,2024-10-03
+STORE-174,Starbucks Indiranagar,Hyderabad,203,NO,Unexpected Drop,30,57,25.27,56,574,2024-02-03
+STORE-175,Starbucks Jubilee Hills,Delhi,409,NO,None,104,112,24.34,48,328,2024-01-21
+STORE-176,Starbucks Banjara Hills,Mumbai,500,NO,None,67,71,19.45,68,693,2024-03-10
+STORE-177,Starbucks Banjara Hills,Bangalore,137,NO,Unexpected Drop,132,58,19.51,40,625,2024-10-15
+STORE-178,Starbucks Connaught Place,Delhi,161,NO,Unexpected Drop,75,62,24.94,68,703,2024-05-07
+STORE-179,Starbucks CyberHub,Bangalore,329,NO,None,35,44,21.44,51,1016,2024-02-28
+STORE-180,Starbucks Connaught Place,Mumbai,432,NO,Mismatch,130,64,18.03,54,919,2024-08-05
+STORE-181,Starbucks CyberHub,Delhi,324,NO,Mismatch,87,19,19.93,48,250,2024-09-13
+STORE-182,Starbucks MG Road,Hyderabad,486,NO,None,99,23,25.08,51,703,2024-10-05
+STORE-183,Starbucks Bandra,Mumbai,240,NO,Mismatch,55,67,27.2,70,1117,2024-08-05
+STORE-184,Starbucks Banjara Hills,Bangalore,454,NO,Mismatch,112,4,21.51,55,1058,2024-10-03
+STORE-185,Starbucks Banjara Hills,Bangalore,116,NO,None,143,103,27.75,43,613,2024-10-07
+STORE-186,Starbucks MG Road,Hyderabad,475,NO,None,27,10,26.1,58,1016,2024-02-11
+STORE-187,Starbucks CyberHub,Hyderabad,263,NO,None,136,76,19.33,57,849,2024-02-17
+STORE-188,Starbucks Jubilee Hills,Mumbai,151,NO,None,45,17,24.58,63,1138,2024-10-14
+STORE-189,Starbucks Connaught Place,Mumbai,466,NO,None,85,3,23.99,58,347,2024-04-27
+STORE-190,Starbucks CyberHub,Hyderabad,316,NO,Mismatch,107,119,18.02,67,911,2024-02-13
+STORE-191,Starbucks Connaught Place,Delhi,379,NO,Unexpected Drop,43,40,20.25,44,983,2024-10-18
+STORE-192,Starbucks Connaught Place,Delhi,474,NO,Unexpected Drop,104,36,27.63,45,358,2024-06-25
+STORE-193,Starbucks MG Road,Hyderabad,459,NO,Unexpected Drop,68,112,20.22,61,246,2024-07-24
+STORE-194,Starbucks MG Road,Mumbai,341,NO,Unexpected Drop,147,9,23.36,51,1128,2024-03-11
+STORE-195,Starbucks Connaught Place,Hyderabad,125,NO,None,98,110,25.18,55,1060,2024-05-10
+STORE-196,Starbucks Connaught Place,Bangalore,379,NO,Unexpected Drop,38,45,21.29,60,1094,2024-02-28
+STORE-197,Starbucks MG Road,Mumbai,361,NO,Unexpected Drop,110,12,21.89,53,1183,2024-05-03
+STORE-198,Starbucks Jubilee Hills,Delhi,151,NO,Unexpected Drop,87,68,21.75,54,736,2024-07-12
+STORE-199,Starbucks Jubilee Hills,Mumbai,415,NO,Unexpected Drop,119,51,25.71,58,683,2024-08-16
+STORE-200,Starbucks Banjara Hills,Delhi,386,NO,Unexpected Drop,61,97,25.84,65,1095,2024-09-22
+STORE-201,Starbucks Jubilee Hills,Mumbai,461,NO,None,69,34,19.13,61,767,2024-09-09
+STORE-202,Starbucks MG Road,Hyderabad,121,NO,Mismatch,133,30,27.38,46,892,2024-02-25
+STORE-203,Starbucks CyberHub,Hyderabad,215,NO,Mismatch,43,4,27.36,51,699,2024-04-20
+STORE-204,Starbucks CyberHub,Mumbai,419,NO,Mismatch,63,68,18.18,52,742,2024-05-27
+STORE-205,Starbucks MG Road,Bangalore,227,NO,Mismatch,97,47,20.5,43,757,2024-09-25
+STORE-206,Starbucks Jubilee Hills,Bangalore,327,NO,None,81,58,23.64,41,1106,2024-04-14
+STORE-207,Starbucks Connaught Place,Bangalore,463,NO,None,125,112,26.91,54,1125,2024-03-20
+STORE-208,Starbucks Bandra,Hyderabad,160,NO,Mismatch,53,96,24.55,52,286,2024-06-19
+STORE-209,Starbucks Connaught Place,Mumbai,395,NO,None,32,79,22.27,57,325,2024-03-03
+STORE-210,Starbucks Jubilee Hills,Delhi,89,YES,None,47,40,18.14,40,387,2024-02-27
+STORE-211,Starbucks Jubilee Hills,Hyderabad,462,NO,Mismatch,61,92,26.91,51,1199,2024-05-15
+STORE-212,Starbucks Jubilee Hills,Bangalore,228,NO,Mismatch,46,74,20.19,58,526,2024-09-10
+STORE-213,Starbucks Andheri,Hyderabad,77,YES,Unexpected Drop,81,16,21.18,45,811,2024-01-01
+STORE-214,Starbucks Connaught Place,Hyderabad,179,NO,Mismatch,91,6,22.77,68,261,2024-03-16
+STORE-215,Starbucks MG Road,Delhi,492,NO,Unexpected Drop,126,113,23.01,55,637,2024-05-18
+STORE-216,Starbucks MG Road,Delhi,167,NO,None,55,78,20.96,48,542,2024-07-02
+STORE-217,Starbucks CyberHub,Delhi,349,NO,None,145,43,22.22,69,657,2024-08-30
+STORE-218,Starbucks Indiranagar,Mumbai,371,NO,Mismatch,118,113,20.07,70,442,2024-10-14
+STORE-219,Starbucks Andheri,Mumbai,243,NO,None,52,52,25.04,65,1085,2024-05-04
+STORE-220,Starbucks MG Road,Mumbai,109,NO,None,38,21,21.29,64,1109,2024-06-24
+STORE-221,Starbucks Indiranagar,Delhi,108,NO,Mismatch,108,68,24.56,50,693,2024-02-10
+STORE-222,Starbucks Banjara Hills,Bangalore,409,NO,Unexpected Drop,24,9,20.89,62,819,2024-07-24
+STORE-223,Starbucks MG Road,Bangalore,110,NO,Mismatch,113,106,19.88,43,1081,2024-07-21
+STORE-224,Starbucks Jubilee Hills,Hyderabad,453,NO,Unexpected Drop,65,53,24.65,51,174,2024-05-31
+STORE-225,Starbucks Indiranagar,Bangalore,316,NO,Mismatch,115,65,18.5,51,782,2024-08-16
+STORE-226,Starbucks CyberHub,Mumbai,391,NO,Unexpected Drop,32,94,19.28,53,1122,2024-09-28
+STORE-227,Starbucks Indiranagar,Bangalore,435,NO,Unexpected Drop,57,111,19.65,53,1005,2024-06-19
+STORE-228,Starbucks Banjara Hills,Delhi,72,YES,Mismatch,59,42,27.59,64,416,2024-01-22
+STORE-229,Starbucks Connaught Place,Mumbai,108,NO,Mismatch,93,30,22.52,66,518,2024-04-04
+STORE-230,Starbucks Bandra,Mumbai,221,NO,None,131,102,24.17,64,405,2024-04-10
+STORE-231,Starbucks Andheri,Mumbai,246,NO,Mismatch,85,14,27.71,44,776,2024-07-14
+STORE-232,Starbucks Andheri,Bangalore,180,NO,Unexpected Drop,74,91,19.76,55,970,2024-10-25
+STORE-233,Starbucks CyberHub,Delhi,247,NO,Mismatch,31,73,24.49,58,845,2024-07-03
+STORE-234,Starbucks MG Road,Bangalore,292,NO,None,91,96,26.97,44,757,2024-09-17
+STORE-235,Starbucks Jubilee Hills,Hyderabad,192,NO,None,56,107,21.68,45,472,2024-06-28
+STORE-236,Starbucks Jubilee Hills,Delhi,106,NO,Unexpected Drop,42,83,21.54,55,445,2024-04-28
+STORE-237,Starbucks Bandra,Mumbai,69,YES,None,146,33,18.87,55,1156,2024-01-02
+STORE-238,Starbucks MG Road,Hyderabad,419,NO,Mismatch,116,86,21.44,56,658,2024-03-05
+STORE-239,Starbucks Connaught Place,Delhi,316,NO,None,56,7,18.36,64,181,2024-03-01
+STORE-240,Starbucks CyberHub,Bangalore,319,NO,None,150,55,26.44,45,251,2024-03-29
+STORE-241,Starbucks CyberHub,Delhi,347,NO,Mismatch,23,15,21.75,64,598,2024-09-08
+STORE-242,Starbucks Jubilee Hills,Bangalore,130,NO,Mismatch,98,25,24.33,42,154,2024-07-22
+STORE-243,Starbucks Connaught Place,Bangalore,360,NO,Mismatch,119,101,20.66,42,150,2024-05-02
+STORE-244,Starbucks Indiranagar,Mumbai,90,YES,Mismatch,131,108,19.04,51,270,2024-03-19
+STORE-245,Starbucks Bandra,Bangalore,426,NO,Unexpected Drop,57,38,26.02,58,917,2024-10-22
+STORE-246,Starbucks Jubilee Hills,Mumbai,392,NO,Mismatch,83,28,20.3,44,262,2024-10-18
+STORE-247,Starbucks Bandra,Bangalore,124,NO,None,24,90,24.63,47,155,2024-09-04
+STORE-248,Starbucks Indiranagar,Hyderabad,473,NO,None,96,52,26.79,49,464,2024-04-21
+STORE-249,Starbucks Andheri,Delhi,471,NO,Mismatch,92,116,19.81,44,174,2024-04-24
+STORE-250,Starbucks Connaught Place,Bangalore,73,YES,Unexpected Drop,131,36,24.92,68,386,2024-07-19
+STORE-251,Starbucks Jubilee Hills,Delhi,437,NO,None,149,45,26.69,64,965,2024-10-02
+STORE-252,Starbucks Indiranagar,Hyderabad,58,YES,Mismatch,139,16,23.42,45,763,2024-01-16
+STORE-253,Starbucks Bandra,Hyderabad,181,NO,Mismatch,122,77,27.12,56,1111,2024-08-18
+STORE-254,Starbucks Indiranagar,Mumbai,260,NO,Mismatch,51,7,19.81,64,1122,2024-08-06
+STORE-255,Starbucks Andheri,Hyderabad,275,NO,Unexpected Drop,132,44,23.35,43,678,2024-02-17
+STORE-256,Starbucks Andheri,Bangalore,486,NO,None,147,34,20.96,53,253,2024-08-14
+STORE-257,Starbucks Indiranagar,Hyderabad,277,NO,Mismatch,121,57,19.79,47,722,2024-08-11
+STORE-258,Starbucks Connaught Place,Mumbai,398,NO,Mismatch,121,32,19.44,44,577,2024-08-15
+STORE-259,Starbucks MG Road,Hyderabad,81,YES,Unexpected Drop,116,26,25.36,59,193,2024-04-23
+STORE-260,Starbucks CyberHub,Bangalore,468,NO,None,93,104,19.32,52,841,2024-10-27
+STORE-261,Starbucks Banjara Hills,Bangalore,86,YES,None,43,55,26.99,59,113,2024-04-26
+STORE-262,Starbucks Jubilee Hills,Mumbai,113,NO,Mismatch,117,76,26.56,66,975,2024-03-10
+STORE-263,Starbucks Jubilee Hills,Mumbai,321,NO,None,78,37,20.34,57,933,2024-10-05
+STORE-264,Starbucks Banjara Hills,Hyderabad,183,NO,None,30,2,19.52,56,133,2024-09-23
+STORE-265,Starbucks CyberHub,Mumbai,61,YES,Unexpected Drop,53,58,20.43,62,799,2024-07-01
+STORE-266,Starbucks Bandra,Bangalore,124,NO,None,100,102,18.75,50,178,2024-02-01
+STORE-267,Starbucks Jubilee Hills,Mumbai,346,NO,Mismatch,65,22,25.13,49,1021,2024-07-28
+STORE-268,Starbucks CyberHub,Hyderabad,432,NO,Unexpected Drop,53,108,22.81,42,349,2024-05-17
+STORE-269,Starbucks Banjara Hills,Bangalore,88,YES,Unexpected Drop,69,10,22.97,63,568,2024-09-25
+STORE-270,Starbucks Andheri,Bangalore,157,NO,Mismatch,97,19,22.83,52,1100,2024-02-16
+STORE-271,Starbucks Bandra,Bangalore,390,NO,Unexpected Drop,92,14,22.02,60,1034,2024-04-06
+STORE-272,Starbucks Connaught Place,Bangalore,174,NO,Mismatch,30,55,20.23,46,509,2024-09-10
+STORE-273,Starbucks Andheri,Hyderabad,329,NO,Unexpected Drop,82,84,26.8,50,859,2024-05-20
+STORE-274,Starbucks Jubilee Hills,Bangalore,369,NO,Unexpected Drop,76,76,22.93,62,177,2024-10-20
+STORE-275,Starbucks Banjara Hills,Hyderabad,205,NO,Unexpected Drop,98,39,23.67,45,873,2024-09-22
+STORE-276,Starbucks Banjara Hills,Mumbai,420,NO,None,91,51,25.15,45,111,2024-01-05
+STORE-277,Starbucks Andheri,Bangalore,387,NO,Mismatch,101,8,19.55,44,311,2024-05-27
+STORE-278,Starbucks Connaught Place,Mumbai,50,YES,Mismatch,73,45,24.87,64,617,2024-09-24
+STORE-279,Starbucks Indiranagar,Bangalore,126,NO,Unexpected Drop,44,54,19.06,50,782,2024-04-13
+STORE-280,Starbucks Andheri,Hyderabad,436,NO,Unexpected Drop,27,41,25.98,50,381,2024-05-08
+STORE-281,Starbucks CyberHub,Mumbai,94,YES,Unexpected Drop,96,111,23.19,48,1040,2024-09-20
+STORE-282,Starbucks Bandra,Delhi,233,NO,Unexpected Drop,61,42,18.14,46,814,2024-01-15
+STORE-283,Starbucks Connaught Place,Bangalore,200,NO,Mismatch,39,28,22.56,54,443,2024-08-05
+STORE-284,Starbucks CyberHub,Bangalore,359,NO,None,96,61,19.16,43,125,2024-05-20
+STORE-285,Starbucks Banjara Hills,Mumbai,496,NO,Unexpected Drop,144,120,23.16,47,900,2024-03-30
+STORE-286,Starbucks Banjara Hills,Mumbai,109,NO,Unexpected Drop,130,35,20.41,56,1125,2024-10-02
+STORE-287,Starbucks Indiranagar,Hyderabad,336,NO,Unexpected Drop,81,15,21.07,57,448,2024-02-23
+STORE-288,Starbucks CyberHub,Delhi,425,NO,Unexpected Drop,26,71,23.2,70,1015,2024-07-22
+STORE-289,Starbucks Banjara Hills,Bangalore,125,NO,Unexpected Drop,37,15,24.76,48,127,2024-03-27
+STORE-290,Starbucks Jubilee Hills,Delhi,434,NO,None,20,74,21.63,43,1013,2024-06-08
+STORE-291,Starbucks Bandra,Mumbai,325,NO,Unexpected Drop,75,93,18.08,58,845,2024-08-01
+STORE-292,Starbucks Indiranagar,Bangalore,294,NO,Unexpected Drop,21,9,18.3,69,501,2024-02-18
+STORE-293,Starbucks Bandra,Mumbai,396,NO,None,121,18,27.56,49,540,2024-01-20
+STORE-294,Starbucks Banjara Hills,Bangalore,409,NO,Unexpected Drop,73,2,21.41,42,947,2024-02-19
+STORE-295,Starbucks Connaught Place,Mumbai,261,NO,Mismatch,105,85,27.71,66,319,2024-08-03
+STORE-296,Starbucks Connaught Place,Hyderabad,137,NO,Unexpected Drop,147,15,19.23,61,528,2024-07-18
+STORE-297,Starbucks MG Road,Hyderabad,237,NO,None,54,41,19.7,43,662,2024-07-19
+STORE-298,Starbucks Jubilee Hills,Bangalore,246,NO,Mismatch,148,82,21.34,66,528,2024-05-03
+STORE-299,Starbucks CyberHub,Delhi,118,NO,None,139,21,18.42,64,170,2024-07-07
+STORE-300,Starbucks Indiranagar,Bangalore,116,NO,Unexpected Drop,103,20,24.27,69,221,2024-02-14
+STORE-301,Starbucks Andheri,Hyderabad,414,NO,Mismatch,121,53,25.61,45,327,2024-06-21
+STORE-302,Starbucks Banjara Hills,Hyderabad,148,NO,Mismatch,106,78,23.61,67,584,2024-03-26
+STORE-303,Starbucks Jubilee Hills,Bangalore,236,NO,Mismatch,140,109,25.19,59,1175,2024-02-22
+STORE-304,Starbucks Indiranagar,Delhi,388,NO,Mismatch,145,91,20.07,59,225,2024-10-24
+STORE-305,Starbucks Indiranagar,Hyderabad,119,NO,Mismatch,20,73,22.39,56,425,2024-05-21
+STORE-306,Starbucks Banjara Hills,Bangalore,67,YES,Mismatch,119,36,26.89,59,795,2024-10-06
+STORE-307,Starbucks Connaught Place,Bangalore,329,NO,None,69,101,22.44,52,133,2024-07-29
+STORE-308,Starbucks Andheri,Bangalore,78,YES,Mismatch,142,0,27.16,67,1161,2024-05-31
+STORE-309,Starbucks Indiranagar,Mumbai,186,NO,None,146,18,22.59,59,665,2024-08-16
+STORE-310,Starbucks Banjara Hills,Bangalore,430,NO,None,39,80,21.77,46,913,2024-10-02
+STORE-311,Starbucks Jubilee Hills,Bangalore,263,NO,Mismatch,45,8,19.49,55,350,2024-06-14
+STORE-312,Starbucks MG Road,Hyderabad,207,NO,Unexpected Drop,40,62,24.2,51,812,2024-05-24
+STORE-313,Starbucks Bandra,Bangalore,304,NO,Unexpected Drop,81,78,23.6,67,846,2024-01-29
+STORE-314,Starbucks CyberHub,Delhi,247,NO,None,60,70,26.91,62,1154,2024-06-12
+STORE-315,Starbucks Andheri,Bangalore,66,YES,Mismatch,137,7,27.86,53,181,2024-08-09
+STORE-316,Starbucks Andheri,Mumbai,350,NO,None,59,43,20.41,63,601,2024-04-15
+STORE-317,Starbucks CyberHub,Bangalore,69,YES,Unexpected Drop,132,63,26.64,68,187,2024-08-09
+STORE-318,Starbucks Banjara Hills,Hyderabad,371,NO,Unexpected Drop,76,17,22.74,52,151,2024-01-09
+STORE-319,Starbucks Jubilee Hills,Hyderabad,231,NO,Unexpected Drop,54,47,20.11,65,856,2024-06-22
+STORE-320,Starbucks Connaught Place,Bangalore,224,NO,None,128,92,21.14,53,252,2024-06-22
+STORE-321,Starbucks Andheri,Mumbai,126,NO,Mismatch,103,76,26.15,52,231,2024-07-25
+STORE-322,Starbucks Banjara Hills,Mumbai,194,NO,None,54,119,23.07,65,135,2024-08-23
+STORE-323,Starbucks Indiranagar,Delhi,458,NO,None,29,32,25.18,48,541,2024-01-15
+STORE-324,Starbucks Andheri,Bangalore,279,NO,None,24,10,18.8,56,154,2024-01-17
+STORE-325,Starbucks Indiranagar,Hyderabad,200,NO,Unexpected Drop,67,42,20.41,63,957,2024-08-23
+STORE-326,Starbucks Banjara Hills,Hyderabad,169,NO,Unexpected Drop,140,0,22.35,41,235,2024-07-16
+STORE-327,Starbucks Bandra,Mumbai,366,NO,Mismatch,68,97,26.74,57,285,2024-02-08
+STORE-328,Starbucks MG Road,Hyderabad,82,YES,Mismatch,54,93,19.44,56,397,2024-09-20
+STORE-329,Starbucks Andheri,Bangalore,248,NO,None,135,17,19.63,57,270,2024-09-22
+STORE-330,Starbucks Andheri,Delhi,447,NO,Mismatch,22,72,20.66,41,981,2024-05-31
+STORE-331,Starbucks Connaught Place,Delhi,421,NO,Unexpected Drop,83,9,22.94,51,114,2024-03-08
+STORE-332,Starbucks Connaught Place,Mumbai,59,YES,None,115,28,27.82,45,693,2024-03-02
+STORE-333,Starbucks Indiranagar,Bangalore,346,NO,Unexpected Drop,43,107,20.71,50,141,2024-09-16
+STORE-334,Starbucks Bandra,Bangalore,340,NO,Unexpected Drop,99,99,24.82,69,286,2024-07-05
+STORE-335,Starbucks Connaught Place,Mumbai,322,NO,None,117,100,25.99,53,481,2024-05-01
+STORE-336,Starbucks Bandra,Mumbai,146,NO,Mismatch,145,9,23.23,54,1176,2024-08-20
+STORE-337,Starbucks Bandra,Bangalore,337,NO,Mismatch,128,47,21.08,57,617,2024-01-31
+STORE-338,Starbucks CyberHub,Bangalore,97,YES,Unexpected Drop,61,28,23.12,70,567,2024-01-30
+STORE-339,Starbucks Bandra,Hyderabad,371,NO,None,57,37,24.49,67,428,2024-06-12
+STORE-340,Starbucks Andheri,Hyderabad,455,NO,Unexpected Drop,69,60,25.56,56,968,2024-04-08
+STORE-341,Starbucks MG Road,Bangalore,254,NO,Unexpected Drop,45,56,22.72,49,188,2024-09-06
+STORE-342,Starbucks Indiranagar,Mumbai,61,YES,Unexpected Drop,74,77,19.12,57,452,2024-04-11
+STORE-343,Starbucks Jubilee Hills,Hyderabad,382,NO,Mismatch,34,64,27.87,69,668,2024-05-02
+STORE-344,Starbucks Connaught Place,Delhi,62,YES,Mismatch,28,49,27.1,43,565,2024-01-27
+STORE-345,Starbucks Connaught Place,Mumbai,490,NO,Mismatch,22,92,18.98,44,219,2024-06-13
+STORE-346,Starbucks Bandra,Bangalore,442,NO,None,73,42,22.76,62,200,2024-06-07
+STORE-347,Starbucks Bandra,Hyderabad,402,NO,Unexpected Drop,42,48,19.43,40,278,2024-07-15
+STORE-348,Starbucks Indiranagar,Delhi,453,NO,Unexpected Drop,110,23,18.41,51,276,2024-08-09
+STORE-349,Starbucks Bandra,Hyderabad,233,NO,Unexpected Drop,51,76,24.41,59,316,2024-09-14
+STORE-350,Starbucks MG Road,Hyderabad,179,NO,None,95,18,21.69,68,643,2024-02-03
+STORE-351,Starbucks MG Road,Bangalore,470,NO,Mismatch,120,43,18.07,48,645,2024-08-05
+STORE-352,Starbucks Connaught Place,Bangalore,330,NO,None,67,91,27.46,69,442,2024-06-15
+STORE-353,Starbucks MG Road,Delhi,362,NO,Unexpected Drop,126,24,18.37,43,650,2024-03-27
+STORE-354,Starbucks MG Road,Bangalore,490,NO,Unexpected Drop,144,81,21.44,70,580,2024-06-25
+STORE-355,Starbucks CyberHub,Bangalore,500,NO,Unexpected Drop,114,33,21.96,66,793,2024-03-05
+STORE-356,Starbucks Bandra,Bangalore,161,NO,Unexpected Drop,58,87,25.07,49,99,2024-06-07
+STORE-357,Starbucks Banjara Hills,Hyderabad,346,NO,None,48,9,24.5,63,708,2024-08-09
+STORE-358,Starbucks Bandra,Hyderabad,146,NO,Mismatch,87,47,25.74,65,563,2024-05-05
+STORE-359,Starbucks Bandra,Hyderabad,380,NO,Mismatch,53,70,18.7,45,927,2024-04-16
+STORE-360,Starbucks Indiranagar,Bangalore,164,NO,Unexpected Drop,88,113,22.42,68,623,2024-06-14
+STORE-361,Starbucks MG Road,Mumbai,185,NO,Mismatch,25,31,18.39,52,842,2024-02-02
+STORE-362,Starbucks Andheri,Bangalore,421,NO,None,130,107,19.35,44,822,2024-02-17
+STORE-363,Starbucks Connaught Place,Mumbai,310,NO,Mismatch,101,60,20.75,48,613,2024-07-27
+STORE-364,Starbucks Jubilee Hills,Hyderabad,482,NO,Unexpected Drop,133,97,20.47,47,1053,2024-08-13
+STORE-365,Starbucks Bandra,Hyderabad,469,NO,Mismatch,20,112,26.03,67,1174,2024-01-02
+STORE-366,Starbucks Connaught Place,Bangalore,420,NO,Unexpected Drop,56,109,22.36,44,324,2024-06-08
+STORE-367,Starbucks Jubilee Hills,Delhi,195,NO,Mismatch,24,78,20.89,43,156,2024-06-08
+STORE-368,Starbucks Jubilee Hills,Mumbai,430,NO,None,94,52,27.41,47,1089,2024-03-22
+STORE-369,Starbucks Banjara Hills,Bangalore,326,NO,None,143,114,20.21,70,832,2024-03-28
+STORE-370,Starbucks Bandra,Mumbai,75,YES,Unexpected Drop,90,77,25.94,58,969,2024-10-01
+STORE-371,Starbucks CyberHub,Hyderabad,297,NO,None,101,27,18.39,42,766,2024-03-29
+STORE-372,Starbucks CyberHub,Bangalore,301,NO,Unexpected Drop,83,2,24.36,67,252,2024-03-23
+STORE-373,Starbucks Connaught Place,Delhi,74,YES,Unexpected Drop,135,100,23.78,66,1001,2024-01-31
+STORE-374,Starbucks MG Road,Delhi,145,NO,Unexpected Drop,130,13,19.57,61,856,2024-01-26
+STORE-375,Starbucks Indiranagar,Hyderabad,53,YES,Mismatch,150,47,22.91,41,326,2024-02-23
+STORE-376,Starbucks CyberHub,Bangalore,338,NO,Mismatch,103,5,23.57,50,942,2024-09-23
+STORE-377,Starbucks Connaught Place,Mumbai,124,NO,None,150,95,25.2,61,354,2024-09-13
+STORE-378,Starbucks Indiranagar,Bangalore,395,NO,Mismatch,134,100,24.43,66,451,2024-10-06
+STORE-379,Starbucks Andheri,Mumbai,474,NO,Unexpected Drop,117,79,22.62,54,843,2024-07-04
+STORE-380,Starbucks MG Road,Delhi,365,NO,Mismatch,70,41,20.87,54,946,2024-10-21
+STORE-381,Starbucks Andheri,Delhi,74,YES,Unexpected Drop,109,97,23.22,63,609,2024-10-17
+STORE-382,Starbucks Banjara Hills,Delhi,495,NO,Mismatch,38,54,24.58,61,476,2024-09-10
+STORE-383,Starbucks Connaught Place,Mumbai,372,NO,Mismatch,137,8,27.13,68,238,2024-04-16
+STORE-384,Starbucks Bandra,Delhi,402,NO,Mismatch,116,63,22.77,63,759,2024-06-25
+STORE-385,Starbucks CyberHub,Hyderabad,261,NO,Unexpected Drop,29,4,20.57,42,432,2024-07-27
+STORE-386,Starbucks Connaught Place,Delhi,392,NO,None,123,66,27.13,69,335,2024-09-18
+STORE-387,Starbucks Jubilee Hills,Hyderabad,158,NO,Unexpected Drop,34,111,19.61,47,1089,2024-06-19
+STORE-388,Starbucks Bandra,Hyderabad,81,YES,None,75,47,20.24,53,983,2024-09-30
+STORE-389,Starbucks Andheri,Bangalore,253,NO,Unexpected Drop,145,34,25.59,52,1158,2024-06-17
+STORE-390,Starbucks Andheri,Delhi,418,NO,Mismatch,149,112,26.78,56,1150,2024-10-11
+STORE-391,Starbucks Andheri,Delhi,298,NO,Mismatch,80,0,19.43,49,1165,2024-03-02
+STORE-392,Starbucks CyberHub,Bangalore,84,YES,Unexpected Drop,131,116,23.71,64,997,2024-02-04
+STORE-393,Starbucks Andheri,Mumbai,461,NO,Mismatch,72,90,19.43,54,188,2024-07-24
+STORE-394,Starbucks MG Road,Mumbai,443,NO,Mismatch,35,31,20.69,41,1039,2024-10-22
+STORE-395,Starbucks Andheri,Hyderabad,406,NO,Unexpected Drop,111,39,19.64,68,1194,2024-02-03
+STORE-396,Starbucks Jubilee Hills,Delhi,170,NO,Mismatch,127,33,22.98,57,257,2024-08-22
+STORE-397,Starbucks MG Road,Bangalore,295,NO,None,139,109,21.84,48,274,2024-07-25
+STORE-398,Starbucks CyberHub,Hyderabad,190,NO,Mismatch,60,68,18.65,52,145,2024-01-30
+STORE-399,Starbucks MG Road,Hyderabad,498,NO,Mismatch,28,91,20.42,46,1121,2024-06-13
+STORE-400,Starbucks CyberHub,Delhi,284,NO,None,31,2,22.8,68,394,2024-02-09
+STORE-401,Starbucks Andheri,Delhi,460,NO,None,52,48,24,40,496,2024-05-10
+STORE-402,Starbucks Bandra,Hyderabad,257,NO,Unexpected Drop,126,9,18.01,40,1155,2024-08-04
+STORE-403,Starbucks Banjara Hills,Bangalore,472,NO,Unexpected Drop,50,70,21.97,46,992,2024-03-14
+STORE-404,Starbucks Andheri,Bangalore,315,NO,None,34,39,21.41,68,738,2024-05-31
+STORE-405,Starbucks Indiranagar,Delhi,286,NO,None,129,72,24.24,43,657,2024-03-08
+STORE-406,Starbucks Indiranagar,Delhi,394,NO,None,97,35,20.2,57,1197,2024-05-27
+STORE-407,Starbucks CyberHub,Mumbai,420,NO,None,35,66,25.77,48,509,2024-04-22
+STORE-408,Starbucks Banjara Hills,Bangalore,415,NO,Unexpected Drop,84,120,20.45,69,1182,2024-04-19
+STORE-409,Starbucks Indiranagar,Hyderabad,148,NO,Mismatch,98,76,26.82,44,672,2024-04-22
+STORE-410,Starbucks Indiranagar,Delhi,257,NO,Unexpected Drop,59,22,19.36,57,118,2024-02-01
+STORE-411,Starbucks Banjara Hills,Bangalore,339,NO,None,116,24,24.43,42,547,2024-07-29
+STORE-412,Starbucks Bandra,Mumbai,485,NO,Unexpected Drop,109,51,18.43,52,871,2024-07-27
+STORE-413,Starbucks MG Road,Bangalore,325,NO,None,127,117,24.56,65,746,2024-07-08
+STORE-414,Starbucks Banjara Hills,Bangalore,369,NO,None,139,15,23.23,46,167,2024-06-09
+STORE-415,Starbucks Banjara Hills,Mumbai,162,NO,Mismatch,24,15,23.98,64,957,2024-06-04
+STORE-416,Starbucks Jubilee Hills,Hyderabad,99,YES,Mismatch,101,105,27.75,47,802,2024-05-23
+STORE-417,Starbucks Jubilee Hills,Bangalore,399,NO,Mismatch,122,64,26.09,57,487,2024-06-27
+STORE-418,Starbucks Andheri,Delhi,120,NO,Mismatch,145,43,22.67,47,394,2024-06-14
+STORE-419,Starbucks CyberHub,Mumbai,424,NO,None,146,75,19.6,54,1080,2024-01-20
+STORE-420,Starbucks Indiranagar,Hyderabad,194,NO,Unexpected Drop,60,73,20.41,65,677,2024-08-26
+STORE-421,Starbucks Connaught Place,Bangalore,143,NO,Mismatch,150,51,27.52,66,280,2024-08-24
+STORE-422,Starbucks Indiranagar,Hyderabad,350,NO,None,123,35,24.91,54,694,2024-02-01
+STORE-423,Starbucks Indiranagar,Mumbai,212,NO,Mismatch,35,82,26.28,58,128,2024-03-17
+STORE-424,Starbucks Jubilee Hills,Bangalore,172,NO,Unexpected Drop,73,35,21.07,47,124,2024-03-25
+STORE-425,Starbucks CyberHub,Hyderabad,445,NO,None,103,84,25.95,53,181,2024-01-05
+STORE-426,Starbucks Indiranagar,Mumbai,103,NO,Mismatch,101,112,25.28,70,391,2024-05-22
+STORE-427,Starbucks Banjara Hills,Bangalore,217,NO,None,64,0,26.3,59,153,2024-03-22
+STORE-428,Starbucks CyberHub,Delhi,302,NO,Mismatch,37,87,22.14,48,611,2024-09-17
+STORE-429,Starbucks Indiranagar,Mumbai,106,NO,Unexpected Drop,59,6,18.79,67,479,2024-01-22
+STORE-430,Starbucks Connaught Place,Bangalore,466,NO,None,120,115,25.39,63,704,2024-08-04
+STORE-431,Starbucks Banjara Hills,Delhi,104,NO,None,148,15,18.09,57,578,2024-05-04
+STORE-432,Starbucks Jubilee Hills,Delhi,72,YES,Mismatch,124,108,26.35,68,309,2024-09-28
+STORE-433,Starbucks CyberHub,Mumbai,485,NO,Unexpected Drop,106,112,23.83,51,1144,2024-04-13
+STORE-434,Starbucks Bandra,Hyderabad,99,YES,Mismatch,112,66,26.09,69,999,2024-05-04
+STORE-435,Starbucks Indiranagar,Delhi,332,NO,None,140,67,27.87,47,565,2024-05-02
+STORE-436,Starbucks Bandra,Hyderabad,91,YES,Mismatch,126,23,24.83,47,490,2024-10-27
+STORE-437,Starbucks Bandra,Delhi,210,NO,Mismatch,21,114,20.69,62,297,2024-02-15
+STORE-438,Starbucks Jubilee Hills,Bangalore,307,NO,Unexpected Drop,39,109,23.69,64,170,2024-08-13
+STORE-439,Starbucks MG Road,Delhi,452,NO,Mismatch,56,60,21.15,55,957,2024-03-15
+STORE-440,Starbucks Andheri,Delhi,419,NO,Unexpected Drop,22,13,20.18,62,401,2024-10-11
+STORE-441,Starbucks Jubilee Hills,Hyderabad,458,NO,Mismatch,105,97,20.24,66,1044,2024-08-29
+STORE-442,Starbucks Indiranagar,Mumbai,499,NO,Mismatch,134,34,24.64,63,876,2024-03-31
+STORE-443,Starbucks Bandra,Delhi,113,NO,None,140,80,23.85,45,848,2024-04-27
+STORE-444,Starbucks Jubilee Hills,Bangalore,163,NO,Unexpected Drop,145,40,19.84,53,1019,2024-04-13
+STORE-445,Starbucks Jubilee Hills,Hyderabad,218,NO,None,117,92,25.3,52,497,2024-01-04
+STORE-446,Starbucks MG Road,Bangalore,175,NO,None,83,32,22.97,67,857,2024-05-10
+STORE-447,Starbucks MG Road,Hyderabad,97,YES,Mismatch,77,28,27.34,54,426,2024-05-13
+STORE-448,Starbucks CyberHub,Hyderabad,287,NO,Mismatch,64,36,24.92,46,985,2024-09-14
+STORE-449,Starbucks Andheri,Bangalore,191,NO,Unexpected Drop,65,102,25.53,60,1148,2024-06-08
+STORE-450,Starbucks MG Road,Delhi,405,NO,None,86,112,23.51,43,768,2024-09-29
+STORE-451,Starbucks CyberHub,Delhi,118,NO,None,135,19,22.9,45,553,2024-02-17
+STORE-452,Starbucks CyberHub,Delhi,246,NO,Unexpected Drop,101,7,22.16,61,1158,2024-07-21
+STORE-453,Starbucks Bandra,Delhi,479,NO,Mismatch,35,18,21.43,59,271,2024-09-06
+STORE-454,Starbucks Andheri,Hyderabad,482,NO,None,79,62,22.44,59,1145,2024-03-24
+STORE-455,Starbucks Indiranagar,Mumbai,275,NO,Unexpected Drop,64,41,21.98,42,752,2024-04-06
+STORE-456,Starbucks Indiranagar,Delhi,380,NO,Unexpected Drop,20,52,19.49,58,188,2024-02-22
+STORE-457,Starbucks Connaught Place,Mumbai,463,NO,Unexpected Drop,96,32,24.28,64,1096,2024-02-01
+STORE-458,Starbucks Jubilee Hills,Hyderabad,265,NO,Unexpected Drop,85,118,20.15,40,400,2024-05-17
+STORE-459,Starbucks Andheri,Delhi,99,YES,Mismatch,22,24,26.46,58,415,2024-10-15
+STORE-460,Starbucks CyberHub,Mumbai,101,NO,Mismatch,28,64,19.56,44,1103,2024-05-25
+STORE-461,Starbucks Connaught Place,Hyderabad,119,NO,Unexpected Drop,134,13,27.57,41,1001,2024-05-24
+STORE-462,Starbucks CyberHub,Bangalore,215,NO,Unexpected Drop,45,72,21.15,61,666,2024-10-17
+STORE-463,Starbucks Andheri,Hyderabad,87,YES,Mismatch,37,16,25.08,66,755,2024-01-11
+STORE-464,Starbucks Jubilee Hills,Mumbai,481,NO,None,85,97,18.88,68,530,2024-01-31
+STORE-465,Starbucks Connaught Place,Bangalore,464,NO,None,103,50,22.35,52,447,2024-03-26
+STORE-466,Starbucks Banjara Hills,Bangalore,480,NO,Mismatch,74,38,25.59,45,608,2024-04-08
+STORE-467,Starbucks Indiranagar,Mumbai,478,NO,None,62,35,22.12,52,1058,2024-01-22
+STORE-468,Starbucks Indiranagar,Delhi,336,NO,None,134,20,21.94,42,91,2024-07-28
+STORE-469,Starbucks Banjara Hills,Bangalore,285,NO,Mismatch,138,30,18.01,41,200,2024-08-03
+STORE-470,Starbucks Indiranagar,Delhi,97,YES,None,120,49,20.13,64,290,2024-01-08
+STORE-471,Starbucks CyberHub,Bangalore,187,NO,Unexpected Drop,74,41,22.06,48,738,2024-03-12
+STORE-472,Starbucks Jubilee Hills,Hyderabad,413,NO,Mismatch,38,3,18.6,51,1148,2024-02-07
+STORE-473,Starbucks Bandra,Delhi,342,NO,None,94,104,20.63,56,268,2024-06-06
+STORE-474,Starbucks CyberHub,Delhi,73,YES,None,30,43,20.25,51,704,2024-01-23
+STORE-475,Starbucks Jubilee Hills,Mumbai,50,YES,Unexpected Drop,54,15,19.71,40,580,2024-02-13
+STORE-476,Starbucks Bandra,Delhi,57,YES,Unexpected Drop,130,1,21.69,48,133,2024-02-02
+STORE-477,Starbucks MG Road,Mumbai,139,NO,None,84,25,27.46,68,410,2024-09-08
+STORE-478,Starbucks Andheri,Hyderabad,462,NO,Unexpected Drop,125,32,21.09,65,242,2024-07-25
+STORE-479,Starbucks Connaught Place,Hyderabad,368,NO,Unexpected Drop,98,60,20.5,68,121,2024-05-20
+STORE-480,Starbucks MG Road,Mumbai,302,NO,Mismatch,121,77,19.61,49,101,2024-07-12
+STORE-481,Starbucks Connaught Place,Delhi,132,NO,Unexpected Drop,147,36,23.94,48,1053,2024-09-26
+STORE-482,Starbucks Connaught Place,Delhi,159,NO,Mismatch,52,97,20.67,61,1175,2024-03-03
+STORE-483,Starbucks Indiranagar,Hyderabad,248,NO,None,115,49,20.86,64,739,2024-02-03
+STORE-484,Starbucks Connaught Place,Mumbai,421,NO,Unexpected Drop,95,46,25.7,52,822,2024-04-04
+STORE-485,Starbucks CyberHub,Mumbai,234,NO,None,120,37,23.03,61,478,2024-02-23
+STORE-486,Starbucks CyberHub,Delhi,367,NO,None,149,1,26.08,58,697,2024-03-25
+STORE-487,Starbucks Connaught Place,Hyderabad,462,NO,None,26,103,23.94,70,380,2024-03-13
+STORE-488,Starbucks MG Road,Bangalore,443,NO,None,116,25,22.19,68,540,2024-03-21
+STORE-489,Starbucks Connaught Place,Bangalore,332,NO,None,32,64,20.73,51,951,2024-03-20
+STORE-490,Starbucks MG Road,Bangalore,283,NO,Unexpected Drop,30,35,21.71,57,1160,2024-03-19
+STORE-491,Starbucks Andheri,Delhi,79,YES,Unexpected Drop,22,50,27.24,48,104,2024-09-18
+STORE-492,Starbucks Banjara Hills,Bangalore,186,NO,None,64,1,19.66,45,129,2024-07-24
+STORE-493,Starbucks CyberHub,Bangalore,387,NO,None,28,89,20.68,59,354,2024-01-05
+STORE-494,Starbucks Jubilee Hills,Delhi,332,NO,Mismatch,126,119,20.2,56,301,2024-08-01
+STORE-495,Starbucks Indiranagar,Delhi,205,NO,Mismatch,72,70,18.34,68,516,2024-01-13
+STORE-496,Starbucks Jubilee Hills,Mumbai,158,NO,Unexpected Drop,45,12,24.88,70,113,2024-08-29
+STORE-497,Starbucks Andheri,Hyderabad,50,YES,None,29,16,24.46,58,501,2024-05-27
+STORE-498,Starbucks CyberHub,Bangalore,403,NO,Unexpected Drop,25,40,19.83,68,512,2024-02-03
+STORE-499,Starbucks Bandra,Bangalore,185,NO,Unexpected Drop,122,72,23.3,42,336,2024-05-28
+STORE-500,Starbucks Jubilee Hills,Mumbai,445,NO,Unexpected Drop,120,10,25.24,54,363,2024-04-24
+STORE-501,Starbucks Connaught Place,Mumbai,335,NO,None,149,48,25.74,46,104,2024-03-22
+STORE-502,Starbucks Andheri,Bangalore,495,NO,None,74,52,20.12,60,346,2024-08-16
+STORE-503,Starbucks Indiranagar,Delhi,340,NO,Mismatch,133,4,23.19,46,113,2024-01-16
+STORE-504,Starbucks MG Road,Hyderabad,349,NO,Mismatch,92,65,26.63,50,1053,2024-10-19
+STORE-505,Starbucks MG Road,Hyderabad,251,NO,Mismatch,91,59,26.55,58,360,2024-04-10
+STORE-506,Starbucks Andheri,Delhi,139,NO,Mismatch,57,4,19.46,62,525,2024-07-15
+STORE-507,Starbucks Andheri,Mumbai,484,NO,None,113,39,23.05,63,621,2024-01-02
+STORE-508,Starbucks Jubilee Hills,Bangalore,367,NO,Unexpected Drop,93,19,21.75,49,434,2024-03-28
+STORE-509,Starbucks Bandra,Hyderabad,448,NO,Unexpected Drop,41,54,19.02,45,369,2024-08-07
+STORE-510,Starbucks CyberHub,Hyderabad,249,NO,Mismatch,73,50,24.38,56,676,2024-02-20
+STORE-511,Starbucks Jubilee Hills,Delhi,251,NO,Unexpected Drop,38,114,24.27,61,210,2024-10-10
+STORE-512,Starbucks Indiranagar,Bangalore,73,YES,Unexpected Drop,28,58,26.48,57,1064,2024-04-05
+STORE-513,Starbucks Andheri,Delhi,212,NO,None,147,32,18.1,48,439,2024-04-08
+STORE-514,Starbucks MG Road,Bangalore,197,NO,Mismatch,59,46,23.57,68,313,2024-05-02
+STORE-515,Starbucks Andheri,Bangalore,406,NO,Unexpected Drop,39,39,27.45,40,524,2024-10-09
+STORE-516,Starbucks Connaught Place,Hyderabad,482,NO,Mismatch,117,9,24.16,50,704,2024-06-27
+STORE-517,Starbucks Andheri,Bangalore,363,NO,None,47,47,23.11,63,446,2024-09-27
+STORE-518,Starbucks Jubilee Hills,Bangalore,174,NO,Unexpected Drop,117,57,23.03,64,260,2024-09-19
+STORE-519,Starbucks CyberHub,Delhi,327,NO,Unexpected Drop,148,96,23.91,47,279,2024-06-02
+STORE-520,Starbucks MG Road,Delhi,500,NO,Unexpected Drop,131,91,27.66,56,102,2024-06-15
+STORE-521,Starbucks CyberHub,Bangalore,51,YES,None,57,109,22.4,57,206,2024-08-05
+STORE-522,Starbucks Connaught Place,Mumbai,365,NO,Unexpected Drop,128,21,23.61,60,1070,2024-07-03
+STORE-523,Starbucks Andheri,Delhi,108,NO,Mismatch,91,46,24.16,55,631,2024-09-12
+STORE-524,Starbucks Jubilee Hills,Delhi,284,NO,Mismatch,100,111,19.48,53,651,2024-01-15
+STORE-525,Starbucks Bandra,Bangalore,378,NO,Unexpected Drop,129,35,22.38,40,576,2024-05-13
+STORE-526,Starbucks Bandra,Bangalore,264,NO,Unexpected Drop,147,97,22.47,70,621,2024-03-24
+STORE-527,Starbucks Bandra,Mumbai,343,NO,Unexpected Drop,52,78,23.6,50,787,2024-09-23
+STORE-528,Starbucks Banjara Hills,Delhi,124,NO,Mismatch,146,42,21.13,69,1070,2024-08-10
+STORE-529,Starbucks Indiranagar,Mumbai,367,NO,None,77,36,27.41,51,404,2024-06-28
+STORE-530,Starbucks Andheri,Hyderabad,335,NO,Unexpected Drop,22,23,26.46,53,161,2024-09-07
+STORE-531,Starbucks Jubilee Hills,Hyderabad,361,NO,None,112,19,25.39,62,399,2024-01-19
+STORE-532,Starbucks Andheri,Bangalore,234,NO,Unexpected Drop,111,118,20.76,46,715,2024-05-11
+STORE-533,Starbucks MG Road,Delhi,80,YES,None,32,110,24.68,66,811,2024-02-16
+STORE-534,Starbucks Andheri,Hyderabad,157,NO,Mismatch,96,106,24.05,66,606,2024-05-13
+STORE-535,Starbucks Connaught Place,Hyderabad,87,YES,Unexpected Drop,23,45,22.02,65,1164,2024-02-15
+STORE-536,Starbucks Banjara Hills,Bangalore,270,NO,None,85,34,21.68,52,662,2024-07-20
+STORE-537,Starbucks MG Road,Delhi,191,NO,Mismatch,60,52,19.41,70,708,2024-03-30
+STORE-538,Starbucks MG Road,Delhi,339,NO,None,65,67,19.35,67,451,2024-07-26
+STORE-539,Starbucks Jubilee Hills,Hyderabad,82,YES,None,28,97,18.47,48,207,2024-03-01
+STORE-540,Starbucks Connaught Place,Mumbai,437,NO,Mismatch,63,79,25.65,45,880,2024-03-08
+STORE-541,Starbucks Indiranagar,Bangalore,240,NO,Unexpected Drop,142,24,21.95,47,694,2024-01-21
+STORE-542,Starbucks Andheri,Hyderabad,102,NO,Mismatch,39,89,26.47,47,856,2024-08-14
+STORE-543,Starbucks Jubilee Hills,Bangalore,301,NO,Mismatch,80,29,27.32,64,666,2024-09-15
+STORE-544,Starbucks Banjara Hills,Delhi,477,NO,Unexpected Drop,47,54,20.65,54,518,2024-09-22
+STORE-545,Starbucks Andheri,Hyderabad,348,NO,Unexpected Drop,126,90,26.06,62,444,2024-08-14
+STORE-546,Starbucks Jubilee Hills,Delhi,52,YES,None,93,16,24.92,54,139,2024-08-03
+STORE-547,Starbucks Banjara Hills,Mumbai,367,NO,Mismatch,44,38,23.47,45,818,2024-10-11
+STORE-548,Starbucks Indiranagar,Bangalore,282,NO,Mismatch,115,46,24.05,69,1062,2024-06-11
+STORE-549,Starbucks Banjara Hills,Hyderabad,154,NO,None,34,74,23.48,68,1002,2024-09-24
+STORE-550,Starbucks Connaught Place,Mumbai,450,NO,Unexpected Drop,131,41,20,65,466,2024-09-02
+STORE-551,Starbucks Jubilee Hills,Hyderabad,130,NO,Mismatch,119,52,22.38,50,1196,2024-08-27
+STORE-552,Starbucks MG Road,Bangalore,254,NO,Mismatch,123,11,18.4,59,924,2024-08-11
+STORE-553,Starbucks Indiranagar,Hyderabad,448,NO,Unexpected Drop,56,47,26.07,66,99,2024-06-28
+STORE-554,Starbucks Jubilee Hills,Hyderabad,399,NO,None,60,36,21.68,63,1039,2024-05-06
+STORE-555,Starbucks Andheri,Mumbai,245,NO,Unexpected Drop,145,54,26.57,67,80,2024-08-26
+STORE-556,Starbucks Bandra,Mumbai,429,NO,Mismatch,66,73,21.25,47,496,2024-04-02
+STORE-557,Starbucks Bandra,Mumbai,441,NO,Mismatch,106,11,26.67,54,760,2024-06-14
+STORE-558,Starbucks CyberHub,Hyderabad,85,YES,None,34,0,22.78,61,458,2024-06-13
+STORE-559,Starbucks Bandra,Hyderabad,147,NO,Mismatch,27,0,25.17,45,870,2024-03-10
+STORE-560,Starbucks Jubilee Hills,Hyderabad,234,NO,None,82,23,20.57,60,833,2024-07-14
+STORE-561,Starbucks Connaught Place,Bangalore,126,NO,Mismatch,48,63,22.38,44,1119,2024-04-17
+STORE-562,Starbucks CyberHub,Bangalore,101,NO,Mismatch,148,94,27.34,65,1158,2024-08-09
+STORE-563,Starbucks Indiranagar,Bangalore,435,NO,Unexpected Drop,89,42,26.59,40,878,2024-04-17
+STORE-564,Starbucks Jubilee Hills,Bangalore,311,NO,Mismatch,48,6,19.63,41,996,2024-10-14
+STORE-565,Starbucks Jubilee Hills,Hyderabad,475,NO,Unexpected Drop,62,74,23.37,41,345,2024-02-25
+STORE-566,Starbucks Connaught Place,Mumbai,283,NO,Mismatch,109,69,26.77,40,250,2024-02-02
+STORE-567,Starbucks MG Road,Hyderabad,306,NO,Unexpected Drop,102,34,27.91,46,347,2024-07-12
+STORE-568,Starbucks Andheri,Hyderabad,102,NO,None,105,99,19.43,68,253,2024-09-15
+STORE-569,Starbucks Banjara Hills,Delhi,239,NO,Mismatch,73,68,20.88,43,541,2024-07-10
+STORE-570,Starbucks Bandra,Delhi,114,NO,Unexpected Drop,58,28,20.88,47,985,2024-08-01
+STORE-571,Starbucks Banjara Hills,Mumbai,406,NO,None,24,111,26.67,65,1034,2024-05-06
+STORE-572,Starbucks MG Road,Delhi,321,NO,None,142,22,22.08,66,796,2024-10-02
+STORE-573,Starbucks Banjara Hills,Hyderabad,201,NO,Mismatch,21,27,19.11,45,464,2024-10-14
+STORE-574,Starbucks MG Road,Delhi,184,NO,None,101,111,22.33,66,444,2024-06-13
+STORE-575,Starbucks Indiranagar,Delhi,262,NO,Mismatch,41,29,21.14,66,659,2024-05-31
+STORE-576,Starbucks Jubilee Hills,Bangalore,402,NO,Mismatch,64,61,23.36,68,880,2024-06-28
+STORE-577,Starbucks Indiranagar,Delhi,219,NO,Unexpected Drop,34,58,22.64,64,172,2024-09-26
+STORE-578,Starbucks Indiranagar,Bangalore,152,NO,Unexpected Drop,36,47,26.18,40,695,2024-08-23
+STORE-579,Starbucks Indiranagar,Hyderabad,111,NO,Unexpected Drop,97,44,24.27,60,389,2024-05-16
+STORE-580,Starbucks Indiranagar,Mumbai,331,NO,Unexpected Drop,74,98,24.82,54,1126,2024-09-20
+STORE-581,Starbucks Bandra,Delhi,276,NO,Unexpected Drop,70,9,19.62,63,1074,2024-06-25
+STORE-582,Starbucks Indiranagar,Mumbai,274,NO,Mismatch,146,21,18.99,66,475,2024-10-06
+STORE-583,Starbucks Andheri,Delhi,206,NO,Mismatch,142,108,19.07,52,1146,2024-06-16
+STORE-584,Starbucks CyberHub,Delhi,238,NO,Unexpected Drop,38,61,25.75,64,292,2024-07-07
+STORE-585,Starbucks Connaught Place,Mumbai,146,NO,Unexpected Drop,75,93,24.62,68,199,2024-08-03
+STORE-586,Starbucks Bandra,Mumbai,87,YES,None,33,96,18.35,59,212,2024-08-16
+STORE-587,Starbucks Andheri,Bangalore,278,NO,None,24,1,21.05,56,664,2024-09-06
+STORE-588,Starbucks MG Road,Delhi,119,NO,Unexpected Drop,46,1,22.26,59,736,2024-02-27
+STORE-589,Starbucks CyberHub,Hyderabad,397,NO,Unexpected Drop,147,49,26.24,58,1098,2024-01-21
+STORE-590,Starbucks Bandra,Delhi,305,NO,Unexpected Drop,120,27,27.15,57,508,2024-05-24
+STORE-591,Starbucks Connaught Place,Delhi,307,NO,None,33,72,24.55,55,478,2024-05-18
+STORE-592,Starbucks Connaught Place,Delhi,398,NO,Unexpected Drop,114,86,18.15,45,236,2024-08-03
+STORE-593,Starbucks Indiranagar,Delhi,182,NO,Unexpected Drop,94,61,25.03,48,381,2024-06-10
+STORE-594,Starbucks Connaught Place,Hyderabad,266,NO,None,107,11,21.91,44,972,2024-04-30
+STORE-595,Starbucks Andheri,Delhi,441,NO,Unexpected Drop,23,11,18.29,63,912,2024-02-01
+STORE-596,Starbucks Connaught Place,Mumbai,390,NO,None,143,1,20.34,65,731,2024-02-17
+STORE-597,Starbucks Andheri,Hyderabad,289,NO,Unexpected Drop,79,49,18.09,50,1024,2024-06-02
+STORE-598,Starbucks CyberHub,Hyderabad,391,NO,None,87,53,24.15,62,1017,2024-01-19
+STORE-599,Starbucks MG Road,Delhi,94,YES,None,81,44,24.41,46,318,2024-10-25
+STORE-600,Starbucks Jubilee Hills,Hyderabad,376,NO,Unexpected Drop,127,42,21.3,43,91,2024-02-29
+STORE-601,Starbucks Jubilee Hills,Bangalore,386,NO,Mismatch,29,41,27.69,51,707,2024-08-31
+STORE-602,Starbucks Connaught Place,Bangalore,411,NO,Unexpected Drop,113,63,21.74,68,177,2024-07-03
+STORE-603,Starbucks MG Road,Mumbai,256,NO,None,59,28,25.64,44,1170,2024-03-26
+STORE-604,Starbucks CyberHub,Bangalore,300,NO,Unexpected Drop,124,9,20.61,57,801,2024-08-05
+STORE-605,Starbucks Bandra,Mumbai,56,YES,Mismatch,97,70,23.92,56,798,2024-09-22
+STORE-606,Starbucks Connaught Place,Bangalore,68,YES,Mismatch,98,38,24,46,742,2024-09-05
+STORE-607,Starbucks Bandra,Delhi,116,NO,Unexpected Drop,89,4,19.5,42,628,2024-04-30
+STORE-608,Starbucks CyberHub,Hyderabad,172,NO,Mismatch,34,44,26.11,69,87,2024-08-02
+STORE-609,Starbucks Connaught Place,Delhi,477,NO,Mismatch,22,73,22.86,66,990,2024-04-22
+STORE-610,Starbucks Bandra,Bangalore,262,NO,Mismatch,130,86,25.81,61,383,2024-05-16
+STORE-611,Starbucks Jubilee Hills,Delhi,494,NO,None,29,46,27.7,51,360,2024-03-15
+STORE-612,Starbucks Bandra,Mumbai,155,NO,Unexpected Drop,144,33,24.85,55,467,2024-07-31
+STORE-613,Starbucks Jubilee Hills,Mumbai,187,NO,None,91,39,27.73,70,717,2024-09-13
+STORE-614,Starbucks Jubilee Hills,Mumbai,83,YES,Unexpected Drop,136,97,22.54,53,111,2024-09-14
+STORE-615,Starbucks Indiranagar,Delhi,148,NO,Mismatch,65,37,24.03,57,938,2024-03-22
+STORE-616,Starbucks Indiranagar,Hyderabad,67,YES,Unexpected Drop,90,78,24.26,49,194,2024-07-17
+STORE-617,Starbucks MG Road,Hyderabad,376,NO,Unexpected Drop,149,18,25.81,63,915,2024-03-14
+STORE-618,Starbucks Bandra,Hyderabad,379,NO,Unexpected Drop,101,65,20.83,53,347,2024-10-26
+STORE-619,Starbucks Indiranagar,Hyderabad,310,NO,Mismatch,99,4,23.29,55,682,2024-07-16
+STORE-620,Starbucks Andheri,Bangalore,448,NO,Unexpected Drop,45,101,27.44,47,1085,2024-01-08
+STORE-621,Starbucks Connaught Place,Hyderabad,441,NO,Unexpected Drop,110,41,22.67,42,354,2024-05-17
+STORE-622,Starbucks Banjara Hills,Bangalore,86,YES,Mismatch,82,47,27.39,41,898,2024-07-08
+STORE-623,Starbucks Banjara Hills,Hyderabad,379,NO,None,78,102,23.61,43,595,2024-10-02
+STORE-624,Starbucks CyberHub,Mumbai,193,NO,None,123,105,19.86,54,512,2024-01-04
+STORE-625,Starbucks Andheri,Bangalore,270,NO,Unexpected Drop,20,115,18.74,40,784,2024-03-03
+STORE-626,Starbucks Bandra,Hyderabad,391,NO,Mismatch,132,33,23.43,43,544,2024-08-28
+STORE-627,Starbucks Bandra,Delhi,219,NO,Mismatch,78,106,19.4,48,1177,2024-03-18
+STORE-628,Starbucks Andheri,Bangalore,362,NO,Unexpected Drop,41,64,20.94,42,636,2024-03-07
+STORE-629,Starbucks CyberHub,Delhi,266,NO,None,63,61,26.97,64,676,2024-06-02
+STORE-630,Starbucks Connaught Place,Hyderabad,165,NO,Unexpected Drop,142,83,19.38,45,1012,2024-06-15
+STORE-631,Starbucks Banjara Hills,Bangalore,319,NO,Mismatch,76,89,19.14,65,509,2024-05-28
+STORE-632,Starbucks Banjara Hills,Mumbai,263,NO,None,93,107,23.81,41,737,2024-04-07
+STORE-633,Starbucks Andheri,Mumbai,427,NO,Mismatch,126,8,27.45,63,1000,2024-03-17
+STORE-634,Starbucks Banjara Hills,Delhi,415,NO,None,75,66,24.6,63,131,2024-07-05
+STORE-635,Starbucks CyberHub,Hyderabad,233,NO,Unexpected Drop,68,24,26.64,44,889,2024-06-10
+STORE-636,Starbucks MG Road,Mumbai,289,NO,Unexpected Drop,120,82,20.32,61,404,2024-04-16
+STORE-637,Starbucks Bandra,Mumbai,272,NO,None,103,9,26.15,65,506,2024-04-02
+STORE-638,Starbucks Andheri,Delhi,285,NO,None,65,91,18.36,52,245,2024-06-16
+STORE-639,Starbucks Andheri,Hyderabad,381,NO,Unexpected Drop,70,25,24.32,65,183,2024-01-27
+STORE-640,Starbucks Bandra,Bangalore,176,NO,None,24,42,22.36,65,936,2024-03-27
+STORE-641,Starbucks Andheri,Delhi,164,NO,Unexpected Drop,79,6,26.33,68,149,2024-04-24
+STORE-642,Starbucks MG Road,Delhi,371,NO,Mismatch,140,109,22.36,63,608,2024-10-06
+STORE-643,Starbucks Indiranagar,Hyderabad,242,NO,None,87,56,23.82,67,545,2024-05-24
+STORE-644,Starbucks Bandra,Hyderabad,360,NO,Mismatch,29,106,25.85,61,658,2024-09-01
+STORE-645,Starbucks Bandra,Bangalore,415,NO,Unexpected Drop,126,96,20.35,50,944,2024-10-17
+STORE-646,Starbucks Indiranagar,Mumbai,286,NO,None,123,61,26.32,53,453,2024-04-26
+STORE-647,Starbucks Connaught Place,Mumbai,323,NO,Unexpected Drop,100,101,19.05,44,1011,2024-02-25
+STORE-648,Starbucks Banjara Hills,Bangalore,308,NO,Mismatch,25,14,23.66,44,228,2024-06-07
+STORE-649,Starbucks Indiranagar,Mumbai,496,NO,Unexpected Drop,135,65,27.93,55,364,2024-02-07
+STORE-650,Starbucks Andheri,Delhi,347,NO,Mismatch,125,38,21,49,795,2024-02-09
+STORE-651,Starbucks MG Road,Mumbai,338,NO,None,67,14,19.93,58,815,2024-08-12
+STORE-652,Starbucks Connaught Place,Delhi,448,NO,Unexpected Drop,46,59,25.92,62,436,2024-06-24
+STORE-653,Starbucks Andheri,Bangalore,95,YES,Mismatch,86,69,25.76,51,772,2024-10-06
+STORE-654,Starbucks Banjara Hills,Hyderabad,453,NO,Mismatch,28,92,25.68,59,379,2024-10-21
+STORE-655,Starbucks Banjara Hills,Hyderabad,362,NO,None,33,76,24.13,60,822,2024-06-12
+STORE-656,Starbucks Jubilee Hills,Mumbai,432,NO,Mismatch,55,29,18.66,44,431,2024-06-26
+STORE-657,Starbucks Connaught Place,Mumbai,466,NO,Mismatch,142,44,25.02,67,212,2024-07-31
+STORE-658,Starbucks CyberHub,Mumbai,243,NO,None,90,41,21.92,58,1091,2024-04-28
+STORE-659,Starbucks MG Road,Mumbai,470,NO,Unexpected Drop,86,20,26.35,50,976,2024-06-13
+STORE-660,Starbucks CyberHub,Delhi,169,NO,Mismatch,61,46,19.63,47,551,2024-03-28
+STORE-661,Starbucks Indiranagar,Delhi,339,NO,None,63,85,27.86,54,984,2024-04-16
+STORE-662,Starbucks CyberHub,Hyderabad,463,NO,None,129,107,19.43,59,1040,2024-04-26
+STORE-663,Starbucks CyberHub,Hyderabad,165,NO,Mismatch,39,4,18.96,54,695,2024-02-17
+STORE-664,Starbucks Connaught Place,Mumbai,486,NO,None,131,48,22.57,45,800,2024-01-10
+STORE-665,Starbucks Jubilee Hills,Bangalore,296,NO,None,137,23,26.71,60,145,2024-02-05
+STORE-666,Starbucks Jubilee Hills,Mumbai,477,NO,Mismatch,112,4,24.35,56,1052,2024-04-12
+STORE-667,Starbucks Banjara Hills,Bangalore,110,NO,None,122,85,22.95,54,988,2024-06-19
+STORE-668,Starbucks Bandra,Mumbai,302,NO,Unexpected Drop,52,58,18.83,57,1017,2024-03-13
+STORE-669,Starbucks Andheri,Bangalore,357,NO,None,34,111,21.57,45,1200,2024-09-15
+STORE-670,Starbucks CyberHub,Hyderabad,221,NO,None,103,90,21.51,59,185,2024-07-10
+STORE-671,Starbucks Bandra,Bangalore,171,NO,Mismatch,25,89,18.01,67,670,2024-08-12
+STORE-672,Starbucks Banjara Hills,Mumbai,204,NO,Mismatch,110,67,27.85,63,776,2024-09-03
+STORE-673,Starbucks Indiranagar,Hyderabad,351,NO,None,132,41,26.3,56,996,2024-10-12
+STORE-674,Starbucks MG Road,Delhi,354,NO,Mismatch,141,112,26.22,45,635,2024-04-29
+STORE-675,Starbucks Bandra,Bangalore,221,NO,None,115,14,19.52,70,424,2024-01-17
+STORE-676,Starbucks Indiranagar,Delhi,302,NO,Mismatch,111,28,27.11,56,848,2024-07-26
+STORE-677,Starbucks Connaught Place,Bangalore,379,NO,Unexpected Drop,147,70,26.61,52,218,2024-09-29
+STORE-678,Starbucks CyberHub,Delhi,409,NO,Mismatch,44,35,19.38,58,112,2024-01-31
+STORE-679,Starbucks Banjara Hills,Mumbai,284,NO,None,136,67,26.47,47,930,2024-06-26
+STORE-680,Starbucks Connaught Place,Bangalore,233,NO,Mismatch,48,78,27.8,68,302,2024-04-21
+STORE-681,Starbucks Indiranagar,Mumbai,427,NO,Mismatch,46,75,21.28,63,1031,2024-05-14
+STORE-682,Starbucks Jubilee Hills,Delhi,180,NO,Unexpected Drop,131,35,19.34,62,254,2024-03-14
+STORE-683,Starbucks CyberHub,Bangalore,395,NO,Unexpected Drop,77,110,21.45,69,508,2024-01-06
+STORE-684,Starbucks Bandra,Hyderabad,61,YES,Unexpected Drop,83,24,25.86,61,763,2024-02-28
+STORE-685,Starbucks MG Road,Hyderabad,440,NO,Unexpected Drop,68,59,21.71,54,1089,2024-08-02
+STORE-686,Starbucks Andheri,Bangalore,339,NO,Unexpected Drop,138,74,23.3,64,484,2024-09-16
+STORE-687,Starbucks Banjara Hills,Delhi,349,NO,None,147,42,21.13,48,1189,2024-02-26
+STORE-688,Starbucks Connaught Place,Delhi,478,NO,None,86,47,21.64,52,171,2024-09-25
+STORE-689,Starbucks Indiranagar,Hyderabad,97,YES,Mismatch,142,117,19.39,57,140,2024-02-21
+STORE-690,Starbucks Indiranagar,Mumbai,414,NO,Mismatch,49,77,26.82,45,434,2024-02-01
+STORE-691,Starbucks Connaught Place,Bangalore,304,NO,Mismatch,44,52,20.8,56,473,2024-06-07
+STORE-692,Starbucks Indiranagar,Hyderabad,316,NO,Mismatch,70,59,27.75,65,957,2024-08-19
+STORE-693,Starbucks CyberHub,Bangalore,386,NO,None,139,18,22.87,54,1114,2024-03-12
+STORE-694,Starbucks Jubilee Hills,Mumbai,158,NO,None,143,9,27.12,58,640,2024-06-18
+STORE-695,Starbucks Banjara Hills,Delhi,308,NO,Unexpected Drop,81,22,22.15,56,308,2024-01-21
+STORE-696,Starbucks Indiranagar,Hyderabad,141,NO,Unexpected Drop,62,71,26.32,70,741,2024-02-14
+STORE-697,Starbucks Jubilee Hills,Mumbai,448,NO,Mismatch,45,98,25.8,55,329,2024-03-03
+STORE-698,Starbucks Bandra,Bangalore,233,NO,Mismatch,110,117,25.9,67,563,2024-09-13
+STORE-699,Starbucks Andheri,Mumbai,447,NO,Mismatch,121,92,26.26,64,188,2024-10-06
+STORE-700,Starbucks Andheri,Mumbai,191,NO,Mismatch,147,78,22.82,46,873,2024-03-22
+STORE-701,Starbucks Banjara Hills,Delhi,287,NO,Mismatch,69,68,23.42,67,144,2024-06-11
+STORE-702,Starbucks CyberHub,Mumbai,236,NO,None,75,37,20.76,51,538,2024-09-30
+STORE-703,Starbucks MG Road,Hyderabad,306,NO,Unexpected Drop,134,82,27.4,42,904,2024-08-04
+STORE-704,Starbucks Indiranagar,Delhi,284,NO,Mismatch,38,4,21.29,55,815,2024-04-02
+STORE-705,Starbucks Bandra,Hyderabad,388,NO,Mismatch,144,5,20.69,60,932,2024-04-28
+STORE-706,Starbucks CyberHub,Delhi,409,NO,Mismatch,123,16,18.34,65,749,2024-03-27
+STORE-707,Starbucks MG Road,Delhi,154,NO,None,80,85,23.71,62,365,2024-10-21
+STORE-708,Starbucks CyberHub,Hyderabad,265,NO,Unexpected Drop,139,67,25.68,46,100,2024-10-16
+STORE-709,Starbucks Indiranagar,Delhi,414,NO,Mismatch,36,52,25.19,53,980,2024-08-09
+STORE-710,Starbucks MG Road,Hyderabad,376,NO,Unexpected Drop,133,17,21.62,60,317,2024-01-01
+STORE-711,Starbucks CyberHub,Hyderabad,293,NO,Mismatch,67,30,20.7,68,335,2024-09-27
+STORE-712,Starbucks MG Road,Delhi,153,NO,Mismatch,61,72,25.59,68,1019,2024-09-04
+STORE-713,Starbucks Banjara Hills,Hyderabad,397,NO,Mismatch,67,61,22.87,70,118,2024-01-27
+STORE-714,Starbucks Connaught Place,Mumbai,114,NO,None,125,90,21.78,70,698,2024-03-02
+STORE-715,Starbucks Bandra,Hyderabad,137,NO,Unexpected Drop,141,44,22.65,51,384,2024-02-26
+STORE-716,Starbucks Andheri,Delhi,256,NO,Unexpected Drop,27,77,21.96,67,464,2024-04-06
+STORE-717,Starbucks CyberHub,Mumbai,344,NO,None,131,62,25.68,48,741,2024-01-20
+STORE-718,Starbucks Indiranagar,Bangalore,417,NO,None,111,78,18.82,69,694,2024-10-14
+STORE-719,Starbucks Andheri,Delhi,121,NO,Unexpected Drop,30,102,23.97,58,960,2024-05-06
+STORE-720,Starbucks CyberHub,Hyderabad,170,NO,Mismatch,114,73,24.89,62,336,2024-06-11
+STORE-721,Starbucks Andheri,Delhi,153,NO,Mismatch,105,52,26.25,48,178,2024-09-24
+STORE-722,Starbucks CyberHub,Bangalore,93,YES,Unexpected Drop,52,67,24.96,66,1173,2024-10-24
+STORE-723,Starbucks Connaught Place,Bangalore,423,NO,None,110,119,18.34,49,368,2024-07-04
+STORE-724,Starbucks CyberHub,Delhi,290,NO,None,137,120,27.24,53,587,2024-06-30
+STORE-725,Starbucks Andheri,Hyderabad,117,NO,None,30,72,18.32,44,271,2024-01-08
+STORE-726,Starbucks Banjara Hills,Hyderabad,360,NO,Unexpected Drop,21,80,24.39,45,266,2024-01-14
+STORE-727,Starbucks Andheri,Mumbai,345,NO,Unexpected Drop,38,62,18.09,52,511,2024-05-28
+STORE-728,Starbucks Andheri,Bangalore,322,NO,None,137,67,18.04,41,701,2024-02-02
+STORE-729,Starbucks Jubilee Hills,Bangalore,258,NO,None,77,55,18.22,63,684,2024-08-15
+STORE-730,Starbucks Banjara Hills,Bangalore,72,YES,Mismatch,122,70,22.56,50,904,2024-05-06
+STORE-731,Starbucks Connaught Place,Mumbai,120,NO,Unexpected Drop,115,112,18.04,54,146,2024-07-25
+STORE-732,Starbucks Banjara Hills,Hyderabad,104,NO,Mismatch,110,9,24.28,67,352,2024-04-28
+STORE-733,Starbucks Indiranagar,Bangalore,381,NO,Unexpected Drop,91,100,22.8,61,111,2024-08-02
+STORE-734,Starbucks Indiranagar,Bangalore,142,NO,Unexpected Drop,150,47,25.79,67,742,2024-01-03
+STORE-735,Starbucks Indiranagar,Bangalore,415,NO,Unexpected Drop,48,108,26.45,67,517,2024-05-20
+STORE-736,Starbucks Banjara Hills,Bangalore,282,NO,None,100,10,26.38,48,634,2024-05-03
+STORE-737,Starbucks CyberHub,Bangalore,123,NO,Mismatch,34,115,22.7,56,603,2024-06-08
+STORE-738,Starbucks CyberHub,Bangalore,313,NO,None,49,62,18.14,69,231,2024-02-18
+STORE-739,Starbucks Connaught Place,Delhi,389,NO,None,115,48,23.03,60,1014,2024-03-03
+STORE-740,Starbucks MG Road,Mumbai,403,NO,None,121,18,22.6,45,1107,2024-03-13
+STORE-741,Starbucks MG Road,Hyderabad,442,NO,Unexpected Drop,148,55,25.62,63,471,2024-06-23
+STORE-742,Starbucks Andheri,Mumbai,125,NO,Unexpected Drop,66,14,19.75,46,567,2024-09-03
+STORE-743,Starbucks Bandra,Hyderabad,354,NO,None,69,11,19.79,63,399,2024-09-24
+STORE-744,Starbucks Banjara Hills,Delhi,339,NO,Mismatch,64,50,24.78,50,134,2024-02-18
+STORE-745,Starbucks Connaught Place,Hyderabad,65,YES,Unexpected Drop,106,117,27.69,40,756,2024-04-29
+STORE-746,Starbucks Indiranagar,Mumbai,117,NO,None,60,19,21.52,58,204,2024-08-16
+STORE-747,Starbucks Connaught Place,Delhi,379,NO,Mismatch,59,87,26.19,52,977,2024-09-20
+STORE-748,Starbucks Jubilee Hills,Hyderabad,159,NO,Unexpected Drop,91,32,23.91,44,449,2024-05-13
+STORE-749,Starbucks Banjara Hills,Bangalore,345,NO,Mismatch,139,74,18.7,49,213,2024-04-18
+STORE-750,Starbucks Jubilee Hills,Bangalore,59,YES,None,118,8,25.94,45,683,2024-03-08
+STORE-751,Starbucks CyberHub,Delhi,319,NO,Unexpected Drop,83,45,20.51,40,174,2024-05-31
+STORE-752,Starbucks Indiranagar,Hyderabad,107,NO,Mismatch,39,105,22.56,53,270,2024-04-13
+STORE-753,Starbucks MG Road,Hyderabad,330,NO,None,31,66,19.82,54,1153,2024-07-08
+STORE-754,Starbucks Connaught Place,Delhi,388,NO,None,81,23,26.85,67,390,2024-06-29
+STORE-755,Starbucks Bandra,Mumbai,208,NO,Mismatch,93,67,20.62,43,1052,2024-04-20
+STORE-756,Starbucks Andheri,Bangalore,413,NO,Unexpected Drop,43,36,25.45,59,710,2024-03-18
+STORE-757,Starbucks Andheri,Delhi,240,NO,Mismatch,27,74,21,56,563,2024-09-26
+STORE-758,Starbucks Bandra,Delhi,126,NO,None,76,73,23.15,64,702,2024-01-02
+STORE-759,Starbucks Connaught Place,Hyderabad,141,NO,Mismatch,148,103,19.88,61,430,2024-10-06
+STORE-760,Starbucks MG Road,Mumbai,103,NO,Mismatch,139,67,21.29,60,1154,2024-01-11
+STORE-761,Starbucks Connaught Place,Hyderabad,90,YES,Mismatch,146,55,20.05,58,878,2024-09-19
+STORE-762,Starbucks CyberHub,Delhi,159,NO,Mismatch,49,18,23.39,70,541,2024-07-02
+STORE-763,Starbucks Andheri,Mumbai,376,NO,None,37,85,27.16,69,413,2024-02-06
+STORE-764,Starbucks Bandra,Delhi,195,NO,Unexpected Drop,88,79,23.17,54,626,2024-04-20
+STORE-765,Starbucks CyberHub,Mumbai,273,NO,None,85,57,25.18,48,1080,2024-07-12
+STORE-766,Starbucks CyberHub,Bangalore,439,NO,Mismatch,91,50,22.81,60,840,2024-07-22
+STORE-767,Starbucks Jubilee Hills,Mumbai,163,NO,Unexpected Drop,85,107,21.47,67,445,2024-09-28
+STORE-768,Starbucks Bandra,Hyderabad,445,NO,Mismatch,92,11,21.19,64,488,2024-07-12
+STORE-769,Starbucks Jubilee Hills,Bangalore,98,YES,Mismatch,96,92,18.79,62,284,2024-09-08
+STORE-770,Starbucks Jubilee Hills,Bangalore,74,YES,Unexpected Drop,28,104,27.92,41,571,2024-05-23
+STORE-771,Starbucks Banjara Hills,Bangalore,228,NO,None,113,50,20.77,64,711,2024-04-21
+STORE-772,Starbucks Connaught Place,Mumbai,318,NO,None,98,88,27.56,66,402,2024-08-08
+STORE-773,Starbucks Connaught Place,Delhi,330,NO,None,71,2,25.57,45,840,2024-08-15
+STORE-774,Starbucks Andheri,Delhi,325,NO,None,107,72,25.72,63,868,2024-03-13
+STORE-775,Starbucks Bandra,Bangalore,144,NO,None,74,102,23.25,49,434,2024-08-10
+STORE-776,Starbucks Indiranagar,Mumbai,101,NO,None,114,43,18.48,42,913,2024-08-13
+STORE-777,Starbucks Connaught Place,Mumbai,178,NO,Mismatch,108,114,25.06,40,301,2024-03-22
+STORE-778,Starbucks Andheri,Bangalore,266,NO,None,34,8,20.94,50,1044,2024-03-26
+STORE-779,Starbucks Banjara Hills,Hyderabad,70,YES,Mismatch,80,49,20.37,64,211,2024-10-03
+STORE-780,Starbucks MG Road,Bangalore,119,NO,Unexpected Drop,129,62,25.01,65,483,2024-07-13
+STORE-781,Starbucks Bandra,Mumbai,106,NO,None,78,32,19.11,66,439,2024-03-17
+STORE-782,Starbucks MG Road,Hyderabad,83,YES,None,71,113,26.47,47,563,2024-03-28
+STORE-783,Starbucks Banjara Hills,Delhi,386,NO,Unexpected Drop,71,32,22.54,55,1064,2024-08-24
+STORE-784,Starbucks Jubilee Hills,Bangalore,107,NO,Unexpected Drop,92,22,27.98,45,902,2024-03-14
+STORE-785,Starbucks Indiranagar,Hyderabad,473,NO,Mismatch,99,102,26.8,53,594,2024-09-20
+STORE-786,Starbucks Jubilee Hills,Mumbai,278,NO,Unexpected Drop,115,44,21.95,55,341,2024-05-26
+STORE-787,Starbucks Andheri,Bangalore,214,NO,None,95,111,22.95,59,1192,2024-02-20
+STORE-788,Starbucks Banjara Hills,Hyderabad,358,NO,Mismatch,110,13,24.95,54,1020,2024-08-19
+STORE-789,Starbucks Andheri,Bangalore,94,YES,None,75,39,23.54,55,433,2024-02-13
+STORE-790,Starbucks Bandra,Bangalore,495,NO,Unexpected Drop,149,109,22.93,53,730,2024-03-02
+STORE-791,Starbucks Connaught Place,Delhi,102,NO,Unexpected Drop,80,114,22.02,45,1125,2024-09-06
+STORE-792,Starbucks CyberHub,Mumbai,261,NO,Mismatch,63,0,19.31,43,387,2024-09-05
+STORE-793,Starbucks CyberHub,Hyderabad,474,NO,Unexpected Drop,74,70,22.26,69,1048,2024-03-17
+STORE-794,Starbucks Andheri,Delhi,335,NO,None,87,23,26.41,43,799,2024-05-13
+STORE-795,Starbucks Banjara Hills,Delhi,337,NO,Mismatch,69,59,27.89,60,975,2024-01-02
+STORE-796,Starbucks Jubilee Hills,Mumbai,184,NO,Unexpected Drop,25,103,18.79,68,582,2024-02-02
+STORE-797,Starbucks CyberHub,Delhi,114,NO,Mismatch,77,115,27.72,69,320,2024-02-29
+STORE-798,Starbucks Banjara Hills,Mumbai,77,YES,Mismatch,82,31,24.45,56,941,2024-10-09
+STORE-799,Starbucks Connaught Place,Delhi,341,NO,None,25,95,23.89,49,268,2024-08-21
+STORE-800,Starbucks Connaught Place,Delhi,139,NO,Mismatch,81,81,21.68,70,157,2024-05-27
+STORE-801,Starbucks Jubilee Hills,Bangalore,160,NO,Mismatch,110,4,22.5,51,643,2024-02-18
+STORE-802,Starbucks Banjara Hills,Hyderabad,215,NO,Mismatch,113,3,24.13,57,474,2024-05-24
+STORE-803,Starbucks Banjara Hills,Delhi,310,NO,Unexpected Drop,115,45,18.95,63,1008,2024-01-07
+STORE-804,Starbucks Connaught Place,Hyderabad,291,NO,None,83,57,24.63,46,1090,2024-06-20
+STORE-805,Starbucks Andheri,Delhi,419,NO,Unexpected Drop,106,46,23.48,62,788,2024-05-17
+STORE-806,Starbucks Banjara Hills,Hyderabad,365,NO,Mismatch,126,34,26.31,43,845,2024-08-07
+STORE-807,Starbucks Andheri,Bangalore,310,NO,None,44,64,20.13,63,588,2024-08-30
+STORE-808,Starbucks MG Road,Bangalore,108,NO,Mismatch,41,23,25.49,61,819,2024-10-22
+STORE-809,Starbucks Bandra,Hyderabad,488,NO,None,134,97,26.46,68,883,2024-07-22
+STORE-810,Starbucks Bandra,Bangalore,464,NO,None,131,48,25.49,62,169,2024-04-08
+STORE-811,Starbucks Jubilee Hills,Delhi,87,YES,Mismatch,20,86,26.21,52,1091,2024-02-01
+STORE-812,Starbucks MG Road,Mumbai,444,NO,Unexpected Drop,39,114,19.33,69,667,2024-01-05
+STORE-813,Starbucks Connaught Place,Bangalore,88,YES,None,55,77,20.41,70,508,2024-10-14
+STORE-814,Starbucks CyberHub,Mumbai,321,NO,None,72,116,21.5,49,526,2024-02-07
+STORE-815,Starbucks Andheri,Bangalore,207,NO,Mismatch,127,54,23.89,40,513,2024-06-02
+STORE-816,Starbucks Indiranagar,Delhi,487,NO,None,111,92,24.73,66,663,2024-08-24
+STORE-817,Starbucks Andheri,Delhi,485,NO,Mismatch,42,16,19.57,63,172,2024-01-05
+STORE-818,Starbucks Andheri,Hyderabad,206,NO,Unexpected Drop,134,47,25.94,70,1085,2024-04-03
+STORE-819,Starbucks Indiranagar,Delhi,198,NO,None,44,84,22.08,49,980,2024-02-26
+STORE-820,Starbucks Jubilee Hills,Bangalore,280,NO,Mismatch,56,18,22.34,61,926,2024-06-16
+STORE-821,Starbucks Indiranagar,Delhi,362,NO,Unexpected Drop,121,52,21.47,63,314,2024-06-28
+STORE-822,Starbucks Jubilee Hills,Hyderabad,344,NO,Unexpected Drop,87,108,21.92,68,648,2024-02-02
+STORE-823,Starbucks MG Road,Hyderabad,328,NO,Unexpected Drop,31,70,18.54,65,393,2024-07-11
+STORE-824,Starbucks Connaught Place,Delhi,198,NO,None,136,66,21.78,44,877,2024-02-13
+STORE-825,Starbucks Jubilee Hills,Delhi,271,NO,Mismatch,24,89,25.27,65,514,2024-07-17
+STORE-826,Starbucks Indiranagar,Mumbai,200,NO,None,23,6,18.23,41,720,2024-01-18
+STORE-827,Starbucks Indiranagar,Bangalore,243,NO,Mismatch,134,103,22.08,50,1019,2024-02-26
+STORE-828,Starbucks Jubilee Hills,Hyderabad,136,NO,Unexpected Drop,56,98,25.7,69,1192,2024-06-16
+STORE-829,Starbucks Bandra,Hyderabad,480,NO,Unexpected Drop,116,87,23.71,63,1012,2024-01-03
+STORE-830,Starbucks Banjara Hills,Mumbai,376,NO,Unexpected Drop,143,101,19.57,62,771,2024-07-04
+STORE-831,Starbucks CyberHub,Mumbai,411,NO,None,86,39,25.29,43,448,2024-06-30
+STORE-832,Starbucks Jubilee Hills,Hyderabad,430,NO,Mismatch,85,86,27.52,63,649,2024-10-08
+STORE-833,Starbucks MG Road,Mumbai,330,NO,Unexpected Drop,63,68,23.15,48,539,2024-02-28
+STORE-834,Starbucks Indiranagar,Delhi,410,NO,Unexpected Drop,94,7,20.77,41,914,2024-02-21
+STORE-835,Starbucks Connaught Place,Bangalore,151,NO,Unexpected Drop,53,76,21.61,59,263,2024-08-17
+STORE-836,Starbucks Banjara Hills,Delhi,95,YES,Unexpected Drop,36,93,19.48,51,714,2024-05-01
+STORE-837,Starbucks CyberHub,Delhi,59,YES,Mismatch,71,52,19.14,54,854,2024-02-11
+STORE-838,Starbucks Banjara Hills,Delhi,141,NO,Unexpected Drop,56,109,22.47,68,878,2024-07-16
+STORE-839,Starbucks Bandra,Mumbai,133,NO,None,72,116,24.29,52,301,2024-08-09
+STORE-840,Starbucks CyberHub,Mumbai,97,YES,Mismatch,34,41,18.91,54,563,2024-04-15
+STORE-841,Starbucks CyberHub,Bangalore,243,NO,Mismatch,120,37,23.64,41,1157,2024-02-02
+STORE-842,Starbucks Jubilee Hills,Hyderabad,359,NO,Unexpected Drop,54,120,21.36,41,1176,2024-04-21
+STORE-843,Starbucks Jubilee Hills,Bangalore,94,YES,Unexpected Drop,92,4,27.14,51,986,2024-02-22
+STORE-844,Starbucks Indiranagar,Hyderabad,476,NO,Mismatch,128,120,20.89,57,222,2024-02-13
+STORE-845,Starbucks Andheri,Delhi,234,NO,Unexpected Drop,27,37,26.49,59,214,2024-06-04
+STORE-846,Starbucks Andheri,Delhi,185,NO,None,54,107,22.51,53,786,2024-09-18
+STORE-847,Starbucks Indiranagar,Bangalore,433,NO,Unexpected Drop,120,41,20.65,46,295,2024-03-16
+STORE-848,Starbucks MG Road,Mumbai,153,NO,None,103,46,22.75,64,94,2024-06-13
+STORE-849,Starbucks Jubilee Hills,Delhi,483,NO,Mismatch,27,76,25.5,64,298,2024-05-02
+STORE-850,Starbucks Banjara Hills,Mumbai,477,NO,None,101,42,24.7,69,535,2024-07-19
+STORE-851,Starbucks Banjara Hills,Bangalore,168,NO,None,134,36,24.43,47,743,2024-02-22
+STORE-852,Starbucks Jubilee Hills,Delhi,237,NO,None,91,30,20.53,40,495,2024-10-01
+STORE-853,Starbucks Banjara Hills,Bangalore,491,NO,None,70,107,25.94,65,360,2024-01-13
+STORE-854,Starbucks Bandra,Mumbai,226,NO,None,41,35,26.56,52,374,2024-09-07
+STORE-855,Starbucks CyberHub,Mumbai,421,NO,None,22,116,20.06,46,456,2024-06-29
+STORE-856,Starbucks CyberHub,Delhi,129,NO,None,26,34,20.45,55,147,2024-02-12
+STORE-857,Starbucks Jubilee Hills,Bangalore,446,NO,Mismatch,59,88,20.24,45,141,2024-08-30
+STORE-858,Starbucks Connaught Place,Delhi,146,NO,None,29,9,20.51,69,217,2024-02-26
+STORE-859,Starbucks Bandra,Hyderabad,369,NO,Unexpected Drop,146,76,27,60,518,2024-07-29
+STORE-860,Starbucks CyberHub,Mumbai,411,NO,Mismatch,138,116,27.32,41,563,2024-07-11
+STORE-861,Starbucks Jubilee Hills,Bangalore,252,NO,None,21,71,26.86,65,990,2024-09-24
+STORE-862,Starbucks Jubilee Hills,Bangalore,333,NO,Unexpected Drop,127,55,26.36,61,748,2024-09-17
+STORE-863,Starbucks Connaught Place,Bangalore,435,NO,None,56,2,27.14,55,612,2024-02-26
+STORE-864,Starbucks Connaught Place,Bangalore,285,NO,Unexpected Drop,35,61,25.07,61,690,2024-03-05
+STORE-865,Starbucks Indiranagar,Mumbai,434,NO,None,36,58,24.41,41,354,2024-10-16
+STORE-866,Starbucks Banjara Hills,Hyderabad,289,NO,Mismatch,58,2,19.69,52,669,2024-10-27
+STORE-867,Starbucks Banjara Hills,Bangalore,308,NO,Mismatch,102,47,25.74,49,672,2024-07-10
+STORE-868,Starbucks Connaught Place,Bangalore,205,NO,None,77,49,24.05,51,120,2024-08-21
+STORE-869,Starbucks MG Road,Mumbai,384,NO,Mismatch,127,118,23.67,43,146,2024-07-11
+STORE-870,Starbucks Banjara Hills,Bangalore,267,NO,None,139,90,19.94,50,225,2024-08-27
+STORE-871,Starbucks CyberHub,Hyderabad,404,NO,Unexpected Drop,38,53,26.45,41,119,2024-05-08
+STORE-872,Starbucks MG Road,Hyderabad,144,NO,None,90,4,19.6,62,883,2024-07-14
+STORE-873,Starbucks Banjara Hills,Delhi,261,NO,Mismatch,64,64,25.15,46,942,2024-09-02
+STORE-874,Starbucks Bandra,Mumbai,233,NO,Mismatch,123,50,21.4,70,590,2024-01-20
+STORE-875,Starbucks Bandra,Delhi,87,YES,Mismatch,33,63,20.74,68,1093,2024-10-24
+STORE-876,Starbucks Jubilee Hills,Bangalore,397,NO,Mismatch,78,40,19.78,70,890,2024-10-07
+STORE-877,Starbucks Andheri,Hyderabad,106,NO,None,34,81,20.35,45,336,2024-09-29
+STORE-878,Starbucks MG Road,Mumbai,360,NO,Mismatch,94,66,22.2,52,876,2024-06-07
+STORE-879,Starbucks CyberHub,Delhi,336,NO,Unexpected Drop,27,86,25.06,63,320,2024-08-19
+STORE-880,Starbucks CyberHub,Hyderabad,259,NO,None,48,81,18.44,68,361,2024-02-28
+STORE-881,Starbucks Indiranagar,Hyderabad,130,NO,Mismatch,95,17,24.24,45,350,2024-08-04
+STORE-882,Starbucks Jubilee Hills,Hyderabad,480,NO,Unexpected Drop,143,66,23.28,57,529,2024-06-03
+STORE-883,Starbucks Bandra,Mumbai,214,NO,Mismatch,101,76,27.76,45,734,2024-07-19
+STORE-884,Starbucks Andheri,Delhi,68,YES,None,67,59,27.6,50,868,2024-09-10
+STORE-885,Starbucks Indiranagar,Delhi,120,NO,None,114,103,25.88,51,364,2024-01-06
+STORE-886,Starbucks Andheri,Bangalore,373,NO,Mismatch,74,82,27.28,55,133,2024-06-13
+STORE-887,Starbucks Andheri,Bangalore,437,NO,None,118,26,27.26,56,1147,2024-01-27
+STORE-888,Starbucks MG Road,Hyderabad,249,NO,Unexpected Drop,145,104,25.39,66,462,2024-07-03
+STORE-889,Starbucks Jubilee Hills,Delhi,102,NO,Unexpected Drop,45,95,24.49,64,616,2024-02-26
+STORE-890,Starbucks MG Road,Bangalore,58,YES,Mismatch,79,86,21.78,69,785,2024-03-04
+STORE-891,Starbucks Bandra,Bangalore,141,NO,Mismatch,38,107,26.12,70,707,2024-06-05
+STORE-892,Starbucks Banjara Hills,Delhi,76,YES,Unexpected Drop,103,84,25,41,609,2024-03-28
+STORE-893,Starbucks Connaught Place,Hyderabad,51,YES,Unexpected Drop,120,17,20.03,70,472,2024-07-08
+STORE-894,Starbucks Connaught Place,Mumbai,322,NO,Unexpected Drop,96,5,21.44,57,115,2024-02-27
+STORE-895,Starbucks Connaught Place,Hyderabad,120,NO,Unexpected Drop,74,64,26.59,69,1026,2024-05-07
+STORE-896,Starbucks Andheri,Delhi,247,NO,Unexpected Drop,139,110,21.06,58,368,2024-05-03
+STORE-897,Starbucks Jubilee Hills,Mumbai,436,NO,None,48,93,27.69,44,556,2024-09-04
+STORE-898,Starbucks CyberHub,Bangalore,324,NO,Mismatch,89,98,27.19,54,1111,2024-10-08
+STORE-899,Starbucks Andheri,Hyderabad,251,NO,Unexpected Drop,39,88,21.05,60,474,2024-09-08
+STORE-900,Starbucks CyberHub,Delhi,274,NO,None,90,9,23.84,65,688,2024-08-19
+STORE-901,Starbucks Bandra,Mumbai,75,YES,None,55,13,19.03,69,1023,2024-07-15
+STORE-902,Starbucks Connaught Place,Delhi,68,YES,Unexpected Drop,33,55,24.37,58,177,2024-07-09
+STORE-903,Starbucks CyberHub,Delhi,483,NO,Mismatch,50,105,20.83,57,893,2024-04-14
+STORE-904,Starbucks Andheri,Mumbai,206,NO,Mismatch,135,53,25.67,68,493,2024-02-13
+STORE-905,Starbucks CyberHub,Hyderabad,491,NO,None,46,110,25.4,59,597,2024-01-30
+STORE-906,Starbucks MG Road,Delhi,485,NO,Unexpected Drop,146,17,23.11,44,897,2024-05-25
+STORE-907,Starbucks Banjara Hills,Hyderabad,96,YES,Mismatch,68,49,27.89,41,772,2024-01-02
+STORE-908,Starbucks Bandra,Delhi,421,NO,Mismatch,63,7,21.83,49,83,2024-05-15
+STORE-909,Starbucks Indiranagar,Bangalore,119,NO,Mismatch,142,85,24.41,68,979,2024-07-05
+STORE-910,Starbucks Bandra,Hyderabad,392,NO,None,70,13,22.75,40,928,2024-08-06
+STORE-911,Starbucks Connaught Place,Hyderabad,310,NO,None,78,94,23.74,68,723,2024-04-13
+STORE-912,Starbucks CyberHub,Mumbai,194,NO,None,144,40,26.06,48,848,2024-02-17
+STORE-913,Starbucks Connaught Place,Mumbai,50,YES,None,37,57,23.99,43,271,2024-06-14
+STORE-914,Starbucks Indiranagar,Bangalore,70,YES,Mismatch,130,70,21.78,68,89,2024-02-28
+STORE-915,Starbucks Connaught Place,Bangalore,172,NO,None,51,13,20.33,43,1126,2024-03-06
+STORE-916,Starbucks CyberHub,Delhi,153,NO,None,80,111,25.61,61,351,2024-04-18
+STORE-917,Starbucks Indiranagar,Bangalore,119,NO,Mismatch,35,61,21.31,62,851,2024-01-29
+STORE-918,Starbucks Banjara Hills,Mumbai,440,NO,None,129,82,20.04,57,1098,2024-03-29
+STORE-919,Starbucks Indiranagar,Mumbai,316,NO,Unexpected Drop,30,18,22.18,64,1028,2024-04-08
+STORE-920,Starbucks Indiranagar,Delhi,373,NO,Mismatch,70,60,21.13,53,1025,2024-07-08
+STORE-921,Starbucks Bandra,Mumbai,411,NO,None,122,94,27.72,43,660,2024-08-27
+STORE-922,Starbucks Bandra,Hyderabad,236,NO,Unexpected Drop,39,45,18.06,64,769,2024-10-20
+STORE-923,Starbucks CyberHub,Mumbai,285,NO,Unexpected Drop,29,80,19.11,43,286,2024-07-06
+STORE-924,Starbucks Jubilee Hills,Bangalore,148,NO,Mismatch,61,103,25.9,55,957,2024-07-08
+STORE-925,Starbucks Bandra,Mumbai,341,NO,Mismatch,133,77,25.79,70,1072,2024-06-12
+STORE-926,Starbucks Jubilee Hills,Bangalore,290,NO,None,53,38,24.26,51,1095,2024-06-05
+STORE-927,Starbucks Indiranagar,Delhi,232,NO,None,97,113,27.31,61,858,2024-05-01
+STORE-928,Starbucks Connaught Place,Bangalore,355,NO,None,82,3,23.57,68,224,2024-01-10
+STORE-929,Starbucks MG Road,Hyderabad,125,NO,None,54,7,21.35,69,81,2024-06-28
+STORE-930,Starbucks MG Road,Bangalore,500,NO,Mismatch,142,30,23.33,41,986,2024-03-17
+STORE-931,Starbucks Banjara Hills,Delhi,117,NO,Unexpected Drop,52,27,23.43,41,95,2024-07-02
+STORE-932,Starbucks CyberHub,Mumbai,367,NO,Mismatch,130,70,22.88,55,264,2024-07-09
+STORE-933,Starbucks CyberHub,Delhi,336,NO,None,65,10,26.45,69,92,2024-04-20
+STORE-934,Starbucks Jubilee Hills,Mumbai,117,NO,None,42,70,20.23,46,835,2024-02-15
+STORE-935,Starbucks Indiranagar,Mumbai,392,NO,None,78,77,21.76,42,144,2024-04-25
+STORE-936,Starbucks MG Road,Mumbai,163,NO,Mismatch,79,107,18.55,70,893,2024-05-02
+STORE-937,Starbucks Indiranagar,Bangalore,464,NO,Unexpected Drop,55,81,24.45,46,908,2024-04-07
+STORE-938,Starbucks Banjara Hills,Delhi,428,NO,Mismatch,70,107,28,69,874,2024-06-21
+STORE-939,Starbucks Banjara Hills,Mumbai,151,NO,Mismatch,94,28,20.49,51,832,2024-02-06
+STORE-940,Starbucks Connaught Place,Mumbai,368,NO,Mismatch,59,30,26.05,55,272,2024-08-15
+STORE-941,Starbucks CyberHub,Hyderabad,87,YES,None,95,118,22.2,41,693,2024-01-25
+STORE-942,Starbucks Banjara Hills,Mumbai,429,NO,Mismatch,66,24,21.21,58,676,2024-07-21
+STORE-943,Starbucks Jubilee Hills,Delhi,409,NO,Mismatch,118,42,21.3,70,681,2024-04-11
+STORE-944,Starbucks Jubilee Hills,Bangalore,83,YES,Unexpected Drop,48,97,23.96,42,873,2024-09-04
+STORE-945,Starbucks MG Road,Delhi,401,NO,Unexpected Drop,130,45,24.33,59,1018,2024-05-11
+STORE-946,Starbucks Banjara Hills,Hyderabad,379,NO,Mismatch,131,85,24.72,46,812,2024-04-07
+STORE-947,Starbucks MG Road,Hyderabad,230,NO,Unexpected Drop,78,24,22.5,59,743,2024-03-23
+STORE-948,Starbucks Jubilee Hills,Hyderabad,428,NO,Unexpected Drop,128,17,18.08,55,879,2024-09-14
+STORE-949,Starbucks Andheri,Delhi,233,NO,Mismatch,136,22,27.46,56,589,2024-05-18
+STORE-950,Starbucks Bandra,Mumbai,64,YES,None,52,87,20.15,66,953,2024-03-08
+STORE-951,Starbucks Connaught Place,Hyderabad,407,NO,Mismatch,130,92,24.45,57,941,2024-03-10
+STORE-952,Starbucks CyberHub,Hyderabad,379,NO,None,57,62,19.12,46,488,2024-03-13
+STORE-953,Starbucks Bandra,Delhi,427,NO,None,32,70,26.69,56,539,2024-05-17
+STORE-954,Starbucks CyberHub,Bangalore,376,NO,None,138,35,24.65,51,353,2024-10-25
+STORE-955,Starbucks Andheri,Delhi,175,NO,Mismatch,71,22,19.02,63,952,2024-07-11
+STORE-956,Starbucks Connaught Place,Hyderabad,65,YES,Mismatch,147,4,21.52,65,483,2024-09-05
+STORE-957,Starbucks Indiranagar,Delhi,391,NO,Unexpected Drop,76,36,27.62,63,1010,2024-01-31
+STORE-958,Starbucks Jubilee Hills,Bangalore,466,NO,Unexpected Drop,66,72,27.76,56,559,2024-07-09
+STORE-959,Starbucks Indiranagar,Bangalore,128,NO,Mismatch,147,72,26.79,61,579,2024-08-17
+STORE-960,Starbucks Indiranagar,Mumbai,311,NO,None,134,45,23.45,44,186,2024-08-29
+STORE-961,Starbucks Indiranagar,Mumbai,136,NO,None,135,109,20.5,63,511,2024-04-24
+STORE-962,Starbucks Jubilee Hills,Delhi,189,NO,Unexpected Drop,65,111,25.18,67,833,2024-05-18
+STORE-963,Starbucks Andheri,Delhi,430,NO,Mismatch,52,54,18.44,66,514,2024-07-12
+STORE-964,Starbucks Connaught Place,Delhi,410,NO,Unexpected Drop,134,47,24.28,52,1142,2024-06-17
+STORE-965,Starbucks Connaught Place,Hyderabad,292,NO,Mismatch,73,67,19.68,57,467,2024-01-17
+STORE-966,Starbucks Indiranagar,Delhi,435,NO,Mismatch,120,85,22.52,52,519,2024-02-13
+STORE-967,Starbucks Connaught Place,Bangalore,135,NO,Unexpected Drop,116,46,26.31,67,695,2024-07-13
+STORE-968,Starbucks MG Road,Mumbai,318,NO,None,134,21,25.44,65,892,2024-03-16
+STORE-969,Starbucks MG Road,Hyderabad,305,NO,Mismatch,49,82,20.92,55,1005,2024-05-23
+STORE-970,Starbucks Connaught Place,Bangalore,230,NO,Unexpected Drop,130,87,24.93,45,1195,2024-07-28
+STORE-971,Starbucks Banjara Hills,Mumbai,292,NO,None,149,22,22.47,46,169,2024-07-19
+STORE-972,Starbucks MG Road,Bangalore,52,YES,Mismatch,44,33,20.38,51,1185,2024-01-26
+STORE-973,Starbucks MG Road,Hyderabad,150,NO,Mismatch,67,42,25.5,57,420,2024-05-01
+STORE-974,Starbucks MG Road,Delhi,331,NO,Mismatch,89,39,22.73,40,1015,2024-04-25
+STORE-975,Starbucks Jubilee Hills,Mumbai,334,NO,Unexpected Drop,150,89,24.79,65,1085,2024-06-19
+STORE-976,Starbucks Andheri,Delhi,300,NO,None,76,18,25.5,54,1164,2024-04-06
+STORE-977,Starbucks Indiranagar,Bangalore,57,YES,Mismatch,52,97,26.37,41,117,2024-08-20
+STORE-978,Starbucks Banjara Hills,Delhi,224,NO,None,149,103,20.66,59,398,2024-04-11
+STORE-979,Starbucks Jubilee Hills,Delhi,128,NO,Unexpected Drop,29,22,27.04,60,693,2024-05-29
+STORE-980,Starbucks Andheri,Hyderabad,235,NO,Unexpected Drop,89,0,25.72,61,153,2024-04-19
+STORE-981,Starbucks Indiranagar,Delhi,485,NO,Mismatch,82,86,19.69,67,188,2024-03-05
+STORE-982,Starbucks Banjara Hills,Delhi,471,NO,None,98,86,22.44,47,283,2024-07-01
+STORE-983,Starbucks MG Road,Bangalore,315,NO,Unexpected Drop,86,7,20.67,49,940,2024-09-01
+STORE-984,Starbucks Connaught Place,Mumbai,296,NO,Mismatch,99,69,26.51,52,762,2024-07-12
+STORE-985,Starbucks Indiranagar,Mumbai,356,NO,None,26,43,24.83,45,888,2024-05-16
+STORE-986,Starbucks Andheri,Delhi,59,YES,Unexpected Drop,60,102,19.78,41,1007,2024-01-13
+STORE-987,Starbucks Indiranagar,Hyderabad,216,NO,Mismatch,24,102,27.34,64,809,2024-06-21
+STORE-988,Starbucks Banjara Hills,Hyderabad,241,NO,Unexpected Drop,30,74,24.25,61,855,2024-04-06
+STORE-989,Starbucks Bandra,Mumbai,266,NO,Unexpected Drop,52,64,22.1,52,681,2024-02-24
+STORE-990,Starbucks Banjara Hills,Hyderabad,346,NO,None,90,87,23.27,67,735,2024-01-29
+STORE-991,Starbucks Jubilee Hills,Hyderabad,469,NO,Mismatch,35,36,26.31,61,189,2024-09-07
+STORE-992,Starbucks Connaught Place,Hyderabad,162,NO,Mismatch,50,118,27.32,54,398,2024-06-25
+STORE-993,Starbucks Indiranagar,Mumbai,75,YES,Mismatch,113,40,26.18,66,548,2024-01-02
+STORE-994,Starbucks MG Road,Hyderabad,140,NO,Unexpected Drop,28,25,25.49,60,676,2024-07-25
+STORE-995,Starbucks Indiranagar,Mumbai,493,NO,Mismatch,110,14,26.04,59,691,2024-05-06
+STORE-996,Starbucks Connaught Place,Bangalore,440,NO,Mismatch,150,35,19.53,64,663,2024-06-27
+STORE-997,Starbucks Indiranagar,Delhi,52,YES,Unexpected Drop,97,84,18.92,60,399,2024-07-18
+STORE-998,Starbucks Connaught Place,Bangalore,443,NO,Mismatch,56,21,18.49,40,279,2024-06-24
+STORE-999,Starbucks Andheri,Bangalore,303,NO,None,109,19,20.15,50,148,2024-06-28
+STORE-1000,Starbucks Banjara Hills,Mumbai,391,NO,None,111,63,24.31,41,1075,2024-02-20
+STORE-1001,Starbucks Jubilee Hills,Delhi,81,YES,Mismatch,65,65,21.95,56,436,2024-05-21
+STORE-1002,Starbucks CyberHub,Hyderabad,71,YES,Mismatch,59,117,26.11,43,955,2024-01-11
+STORE-1003,Starbucks Bandra,Hyderabad,337,NO,Unexpected Drop,79,17,21.35,40,557,2024-03-04
+STORE-1004,Starbucks Banjara Hills,Hyderabad,215,NO,Mismatch,118,50,27.9,49,537,2024-04-09
+STORE-1005,Starbucks Connaught Place,Hyderabad,98,YES,None,68,3,20.06,68,763,2024-06-09
+STORE-1006,Starbucks Andheri,Mumbai,451,NO,Mismatch,58,67,18.79,62,283,2024-09-25
+STORE-1007,Starbucks Bandra,Mumbai,86,YES,Unexpected Drop,146,1,18.22,70,451,2024-01-30
+STORE-1008,Starbucks Banjara Hills,Bangalore,419,NO,None,137,76,21.06,67,282,2024-03-10
+STORE-1009,Starbucks CyberHub,Delhi,57,YES,None,84,33,23.75,48,926,2024-02-15
+STORE-1010,Starbucks Banjara Hills,Bangalore,87,YES,None,147,74,22.64,47,197,2024-09-27
+STORE-1011,Starbucks Indiranagar,Hyderabad,231,NO,None,79,20,25.63,70,1013,2024-09-02
+STORE-1012,Starbucks MG Road,Bangalore,402,NO,Mismatch,65,7,21.75,54,337,2024-04-01
+STORE-1013,Starbucks MG Road,Delhi,150,NO,None,130,46,20.45,58,453,2024-02-13
+STORE-1014,Starbucks CyberHub,Delhi,187,NO,Unexpected Drop,109,110,20.95,48,339,2024-07-03
+STORE-1015,Starbucks Andheri,Mumbai,346,NO,None,23,20,26.66,60,210,2024-03-01
+STORE-1016,Starbucks CyberHub,Delhi,109,NO,Mismatch,107,91,23.98,49,1089,2024-03-30
+STORE-1017,Starbucks Jubilee Hills,Mumbai,130,NO,None,129,68,19.81,52,616,2024-08-05
+STORE-1018,Starbucks Banjara Hills,Bangalore,102,NO,Mismatch,126,0,25.2,57,568,2024-10-04
+STORE-1019,Starbucks Connaught Place,Mumbai,207,NO,Unexpected Drop,96,64,26.79,49,1111,2024-07-20
+STORE-1020,Starbucks Banjara Hills,Mumbai,302,NO,Unexpected Drop,126,56,23.36,40,173,2024-01-23
+STORE-1021,Starbucks Banjara Hills,Mumbai,162,NO,None,150,24,20.62,43,147,2024-07-22
+STORE-1022,Starbucks Connaught Place,Mumbai,370,NO,Mismatch,55,46,25.29,67,692,2024-01-26
+STORE-1023,Starbucks Andheri,Hyderabad,101,NO,None,140,94,19.8,63,539,2024-05-08
+STORE-1024,Starbucks CyberHub,Hyderabad,226,NO,Mismatch,137,9,26.56,66,229,2024-04-05
+STORE-1025,Starbucks Connaught Place,Bangalore,229,NO,None,141,108,20.37,60,587,2024-10-10
+STORE-1026,Starbucks MG Road,Hyderabad,401,NO,None,130,77,19.62,67,619,2024-07-04
+STORE-1027,Starbucks Andheri,Hyderabad,303,NO,Unexpected Drop,35,49,25.62,41,546,2024-03-23
+STORE-1028,Starbucks MG Road,Mumbai,242,NO,Unexpected Drop,94,4,21.29,59,767,2024-08-08
+STORE-1029,Starbucks Andheri,Bangalore,286,NO,Unexpected Drop,128,105,20.13,50,285,2024-01-22
+STORE-1030,Starbucks Jubilee Hills,Delhi,318,NO,None,69,76,24.63,42,346,2024-04-26
+STORE-1031,Starbucks Banjara Hills,Hyderabad,256,NO,Unexpected Drop,117,109,20.88,48,1019,2024-08-29
+STORE-1032,Starbucks Banjara Hills,Delhi,130,NO,Unexpected Drop,70,75,21.56,63,1091,2024-05-18
+STORE-1033,Starbucks Indiranagar,Delhi,91,YES,None,47,93,23.48,50,555,2024-06-11
+STORE-1034,Starbucks Banjara Hills,Mumbai,119,NO,Mismatch,87,112,19.2,53,596,2024-07-10
+STORE-1035,Starbucks MG Road,Bangalore,75,YES,None,104,67,27.46,58,1078,2024-09-15
+STORE-1036,Starbucks Connaught Place,Bangalore,310,NO,Unexpected Drop,82,9,24.54,57,465,2024-03-04
+STORE-1037,Starbucks Connaught Place,Bangalore,293,NO,None,92,15,26.65,53,596,2024-07-03
+STORE-1038,Starbucks Bandra,Delhi,369,NO,Unexpected Drop,111,68,26.02,56,794,2024-08-04
+STORE-1039,Starbucks CyberHub,Hyderabad,446,NO,Unexpected Drop,62,19,21.01,41,676,2024-03-08
+STORE-1040,Starbucks Jubilee Hills,Mumbai,408,NO,Unexpected Drop,25,27,22.01,62,590,2024-07-14
+STORE-1041,Starbucks Banjara Hills,Delhi,204,NO,None,45,56,24.8,63,480,2024-07-09
+STORE-1042,Starbucks MG Road,Bangalore,107,NO,None,118,31,27.81,47,387,2024-02-18
+STORE-1043,Starbucks Jubilee Hills,Delhi,128,NO,Mismatch,51,120,27.8,65,557,2024-09-11
+STORE-1044,Starbucks Banjara Hills,Mumbai,271,NO,Mismatch,56,9,19.42,67,172,2024-08-04
+STORE-1045,Starbucks MG Road,Hyderabad,426,NO,Mismatch,57,107,23.48,56,958,2024-03-14
+STORE-1046,Starbucks Bandra,Hyderabad,379,NO,Unexpected Drop,106,49,26.13,62,624,2024-10-25
+STORE-1047,Starbucks Connaught Place,Bangalore,328,NO,Mismatch,130,116,22.58,50,982,2024-07-22
+STORE-1048,Starbucks Jubilee Hills,Delhi,258,NO,Unexpected Drop,30,77,24.33,42,921,2024-04-06
+STORE-1049,Starbucks CyberHub,Bangalore,71,YES,None,38,109,26.89,50,476,2024-01-22
+STORE-1050,Starbucks Indiranagar,Mumbai,389,NO,None,39,34,27.65,57,1198,2024-10-13
+STORE-1051,Starbucks Bandra,Hyderabad,331,NO,Unexpected Drop,125,71,22.25,63,147,2024-07-06
+STORE-1052,Starbucks Jubilee Hills,Hyderabad,425,NO,None,66,12,20.26,69,985,2024-01-12
+STORE-1053,Starbucks Jubilee Hills,Bangalore,70,YES,Unexpected Drop,85,66,18.15,55,721,2024-02-13
+STORE-1054,Starbucks MG Road,Delhi,219,NO,Unexpected Drop,122,6,19.44,58,1113,2024-04-24
+STORE-1055,Starbucks MG Road,Hyderabad,453,NO,None,141,86,19.06,46,125,2024-01-15
+STORE-1056,Starbucks Connaught Place,Hyderabad,294,NO,Unexpected Drop,144,8,20.18,67,428,2024-01-11
+STORE-1057,Starbucks Jubilee Hills,Delhi,162,NO,Unexpected Drop,112,113,21.68,47,756,2024-06-07
+STORE-1058,Starbucks MG Road,Hyderabad,348,NO,None,43,108,27.8,43,968,2024-02-11
+STORE-1059,Starbucks Indiranagar,Hyderabad,186,NO,Mismatch,93,6,27.79,46,558,2024-10-09
+STORE-1060,Starbucks Connaught Place,Bangalore,195,NO,Mismatch,34,78,23.66,54,118,2024-04-22
+STORE-1061,Starbucks MG Road,Hyderabad,479,NO,Mismatch,88,41,18.05,60,943,2024-02-15
+STORE-1062,Starbucks Connaught Place,Delhi,183,NO,Unexpected Drop,52,20,19.52,61,131,2024-02-18
+STORE-1063,Starbucks CyberHub,Mumbai,270,NO,Mismatch,124,71,27.25,45,675,2024-01-04
+STORE-1064,Starbucks Bandra,Bangalore,282,NO,None,124,117,19.32,61,768,2024-02-07
+STORE-1065,Starbucks Connaught Place,Mumbai,398,NO,Mismatch,91,113,26.66,47,380,2024-02-17
+STORE-1066,Starbucks MG Road,Bangalore,145,NO,Unexpected Drop,82,101,25.34,53,357,2024-05-19
+STORE-1067,Starbucks Banjara Hills,Hyderabad,365,NO,Unexpected Drop,142,73,23.11,50,388,2024-07-25
+STORE-1068,Starbucks CyberHub,Bangalore,417,NO,Mismatch,106,86,27.7,52,652,2024-03-25
+STORE-1069,Starbucks Bandra,Delhi,211,NO,Unexpected Drop,125,83,22.17,58,864,2024-08-12
+STORE-1070,Starbucks Jubilee Hills,Hyderabad,97,YES,Mismatch,110,22,23.49,60,448,2024-10-21
+STORE-1071,Starbucks Indiranagar,Delhi,338,NO,Mismatch,121,8,20.73,54,757,2024-04-27
+STORE-1072,Starbucks Indiranagar,Hyderabad,60,YES,Mismatch,87,80,22.09,41,626,2024-04-10
+STORE-1073,Starbucks Jubilee Hills,Delhi,76,YES,Mismatch,78,51,25.89,61,1090,2024-08-24
+STORE-1074,Starbucks MG Road,Mumbai,109,NO,Unexpected Drop,73,0,26.39,51,549,2024-06-25
+STORE-1075,Starbucks CyberHub,Delhi,125,NO,Mismatch,24,77,19.91,43,1144,2024-08-30
+STORE-1076,Starbucks Connaught Place,Hyderabad,186,NO,Mismatch,77,16,21.04,41,450,2024-06-27
+STORE-1077,Starbucks Indiranagar,Mumbai,346,NO,None,69,50,25.64,63,819,2024-02-18
+STORE-1078,Starbucks CyberHub,Hyderabad,305,NO,None,90,113,22.59,66,1040,2024-08-17
+STORE-1079,Starbucks Jubilee Hills,Hyderabad,297,NO,Unexpected Drop,141,47,27.98,53,942,2024-05-22
+STORE-1080,Starbucks Connaught Place,Delhi,125,NO,Unexpected Drop,144,89,25.66,64,1113,2024-08-18
+STORE-1081,Starbucks Jubilee Hills,Hyderabad,477,NO,Unexpected Drop,122,16,26.41,69,165,2024-02-13
+STORE-1082,Starbucks MG Road,Delhi,203,NO,Mismatch,127,76,25.82,44,1169,2024-02-06
+STORE-1083,Starbucks Andheri,Delhi,429,NO,Unexpected Drop,31,63,19.05,65,294,2024-05-27
+STORE-1084,Starbucks CyberHub,Delhi,143,NO,None,130,93,24.06,65,538,2024-04-11
+STORE-1085,Starbucks Connaught Place,Delhi,437,NO,Unexpected Drop,134,77,18.7,65,138,2024-08-26
+STORE-1086,Starbucks Connaught Place,Delhi,273,NO,None,75,65,18.05,60,699,2024-01-23
+STORE-1087,Starbucks Indiranagar,Mumbai,452,NO,Mismatch,103,42,23.38,70,849,2024-01-09
+STORE-1088,Starbucks Banjara Hills,Bangalore,306,NO,None,35,35,21.88,46,833,2024-06-05
+STORE-1089,Starbucks Bandra,Bangalore,58,YES,Unexpected Drop,44,46,24.48,41,134,2024-05-04
+STORE-1090,Starbucks MG Road,Hyderabad,371,NO,None,83,67,26.49,55,863,2024-05-28
+STORE-1091,Starbucks MG Road,Bangalore,87,YES,None,117,76,26.61,48,1103,2024-02-13
+STORE-1092,Starbucks MG Road,Mumbai,470,NO,None,45,116,27.05,70,556,2024-03-16
+STORE-1093,Starbucks MG Road,Hyderabad,300,NO,Mismatch,120,26,23.79,53,84,2024-04-06
+STORE-1094,Starbucks CyberHub,Delhi,465,NO,Mismatch,117,30,22.17,69,876,2024-06-03
+STORE-1095,Starbucks MG Road,Delhi,90,YES,Mismatch,101,55,27.64,63,378,2024-04-16
+STORE-1096,Starbucks MG Road,Bangalore,385,NO,Mismatch,113,72,21.4,67,615,2024-06-24
+STORE-1097,Starbucks CyberHub,Bangalore,430,NO,Unexpected Drop,119,30,26.59,66,196,2024-05-27
+STORE-1098,Starbucks MG Road,Hyderabad,370,NO,Mismatch,32,93,20.83,63,526,2024-06-16
+STORE-1099,Starbucks CyberHub,Mumbai,438,NO,Mismatch,101,54,24.09,43,504,2024-09-21
+STORE-1100,Starbucks MG Road,Delhi,347,NO,None,48,57,20.05,63,472,2024-02-08

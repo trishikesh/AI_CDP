@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+plotly
+pymongo
+# Optional, for better local secret management:
+# python-dotenv

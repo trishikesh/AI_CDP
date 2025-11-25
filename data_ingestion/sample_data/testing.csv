@@ -1,0 +1,501 @@
+Test_ID,Batch_ID,Test_Type,Test_Results,Passed/Failed,Tester_Name,Testing_Date
+TST00001,BATCH842,Taste,Too Sweet,Passed,Priya Nair,2024-01-27
+TST00002,BATCH110,Taste,Flavor Bitter,Passed,Amit Sharma,2024-03-18
+TST00003,BATCH965,Packaging,Label Misaligned,Passed,Amit Sharma,2024-01-27
+TST00004,BATCH376,Packaging,Seal Weak,Passed,John Mathews,2024-04-07
+TST00005,BATCH251,Packaging,Seal Weak,Failed,Michael Lee,2024-06-13
+TST00006,BATCH483,Quality,Moisture 11%,Failed,Sara Khan,2024-02-23
+TST00007,BATCH785,Packaging,Packaging Strong,Passed,Amit Sharma,2024-04-18
+TST00008,BATCH896,Packaging,Packaging Strong,Passed,Sara Khan,2024-03-11
+TST00009,BATCH823,Chemical,pH Normal,Passed,Sara Khan,2024-04-15
+TST00010,BATCH240,Quality,Freshness Optimal,Passed,John Mathews,2024-06-19
+TST00011,BATCH715,Packaging,Seal Weak,Passed,Sara Khan,2024-02-22
+TST00012,BATCH745,Quality,Roast Medium,Failed,Amit Sharma,2024-03-26
+TST00013,BATCH125,Taste,Flavor Balanced,Passed,John Mathews,2024-02-16
+TST00014,BATCH232,Quality,Freshness Low,Failed,Amit Sharma,2024-06-01
+TST00015,BATCH101,Quality,Roast Dark,Passed,Michael Lee,2024-05-29
+TST00016,BATCH243,Packaging,Seal Weak,Failed,John Mathews,2024-03-07
+TST00017,BATCH266,Taste,Too Sweet,Failed,Sara Khan,2024-06-23
+TST00018,BATCH676,Chemical,Traces within limits,Failed,John Mathews,2024-04-21
+TST00019,BATCH304,Quality,Moisture 13%,Failed,Priya Nair,2024-05-15
+TST00020,BATCH688,Quality,Freshness Low,Passed,Michael Lee,2024-02-10
+TST00021,BATCH430,Quality,Freshness Low,Failed,John Mathews,2024-02-24
+TST00022,BATCH853,Taste,Aftertaste Clean,Passed,Sara Khan,2024-01-03
+TST00023,BATCH330,Chemical,pH Normal,Passed,Amit Sharma,2024-03-20
+TST00024,BATCH329,Packaging,Seal Weak,Passed,John Mathews,2024-01-23
+TST00025,BATCH765,Chemical,No contaminants,Failed,Priya Nair,2024-04-20
+TST00026,BATCH550,Quality,Freshness Low,Passed,Priya Nair,2024-06-22
+TST00027,BATCH676,Chemical,No contaminants,Failed,Sara Khan,2024-04-25
+TST00028,BATCH736,Packaging,Seal Intact,Failed,Amit Sharma,2024-03-09
+TST00029,BATCH264,Quality,Moisture 11%,Passed,Sara Khan,2024-04-22
+TST00030,BATCH188,Quality,Roast Medium,Passed,Michael Lee,2024-03-11
+TST00031,BATCH664,Quality,Freshness Optimal,Failed,John Mathews,2024-03-16
+TST00032,BATCH352,Chemical,Traces within limits,Passed,Priya Nair,2024-01-07
+TST00033,BATCH238,Taste,Too Sweet,Passed,Amit Sharma,2024-03-24
+TST00034,BATCH732,Packaging,Seal Weak,Failed,John Mathews,2024-06-04
+TST00035,BATCH793,Packaging,Seal Intact,Failed,Priya Nair,2024-03-09
+TST00036,BATCH580,Quality,Temperature Normal,Failed,Amit Sharma,2024-06-05
+TST00037,BATCH390,Quality,Freshness Optimal,Failed,Michael Lee,2024-05-14
+TST00038,BATCH312,Chemical,pH Normal,Passed,Sara Khan,2024-04-08
+TST00039,BATCH522,Chemical,No contaminants,Failed,Michael Lee,2024-06-26
+TST00040,BATCH732,Chemical,Traces within limits,Failed,Sara Khan,2024-03-14
+TST00041,BATCH434,Quality,Moisture 11%,Passed,John Mathews,2024-04-16
+TST00042,BATCH440,Taste,Flavor Balanced,Failed,Michael Lee,2024-06-14
+TST00043,BATCH485,Packaging,Label Misaligned,Passed,Michael Lee,2024-04-11
+TST00044,BATCH922,Taste,Too Sweet,Passed,Amit Sharma,2024-04-10
+TST00045,BATCH941,Packaging,Seal Intact,Passed,Priya Nair,2024-04-19
+TST00046,BATCH212,Chemical,pH Slightly High,Passed,Priya Nair,2024-05-11
+TST00047,BATCH819,Quality,Freshness Low,Passed,Sara Khan,2024-05-12
+TST00048,BATCH488,Taste,Too Sweet,Passed,John Mathews,2024-02-20
+TST00049,BATCH349,Taste,Aftertaste Clean,Passed,John Mathews,2024-02-14
+TST00050,BATCH455,Chemical,No contaminants,Passed,Michael Lee,2024-01-27
+TST00051,BATCH882,Packaging,Label Misaligned,Passed,Priya Nair,2024-03-15
+TST00052,BATCH708,Packaging,Seal Weak,Passed,Amit Sharma,2024-02-12
+TST00053,BATCH359,Chemical,Traces within limits,Failed,Michael Lee,2024-04-10
+TST00054,BATCH682,Quality,Roast Dark,Passed,John Mathews,2024-05-28
+TST00055,BATCH925,Quality,Moisture 13%,Failed,John Mathews,2024-05-21
+TST00056,BATCH968,Taste,Flavor Balanced,Passed,Amit Sharma,2024-06-03
+TST00057,BATCH532,Packaging,Label Misaligned,Failed,Michael Lee,2024-05-17
+TST00058,BATCH332,Packaging,Label Misaligned,Failed,John Mathews,2024-01-15
+TST00059,BATCH145,Taste,Flavor Bitter,Passed,Amit Sharma,2024-04-28
+TST00060,BATCH189,Chemical,pH Normal,Passed,Amit Sharma,2024-05-19
+TST00061,BATCH169,Chemical,No contaminants,Passed,Priya Nair,2024-03-16
+TST00062,BATCH500,Chemical,No contaminants,Passed,Michael Lee,2024-02-16
+TST00063,BATCH117,Quality,Roast Medium,Failed,Sara Khan,2024-03-26
+TST00064,BATCH611,Packaging,Seal Weak,Failed,Michael Lee,2024-05-29
+TST00065,BATCH556,Taste,Aftertaste Clean,Passed,Priya Nair,2024-03-18
+TST00066,BATCH285,Chemical,pH Slightly High,Failed,Amit Sharma,2024-04-18
+TST00067,BATCH500,Chemical,Traces within limits,Passed,Amit Sharma,2024-01-23
+TST00068,BATCH652,Quality,Moisture 13%,Failed,John Mathews,2024-04-14
+TST00069,BATCH451,Quality,Freshness Low,Failed,Priya Nair,2024-05-27
+TST00070,BATCH885,Packaging,Seal Weak,Passed,Michael Lee,2024-03-25
+TST00071,BATCH657,Packaging,Packaging Strong,Passed,Sara Khan,2024-04-10
+TST00072,BATCH666,Quality,Moisture 11%,Passed,Amit Sharma,2024-03-09
+TST00073,BATCH687,Chemical,Traces within limits,Passed,Priya Nair,2024-03-20
+TST00074,BATCH859,Taste,Flavor Balanced,Passed,Priya Nair,2024-04-27
+TST00075,BATCH513,Chemical,Traces within limits,Passed,Sara Khan,2024-01-14
+TST00076,BATCH164,Quality,Freshness Optimal,Passed,John Mathews,2024-04-05
+TST00077,BATCH839,Taste,Flavor Bitter,Failed,Sara Khan,2024-02-19
+TST00078,BATCH821,Chemical,pH Normal,Passed,Sara Khan,2024-05-16
+TST00079,BATCH232,Taste,Aftertaste Clean,Failed,John Mathews,2024-04-06
+TST00080,BATCH869,Packaging,Packaging Strong,Passed,John Mathews,2024-06-15
+TST00081,BATCH526,Packaging,Label Misaligned,Failed,John Mathews,2024-03-21
+TST00082,BATCH981,Packaging,Seal Weak,Passed,John Mathews,2024-03-18
+TST00083,BATCH105,Quality,Roast Dark,Failed,Amit Sharma,2024-02-09
+TST00084,BATCH853,Taste,Too Sweet,Failed,John Mathews,2024-01-02
+TST00085,BATCH514,Packaging,Label Misaligned,Failed,Michael Lee,2024-01-07
+TST00086,BATCH905,Quality,Roast Medium,Failed,Michael Lee,2024-05-18
+TST00087,BATCH355,Chemical,pH Slightly High,Passed,Sara Khan,2024-03-19
+TST00088,BATCH926,Packaging,Label Misaligned,Passed,Sara Khan,2024-06-09
+TST00089,BATCH113,Packaging,Packaging Strong,Failed,Priya Nair,2024-02-26
+TST00090,BATCH430,Taste,Too Sweet,Passed,Michael Lee,2024-06-02
+TST00091,BATCH600,Packaging,Seal Intact,Passed,Priya Nair,2024-05-06
+TST00092,BATCH985,Packaging,Seal Intact,Failed,Sara Khan,2024-02-23
+TST00093,BATCH881,Packaging,Packaging Strong,Failed,Priya Nair,2024-01-03
+TST00094,BATCH427,Packaging,Packaging Strong,Failed,Priya Nair,2024-01-03
+TST00095,BATCH933,Packaging,Label Misaligned,Failed,Sara Khan,2024-04-18
+TST00096,BATCH887,Packaging,Seal Intact,Failed,Amit Sharma,2024-03-27
+TST00097,BATCH684,Quality,Temperature Normal,Passed,John Mathews,2024-03-20
+TST00098,BATCH778,Chemical,No contaminants,Passed,Priya Nair,2024-04-30
+TST00099,BATCH407,Chemical,pH Normal,Passed,Priya Nair,2024-06-18
+TST00100,BATCH531,Chemical,Traces within limits,Passed,Sara Khan,2024-04-22
+TST00101,BATCH475,Taste,Aftertaste Clean,Failed,Sara Khan,2024-04-02
+TST00102,BATCH985,Packaging,Seal Intact,Failed,Priya Nair,2024-02-28
+TST00103,BATCH439,Chemical,pH Slightly High,Passed,Sara Khan,2024-02-26
+TST00104,BATCH344,Taste,Aroma Rich,Failed,John Mathews,2024-06-05
+TST00105,BATCH433,Chemical,pH Normal,Passed,Amit Sharma,2024-04-24
+TST00106,BATCH261,Quality,Roast Dark,Passed,Sara Khan,2024-06-04
+TST00107,BATCH576,Chemical,pH Slightly High,Passed,Amit Sharma,2024-03-06
+TST00108,BATCH923,Quality,Freshness Low,Failed,Sara Khan,2024-04-17
+TST00109,BATCH124,Quality,Moisture 13%,Passed,John Mathews,2024-01-29
+TST00110,BATCH447,Quality,Moisture 13%,Passed,Michael Lee,2024-04-23
+TST00111,BATCH809,Quality,Freshness Optimal,Failed,Michael Lee,2024-05-10
+TST00112,BATCH674,Chemical,pH Normal,Failed,Sara Khan,2024-04-26
+TST00113,BATCH230,Chemical,pH Normal,Passed,Priya Nair,2024-02-22
+TST00114,BATCH948,Chemical,No contaminants,Failed,Priya Nair,2024-05-21
+TST00115,BATCH926,Taste,Flavor Bitter,Passed,Sara Khan,2024-04-02
+TST00116,BATCH922,Taste,Flavor Bitter,Failed,Amit Sharma,2024-06-25
+TST00117,BATCH592,Quality,Freshness Low,Passed,Amit Sharma,2024-01-28
+TST00118,BATCH378,Quality,Roast Dark,Failed,Sara Khan,2024-01-10
+TST00119,BATCH864,Taste,Too Sweet,Passed,John Mathews,2024-04-11
+TST00120,BATCH202,Packaging,Packaging Strong,Passed,Michael Lee,2024-02-11
+TST00121,BATCH495,Packaging,Packaging Strong,Failed,Amit Sharma,2024-05-10
+TST00122,BATCH489,Taste,Flavor Bitter,Failed,Priya Nair,2024-02-04
+TST00123,BATCH164,Taste,Flavor Bitter,Passed,Michael Lee,2024-04-08
+TST00124,BATCH508,Taste,Aftertaste Clean,Failed,Priya Nair,2024-02-28
+TST00125,BATCH105,Chemical,Traces within limits,Passed,Priya Nair,2024-01-18
+TST00126,BATCH483,Packaging,Label Misaligned,Failed,Amit Sharma,2024-04-06
+TST00127,BATCH793,Taste,Flavor Bitter,Passed,John Mathews,2024-06-18
+TST00128,BATCH372,Packaging,Seal Intact,Failed,Priya Nair,2024-04-05
+TST00129,BATCH807,Packaging,Seal Weak,Failed,Michael Lee,2024-01-22
+TST00130,BATCH706,Taste,Aroma Rich,Passed,Sara Khan,2024-04-14
+TST00131,BATCH304,Packaging,Seal Intact,Passed,John Mathews,2024-04-29
+TST00132,BATCH790,Taste,Flavor Bitter,Failed,Priya Nair,2024-04-19
+TST00133,BATCH488,Taste,Flavor Bitter,Failed,Amit Sharma,2024-02-08
+TST00134,BATCH479,Taste,Aftertaste Clean,Passed,Priya Nair,2024-04-21
+TST00135,BATCH468,Quality,Roast Medium,Failed,Sara Khan,2024-06-19
+TST00136,BATCH888,Packaging,Packaging Strong,Failed,Priya Nair,2024-01-15
+TST00137,BATCH470,Quality,Roast Dark,Failed,Sara Khan,2024-06-09
+TST00138,BATCH602,Chemical,Traces within limits,Passed,Michael Lee,2024-01-24
+TST00139,BATCH328,Packaging,Seal Intact,Passed,Sara Khan,2024-02-12
+TST00140,BATCH934,Taste,Aftertaste Clean,Passed,Priya Nair,2024-01-23
+TST00141,BATCH366,Chemical,pH Normal,Passed,Michael Lee,2024-01-11
+TST00142,BATCH767,Packaging,Seal Intact,Passed,Michael Lee,2024-01-04
+TST00143,BATCH740,Packaging,Label Misaligned,Failed,Michael Lee,2024-03-13
+TST00144,BATCH885,Taste,Flavor Balanced,Failed,Amit Sharma,2024-03-05
+TST00145,BATCH733,Chemical,pH Normal,Passed,Priya Nair,2024-02-15
+TST00146,BATCH811,Chemical,No contaminants,Passed,John Mathews,2024-04-23
+TST00147,BATCH281,Chemical,Traces within limits,Failed,Michael Lee,2024-01-05
+TST00148,BATCH693,Taste,Aftertaste Clean,Passed,Amit Sharma,2024-05-17
+TST00149,BATCH662,Chemical,pH Normal,Failed,Priya Nair,2024-06-22
+TST00150,BATCH872,Packaging,Seal Intact,Passed,John Mathews,2024-01-16
+TST00151,BATCH768,Packaging,Packaging Strong,Passed,Amit Sharma,2024-02-01
+TST00152,BATCH535,Quality,Roast Medium,Passed,Amit Sharma,2024-05-08
+TST00153,BATCH475,Taste,Flavor Bitter,Passed,Amit Sharma,2024-01-18
+TST00154,BATCH910,Quality,Roast Medium,Passed,Michael Lee,2024-04-11
+TST00155,BATCH346,Taste,Aroma Rich,Failed,Sara Khan,2024-03-26
+TST00156,BATCH292,Quality,Temperature Normal,Failed,Michael Lee,2024-04-06
+TST00157,BATCH446,Taste,Aftertaste Clean,Failed,John Mathews,2024-05-07
+TST00158,BATCH802,Quality,Freshness Low,Failed,Michael Lee,2024-04-30
+TST00159,BATCH250,Chemical,pH Normal,Passed,Michael Lee,2024-03-24
+TST00160,BATCH452,Chemical,No contaminants,Failed,Priya Nair,2024-06-29
+TST00161,BATCH351,Quality,Roast Medium,Passed,Priya Nair,2024-04-14
+TST00162,BATCH834,Chemical,pH Slightly High,Passed,Sara Khan,2024-03-16
+TST00163,BATCH250,Chemical,Traces within limits,Failed,Michael Lee,2024-01-14
+TST00164,BATCH414,Chemical,No contaminants,Passed,Priya Nair,2024-01-02
+TST00165,BATCH673,Chemical,pH Slightly High,Failed,Sara Khan,2024-03-15
+TST00166,BATCH502,Taste,Aroma Rich,Passed,Amit Sharma,2024-05-29
+TST00167,BATCH775,Taste,Aftertaste Clean,Passed,John Mathews,2024-01-11
+TST00168,BATCH867,Packaging,Seal Intact,Passed,Sara Khan,2024-03-22
+TST00169,BATCH982,Quality,Freshness Low,Passed,Amit Sharma,2024-03-12
+TST00170,BATCH234,Quality,Roast Dark,Failed,Priya Nair,2024-06-18
+TST00171,BATCH340,Chemical,No contaminants,Passed,Priya Nair,2024-01-03
+TST00172,BATCH183,Chemical,pH Slightly High,Passed,Amit Sharma,2024-06-02
+TST00173,BATCH283,Chemical,pH Normal,Failed,John Mathews,2024-03-06
+TST00174,BATCH412,Quality,Freshness Optimal,Passed,Sara Khan,2024-02-10
+TST00175,BATCH375,Chemical,pH Slightly High,Passed,Amit Sharma,2024-01-07
+TST00176,BATCH328,Taste,Flavor Balanced,Failed,Michael Lee,2024-01-21
+TST00177,BATCH663,Taste,Aftertaste Clean,Failed,John Mathews,2024-03-07
+TST00178,BATCH930,Chemical,Traces within limits,Failed,Priya Nair,2024-04-10
+TST00179,BATCH539,Chemical,pH Normal,Passed,Priya Nair,2024-04-07
+TST00180,BATCH744,Packaging,Label Misaligned,Failed,Amit Sharma,2024-03-27
+TST00181,BATCH954,Packaging,Seal Intact,Passed,Sara Khan,2024-01-29
+TST00182,BATCH664,Chemical,No contaminants,Passed,John Mathews,2024-02-29
+TST00183,BATCH870,Packaging,Seal Weak,Passed,John Mathews,2024-03-29
+TST00184,BATCH934,Packaging,Seal Intact,Passed,Priya Nair,2024-06-08
+TST00185,BATCH621,Chemical,pH Slightly High,Failed,Michael Lee,2024-04-28
+TST00186,BATCH908,Taste,Flavor Balanced,Passed,John Mathews,2024-03-28
+TST00187,BATCH773,Quality,Roast Medium,Passed,John Mathews,2024-02-27
+TST00188,BATCH709,Packaging,Packaging Strong,Failed,Priya Nair,2024-04-20
+TST00189,BATCH711,Packaging,Label Misaligned,Passed,Sara Khan,2024-05-21
+TST00190,BATCH650,Taste,Aroma Rich,Failed,John Mathews,2024-05-25
+TST00191,BATCH720,Quality,Moisture 11%,Passed,Priya Nair,2024-05-17
+TST00192,BATCH730,Quality,Moisture 13%,Failed,Sara Khan,2024-02-28
+TST00193,BATCH527,Quality,Freshness Optimal,Passed,Amit Sharma,2024-04-28
+TST00194,BATCH932,Chemical,pH Normal,Passed,Sara Khan,2024-01-01
+TST00195,BATCH837,Quality,Freshness Optimal,Passed,Priya Nair,2024-04-22
+TST00196,BATCH137,Chemical,pH Normal,Failed,Amit Sharma,2024-06-18
+TST00197,BATCH488,Quality,Roast Dark,Passed,Michael Lee,2024-03-02
+TST00198,BATCH220,Chemical,pH Slightly High,Passed,Amit Sharma,2024-03-18
+TST00199,BATCH735,Quality,Temperature Normal,Passed,Priya Nair,2024-04-10
+TST00200,BATCH207,Quality,Roast Medium,Passed,Michael Lee,2024-01-09
+TST00201,BATCH898,Chemical,pH Normal,Failed,Amit Sharma,2024-05-13
+TST00202,BATCH373,Quality,Roast Dark,Failed,John Mathews,2024-06-29
+TST00203,BATCH192,Taste,Aftertaste Clean,Passed,Priya Nair,2024-06-08
+TST00204,BATCH811,Taste,Flavor Balanced,Passed,Amit Sharma,2024-01-25
+TST00205,BATCH695,Packaging,Seal Intact,Failed,John Mathews,2024-02-16
+TST00206,BATCH220,Chemical,pH Normal,Failed,Priya Nair,2024-02-27
+TST00207,BATCH172,Packaging,Seal Weak,Passed,Michael Lee,2024-01-12
+TST00208,BATCH829,Taste,Aftertaste Clean,Failed,Sara Khan,2024-01-05
+TST00209,BATCH672,Chemical,Traces within limits,Failed,Priya Nair,2024-06-13
+TST00210,BATCH101,Taste,Flavor Bitter,Passed,Sara Khan,2024-04-07
+TST00211,BATCH781,Packaging,Packaging Strong,Passed,Michael Lee,2024-02-13
+TST00212,BATCH880,Taste,Flavor Balanced,Failed,Michael Lee,2024-01-22
+TST00213,BATCH521,Packaging,Seal Weak,Failed,Amit Sharma,2024-02-22
+TST00214,BATCH421,Packaging,Seal Weak,Failed,Sara Khan,2024-06-05
+TST00215,BATCH858,Quality,Roast Dark,Failed,Amit Sharma,2024-06-10
+TST00216,BATCH401,Chemical,pH Normal,Passed,Sara Khan,2024-03-16
+TST00217,BATCH109,Packaging,Seal Intact,Failed,Amit Sharma,2024-05-12
+TST00218,BATCH902,Packaging,Seal Weak,Failed,John Mathews,2024-01-31
+TST00219,BATCH601,Packaging,Seal Weak,Failed,Michael Lee,2024-05-01
+TST00220,BATCH580,Taste,Too Sweet,Failed,Amit Sharma,2024-01-12
+TST00221,BATCH705,Packaging,Seal Weak,Passed,Priya Nair,2024-06-28
+TST00222,BATCH501,Taste,Flavor Bitter,Failed,Michael Lee,2024-03-12
+TST00223,BATCH531,Quality,Moisture 13%,Failed,John Mathews,2024-01-27
+TST00224,BATCH666,Chemical,No contaminants,Passed,Priya Nair,2024-06-04
+TST00225,BATCH446,Quality,Moisture 11%,Passed,Priya Nair,2024-05-09
+TST00226,BATCH986,Taste,Too Sweet,Passed,Michael Lee,2024-06-06
+TST00227,BATCH781,Quality,Moisture 11%,Failed,John Mathews,2024-04-12
+TST00228,BATCH674,Chemical,Traces within limits,Passed,Amit Sharma,2024-05-21
+TST00229,BATCH329,Chemical,pH Slightly High,Failed,John Mathews,2024-02-16
+TST00230,BATCH530,Quality,Roast Dark,Passed,Amit Sharma,2024-03-31
+TST00231,BATCH976,Packaging,Label Misaligned,Passed,Sara Khan,2024-06-24
+TST00232,BATCH449,Packaging,Label Misaligned,Failed,Amit Sharma,2024-05-13
+TST00233,BATCH459,Taste,Flavor Balanced,Failed,John Mathews,2024-05-11
+TST00234,BATCH600,Quality,Freshness Low,Passed,John Mathews,2024-06-04
+TST00235,BATCH224,Quality,Roast Dark,Passed,Priya Nair,2024-01-22
+TST00236,BATCH209,Chemical,pH Slightly High,Passed,John Mathews,2024-05-17
+TST00237,BATCH828,Taste,Aroma Rich,Passed,Amit Sharma,2024-06-29
+TST00238,BATCH334,Chemical,No contaminants,Passed,Sara Khan,2024-03-07
+TST00239,BATCH658,Packaging,Seal Intact,Passed,Priya Nair,2024-03-29
+TST00240,BATCH842,Packaging,Seal Intact,Failed,Amit Sharma,2024-02-19
+TST00241,BATCH291,Packaging,Seal Intact,Failed,Amit Sharma,2024-06-11
+TST00242,BATCH574,Chemical,pH Normal,Passed,Michael Lee,2024-04-05
+TST00243,BATCH484,Taste,Aroma Rich,Passed,Sara Khan,2024-02-21
+TST00244,BATCH577,Taste,Too Sweet,Passed,Sara Khan,2024-05-04
+TST00245,BATCH765,Quality,Freshness Optimal,Failed,Michael Lee,2024-05-20
+TST00246,BATCH917,Taste,Flavor Bitter,Passed,Sara Khan,2024-05-15
+TST00247,BATCH852,Taste,Flavor Balanced,Passed,Michael Lee,2024-04-30
+TST00248,BATCH910,Chemical,Traces within limits,Passed,Amit Sharma,2024-05-17
+TST00249,BATCH995,Quality,Roast Dark,Passed,Michael Lee,2024-06-08
+TST00250,BATCH245,Taste,Flavor Balanced,Failed,Sara Khan,2024-06-18
+TST00251,BATCH799,Taste,Flavor Balanced,Failed,Priya Nair,2024-06-05
+TST00252,BATCH914,Quality,Roast Medium,Failed,Sara Khan,2024-04-14
+TST00253,BATCH560,Packaging,Seal Weak,Failed,Amit Sharma,2024-05-10
+TST00254,BATCH915,Quality,Moisture 13%,Failed,Sara Khan,2024-05-11
+TST00255,BATCH348,Taste,Flavor Balanced,Failed,John Mathews,2024-03-23
+TST00256,BATCH301,Packaging,Seal Intact,Failed,John Mathews,2024-06-08
+TST00257,BATCH160,Chemical,pH Normal,Failed,Amit Sharma,2024-05-16
+TST00258,BATCH338,Packaging,Seal Weak,Passed,John Mathews,2024-04-24
+TST00259,BATCH777,Packaging,Label Misaligned,Failed,Priya Nair,2024-01-03
+TST00260,BATCH495,Taste,Aftertaste Clean,Failed,Priya Nair,2024-06-18
+TST00261,BATCH679,Quality,Roast Medium,Passed,Priya Nair,2024-03-14
+TST00262,BATCH764,Taste,Aftertaste Clean,Passed,Sara Khan,2024-04-02
+TST00263,BATCH540,Chemical,Traces within limits,Failed,Sara Khan,2024-05-26
+TST00264,BATCH244,Quality,Moisture 13%,Passed,Amit Sharma,2024-02-25
+TST00265,BATCH618,Quality,Moisture 13%,Passed,John Mathews,2024-02-06
+TST00266,BATCH162,Packaging,Label Misaligned,Failed,Priya Nair,2024-04-01
+TST00267,BATCH965,Taste,Flavor Bitter,Passed,Amit Sharma,2024-04-19
+TST00268,BATCH124,Quality,Roast Medium,Passed,Amit Sharma,2024-02-28
+TST00269,BATCH614,Quality,Freshness Optimal,Failed,Michael Lee,2024-04-17
+TST00270,BATCH931,Chemical,No contaminants,Failed,Michael Lee,2024-03-18
+TST00271,BATCH107,Chemical,Traces within limits,Passed,Amit Sharma,2024-05-27
+TST00272,BATCH400,Chemical,No contaminants,Failed,Amit Sharma,2024-05-19
+TST00273,BATCH889,Quality,Freshness Low,Passed,Michael Lee,2024-06-18
+TST00274,BATCH920,Packaging,Seal Weak,Passed,Amit Sharma,2024-04-27
+TST00275,BATCH318,Chemical,No contaminants,Passed,Priya Nair,2024-03-17
+TST00276,BATCH539,Packaging,Packaging Strong,Failed,Priya Nair,2024-03-26
+TST00277,BATCH276,Chemical,pH Normal,Failed,John Mathews,2024-03-07
+TST00278,BATCH394,Quality,Freshness Low,Failed,Sara Khan,2024-02-22
+TST00279,BATCH759,Taste,Aroma Rich,Failed,Michael Lee,2024-06-28
+TST00280,BATCH975,Packaging,Seal Intact,Failed,Sara Khan,2024-06-25
+TST00281,BATCH638,Quality,Roast Medium,Failed,Sara Khan,2024-06-02
+TST00282,BATCH350,Taste,Aroma Rich,Failed,Amit Sharma,2024-03-15
+TST00283,BATCH731,Packaging,Label Misaligned,Passed,Amit Sharma,2024-04-22
+TST00284,BATCH272,Quality,Roast Medium,Failed,John Mathews,2024-04-27
+TST00285,BATCH753,Packaging,Label Misaligned,Passed,Sara Khan,2024-01-12
+TST00286,BATCH400,Packaging,Label Misaligned,Passed,Michael Lee,2024-04-07
+TST00287,BATCH319,Packaging,Seal Weak,Failed,Michael Lee,2024-01-10
+TST00288,BATCH765,Chemical,Traces within limits,Passed,John Mathews,2024-06-06
+TST00289,BATCH888,Taste,Flavor Bitter,Failed,Priya Nair,2024-02-03
+TST00290,BATCH100,Taste,Aroma Rich,Passed,Amit Sharma,2024-06-12
+TST00291,BATCH935,Quality,Moisture 13%,Failed,Priya Nair,2024-01-25
+TST00292,BATCH101,Taste,Flavor Balanced,Failed,Michael Lee,2024-05-03
+TST00293,BATCH855,Packaging,Seal Intact,Failed,John Mathews,2024-04-05
+TST00294,BATCH536,Quality,Roast Dark,Failed,John Mathews,2024-01-18
+TST00295,BATCH714,Quality,Temperature Normal,Passed,Michael Lee,2024-04-18
+TST00296,BATCH279,Packaging,Seal Intact,Passed,Priya Nair,2024-02-01
+TST00297,BATCH757,Packaging,Packaging Strong,Failed,Sara Khan,2024-04-21
+TST00298,BATCH447,Packaging,Seal Intact,Passed,Sara Khan,2024-03-09
+TST00299,BATCH952,Packaging,Seal Intact,Failed,John Mathews,2024-02-04
+TST00300,BATCH851,Quality,Freshness Optimal,Passed,John Mathews,2024-01-02
+TST00301,BATCH237,Chemical,pH Normal,Failed,Priya Nair,2024-02-09
+TST00302,BATCH982,Quality,Roast Dark,Passed,Amit Sharma,2024-05-05
+TST00303,BATCH737,Chemical,Traces within limits,Passed,Sara Khan,2024-05-04
+TST00304,BATCH440,Chemical,pH Normal,Failed,John Mathews,2024-03-26
+TST00305,BATCH541,Quality,Roast Dark,Failed,Michael Lee,2024-04-27
+TST00306,BATCH610,Quality,Freshness Optimal,Passed,John Mathews,2024-01-08
+TST00307,BATCH592,Quality,Roast Medium,Passed,Priya Nair,2024-01-04
+TST00308,BATCH385,Packaging,Label Misaligned,Failed,Sara Khan,2024-03-24
+TST00309,BATCH789,Taste,Too Sweet,Failed,John Mathews,2024-03-13
+TST00310,BATCH692,Taste,Flavor Balanced,Passed,Sara Khan,2024-01-03
+TST00311,BATCH550,Quality,Roast Medium,Passed,Amit Sharma,2024-03-25
+TST00312,BATCH878,Taste,Aroma Rich,Failed,John Mathews,2024-03-19
+TST00313,BATCH489,Taste,Aroma Rich,Failed,Amit Sharma,2024-04-19
+TST00314,BATCH768,Taste,Too Sweet,Passed,Amit Sharma,2024-01-19
+TST00315,BATCH496,Chemical,Traces within limits,Failed,John Mathews,2024-05-24
+TST00316,BATCH634,Packaging,Seal Weak,Passed,Michael Lee,2024-05-03
+TST00317,BATCH570,Taste,Aftertaste Clean,Failed,Sara Khan,2024-02-24
+TST00318,BATCH949,Packaging,Label Misaligned,Failed,Priya Nair,2024-01-01
+TST00319,BATCH923,Quality,Freshness Low,Passed,Michael Lee,2024-01-16
+TST00320,BATCH955,Chemical,pH Normal,Passed,Priya Nair,2024-03-31
+TST00321,BATCH100,Quality,Moisture 11%,Failed,Amit Sharma,2024-02-09
+TST00322,BATCH575,Quality,Temperature Normal,Passed,Michael Lee,2024-04-19
+TST00323,BATCH731,Chemical,Traces within limits,Passed,Priya Nair,2024-01-02
+TST00324,BATCH299,Chemical,Traces within limits,Failed,Priya Nair,2024-02-22
+TST00325,BATCH342,Packaging,Seal Intact,Passed,Michael Lee,2024-02-17
+TST00326,BATCH318,Quality,Moisture 13%,Passed,Sara Khan,2024-01-14
+TST00327,BATCH251,Quality,Roast Dark,Failed,Sara Khan,2024-02-18
+TST00328,BATCH246,Chemical,Traces within limits,Failed,Priya Nair,2024-06-17
+TST00329,BATCH459,Packaging,Label Misaligned,Failed,Amit Sharma,2024-06-29
+TST00330,BATCH209,Chemical,No contaminants,Failed,Priya Nair,2024-03-18
+TST00331,BATCH261,Packaging,Seal Weak,Passed,Michael Lee,2024-05-25
+TST00332,BATCH575,Taste,Flavor Balanced,Passed,Priya Nair,2024-01-14
+TST00333,BATCH846,Chemical,Traces within limits,Failed,Amit Sharma,2024-02-27
+TST00334,BATCH978,Chemical,Traces within limits,Passed,John Mathews,2024-02-20
+TST00335,BATCH891,Chemical,pH Normal,Passed,Sara Khan,2024-01-07
+TST00336,BATCH961,Taste,Flavor Bitter,Passed,Amit Sharma,2024-01-27
+TST00337,BATCH336,Packaging,Packaging Strong,Failed,Sara Khan,2024-02-22
+TST00338,BATCH227,Quality,Moisture 13%,Passed,John Mathews,2024-03-04
+TST00339,BATCH956,Taste,Too Sweet,Passed,Priya Nair,2024-04-29
+TST00340,BATCH542,Chemical,Traces within limits,Passed,Amit Sharma,2024-03-04
+TST00341,BATCH960,Packaging,Seal Intact,Failed,Amit Sharma,2024-04-06
+TST00342,BATCH277,Packaging,Seal Intact,Failed,John Mathews,2024-03-02
+TST00343,BATCH718,Packaging,Seal Intact,Failed,Amit Sharma,2024-05-18
+TST00344,BATCH600,Taste,Too Sweet,Failed,Priya Nair,2024-06-15
+TST00345,BATCH312,Chemical,pH Slightly High,Passed,John Mathews,2024-03-18
+TST00346,BATCH684,Quality,Temperature Normal,Failed,John Mathews,2024-04-21
+TST00347,BATCH920,Packaging,Label Misaligned,Passed,John Mathews,2024-02-02
+TST00348,BATCH890,Chemical,pH Slightly High,Failed,Sara Khan,2024-05-15
+TST00349,BATCH596,Chemical,pH Slightly High,Passed,John Mathews,2024-06-23
+TST00350,BATCH239,Quality,Freshness Low,Passed,John Mathews,2024-05-21
+TST00351,BATCH538,Packaging,Packaging Strong,Passed,Priya Nair,2024-01-05
+TST00352,BATCH217,Packaging,Label Misaligned,Failed,Priya Nair,2024-02-12
+TST00353,BATCH157,Packaging,Label Misaligned,Passed,Michael Lee,2024-02-21
+TST00354,BATCH400,Chemical,pH Slightly High,Passed,Michael Lee,2024-04-30
+TST00355,BATCH562,Packaging,Label Misaligned,Passed,John Mathews,2024-06-25
+TST00356,BATCH322,Packaging,Label Misaligned,Failed,John Mathews,2024-01-13
+TST00357,BATCH265,Packaging,Label Misaligned,Failed,Michael Lee,2024-05-12
+TST00358,BATCH786,Quality,Moisture 11%,Failed,Michael Lee,2024-04-20
+TST00359,BATCH662,Chemical,Traces within limits,Passed,Priya Nair,2024-03-23
+TST00360,BATCH422,Quality,Roast Medium,Passed,John Mathews,2024-01-04
+TST00361,BATCH335,Packaging,Seal Intact,Passed,Amit Sharma,2024-05-31
+TST00362,BATCH856,Taste,Flavor Bitter,Passed,Amit Sharma,2024-02-14
+TST00363,BATCH239,Packaging,Label Misaligned,Passed,John Mathews,2024-03-22
+TST00364,BATCH682,Taste,Flavor Bitter,Passed,Priya Nair,2024-05-06
+TST00365,BATCH124,Quality,Temperature Normal,Failed,John Mathews,2024-06-07
+TST00366,BATCH917,Packaging,Packaging Strong,Passed,John Mathews,2024-03-04
+TST00367,BATCH855,Quality,Freshness Optimal,Failed,Amit Sharma,2024-01-01
+TST00368,BATCH103,Quality,Moisture 13%,Passed,Amit Sharma,2024-05-30
+TST00369,BATCH684,Taste,Too Sweet,Failed,Sara Khan,2024-06-20
+TST00370,BATCH129,Chemical,pH Slightly High,Failed,Michael Lee,2024-05-05
+TST00371,BATCH753,Packaging,Seal Weak,Passed,Michael Lee,2024-02-25
+TST00372,BATCH884,Chemical,No contaminants,Failed,Sara Khan,2024-02-07
+TST00373,BATCH574,Quality,Temperature Normal,Passed,Sara Khan,2024-01-27
+TST00374,BATCH881,Taste,Flavor Bitter,Passed,John Mathews,2024-01-02
+TST00375,BATCH474,Packaging,Seal Intact,Failed,John Mathews,2024-05-11
+TST00376,BATCH844,Packaging,Seal Intact,Failed,Amit Sharma,2024-01-29
+TST00377,BATCH287,Taste,Flavor Balanced,Failed,Amit Sharma,2024-02-10
+TST00378,BATCH134,Taste,Aroma Rich,Passed,Amit Sharma,2024-02-13
+TST00379,BATCH518,Chemical,pH Slightly High,Failed,Priya Nair,2024-04-02
+TST00380,BATCH776,Taste,Flavor Balanced,Failed,Sara Khan,2024-05-15
+TST00381,BATCH675,Chemical,pH Normal,Failed,Amit Sharma,2024-02-20
+TST00382,BATCH937,Quality,Temperature Normal,Failed,Priya Nair,2024-04-07
+TST00383,BATCH450,Quality,Moisture 13%,Passed,Amit Sharma,2024-05-21
+TST00384,BATCH916,Packaging,Seal Intact,Failed,Michael Lee,2024-02-24
+TST00385,BATCH907,Taste,Aroma Rich,Passed,Priya Nair,2024-06-28
+TST00386,BATCH741,Quality,Moisture 13%,Failed,John Mathews,2024-04-04
+TST00387,BATCH645,Quality,Temperature Normal,Failed,Michael Lee,2024-06-25
+TST00388,BATCH884,Packaging,Label Misaligned,Passed,Sara Khan,2024-04-11
+TST00389,BATCH379,Chemical,No contaminants,Failed,Priya Nair,2024-02-03
+TST00390,BATCH323,Quality,Roast Medium,Failed,Priya Nair,2024-03-31
+TST00391,BATCH402,Chemical,No contaminants,Passed,Sara Khan,2024-05-11
+TST00392,BATCH311,Chemical,Traces within limits,Failed,Michael Lee,2024-01-27
+TST00393,BATCH782,Chemical,pH Normal,Failed,Amit Sharma,2024-01-18
+TST00394,BATCH446,Quality,Moisture 13%,Passed,Michael Lee,2024-06-04
+TST00395,BATCH944,Quality,Roast Dark,Passed,Michael Lee,2024-02-15
+TST00396,BATCH802,Chemical,pH Normal,Passed,Michael Lee,2024-04-30
+TST00397,BATCH512,Chemical,No contaminants,Failed,Michael Lee,2024-05-23
+TST00398,BATCH170,Taste,Aftertaste Clean,Failed,Michael Lee,2024-04-07
+TST00399,BATCH891,Quality,Temperature Normal,Passed,Sara Khan,2024-02-06
+TST00400,BATCH239,Chemical,No contaminants,Failed,Priya Nair,2024-03-10
+TST00401,BATCH893,Quality,Moisture 13%,Passed,Michael Lee,2024-01-06
+TST00402,BATCH116,Chemical,No contaminants,Failed,John Mathews,2024-03-24
+TST00403,BATCH337,Packaging,Seal Intact,Failed,Priya Nair,2024-05-06
+TST00404,BATCH441,Quality,Roast Medium,Passed,John Mathews,2024-06-04
+TST00405,BATCH558,Taste,Flavor Balanced,Failed,John Mathews,2024-03-01
+TST00406,BATCH945,Chemical,pH Slightly High,Passed,Sara Khan,2024-05-28
+TST00407,BATCH808,Packaging,Seal Weak,Failed,John Mathews,2024-04-13
+TST00408,BATCH858,Chemical,pH Slightly High,Failed,Michael Lee,2024-02-07
+TST00409,BATCH359,Packaging,Packaging Strong,Passed,Amit Sharma,2024-03-05
+TST00410,BATCH647,Taste,Too Sweet,Passed,Michael Lee,2024-05-29
+TST00411,BATCH229,Packaging,Seal Weak,Passed,Michael Lee,2024-05-21
+TST00412,BATCH719,Packaging,Seal Intact,Failed,Sara Khan,2024-02-29
+TST00413,BATCH889,Packaging,Seal Intact,Failed,Amit Sharma,2024-04-04
+TST00414,BATCH106,Quality,Freshness Optimal,Failed,Priya Nair,2024-03-17
+TST00415,BATCH829,Chemical,pH Normal,Passed,John Mathews,2024-01-26
+TST00416,BATCH981,Chemical,pH Slightly High,Failed,Michael Lee,2024-03-04
+TST00417,BATCH784,Quality,Moisture 13%,Failed,Amit Sharma,2024-04-19
+TST00418,BATCH204,Taste,Aroma Rich,Failed,Priya Nair,2024-01-18
+TST00419,BATCH397,Packaging,Packaging Strong,Passed,Priya Nair,2024-02-22
+TST00420,BATCH615,Packaging,Label Misaligned,Failed,John Mathews,2024-03-23
+TST00421,BATCH271,Packaging,Label Misaligned,Passed,Priya Nair,2024-02-03
+TST00422,BATCH209,Chemical,No contaminants,Passed,Priya Nair,2024-02-28
+TST00423,BATCH696,Chemical,pH Slightly High,Failed,John Mathews,2024-03-23
+TST00424,BATCH512,Quality,Roast Medium,Failed,Priya Nair,2024-03-13
+TST00425,BATCH373,Packaging,Seal Intact,Failed,Priya Nair,2024-02-29
+TST00426,BATCH682,Packaging,Seal Weak,Passed,John Mathews,2024-02-24
+TST00427,BATCH357,Quality,Freshness Optimal,Passed,John Mathews,2024-06-15
+TST00428,BATCH461,Packaging,Seal Weak,Failed,Sara Khan,2024-05-28
+TST00429,BATCH696,Packaging,Seal Intact,Passed,Amit Sharma,2024-02-24
+TST00430,BATCH202,Taste,Too Sweet,Failed,John Mathews,2024-05-29
+TST00431,BATCH922,Chemical,No contaminants,Passed,Priya Nair,2024-06-03
+TST00432,BATCH375,Packaging,Seal Intact,Passed,Priya Nair,2024-06-19
+TST00433,BATCH179,Packaging,Seal Intact,Passed,John Mathews,2024-03-23
+TST00434,BATCH124,Packaging,Seal Intact,Passed,Michael Lee,2024-05-20
+TST00435,BATCH299,Taste,Aftertaste Clean,Passed,Amit Sharma,2024-01-11
+TST00436,BATCH309,Chemical,No contaminants,Failed,John Mathews,2024-01-13
+TST00437,BATCH498,Packaging,Label Misaligned,Passed,Sara Khan,2024-06-21
+TST00438,BATCH983,Packaging,Seal Intact,Failed,Sara Khan,2024-06-19
+TST00439,BATCH310,Packaging,Label Misaligned,Failed,Sara Khan,2024-02-19
+TST00440,BATCH673,Packaging,Packaging Strong,Failed,Amit Sharma,2024-06-26
+TST00441,BATCH747,Chemical,No contaminants,Passed,Priya Nair,2024-05-18
+TST00442,BATCH788,Chemical,No contaminants,Failed,John Mathews,2024-03-28
+TST00443,BATCH100,Taste,Flavor Balanced,Passed,Sara Khan,2024-04-08
+TST00444,BATCH368,Chemical,pH Slightly High,Passed,John Mathews,2024-01-10
+TST00445,BATCH992,Chemical,No contaminants,Passed,Priya Nair,2024-02-02
+TST00446,BATCH957,Packaging,Seal Weak,Passed,John Mathews,2024-01-08
+TST00447,BATCH154,Quality,Temperature Normal,Failed,Amit Sharma,2024-01-23
+TST00448,BATCH242,Quality,Freshness Optimal,Passed,Amit Sharma,2024-04-26
+TST00449,BATCH216,Taste,Too Sweet,Failed,Sara Khan,2024-04-21
+TST00450,BATCH375,Packaging,Label Misaligned,Passed,Michael Lee,2024-06-19
+TST00451,BATCH215,Taste,Flavor Bitter,Failed,Michael Lee,2024-04-15
+TST00452,BATCH988,Packaging,Seal Intact,Failed,Priya Nair,2024-04-06
+TST00453,BATCH655,Quality,Moisture 11%,Passed,Amit Sharma,2024-03-07
+TST00454,BATCH698,Quality,Moisture 13%,Failed,Michael Lee,2024-05-01
+TST00455,BATCH568,Taste,Flavor Balanced,Passed,Michael Lee,2024-01-09
+TST00456,BATCH598,Chemical,pH Normal,Failed,Sara Khan,2024-02-15
+TST00457,BATCH442,Packaging,Seal Weak,Passed,Priya Nair,2024-06-04
+TST00458,BATCH539,Quality,Temperature Normal,Failed,Amit Sharma,2024-06-16
+TST00459,BATCH548,Chemical,Traces within limits,Passed,Sara Khan,2024-04-20
+TST00460,BATCH384,Chemical,Traces within limits,Failed,Michael Lee,2024-06-05
+TST00461,BATCH784,Quality,Moisture 13%,Failed,John Mathews,2024-05-10
+TST00462,BATCH365,Chemical,pH Slightly High,Failed,Sara Khan,2024-01-23
+TST00463,BATCH190,Quality,Roast Dark,Failed,Michael Lee,2024-03-20
+TST00464,BATCH856,Taste,Aroma Rich,Failed,Priya Nair,2024-06-15
+TST00465,BATCH754,Packaging,Seal Intact,Failed,Priya Nair,2024-06-05
+TST00466,BATCH699,Packaging,Seal Intact,Passed,Priya Nair,2024-06-05
+TST00467,BATCH516,Taste,Too Sweet,Failed,John Mathews,2024-02-06
+TST00468,BATCH505,Packaging,Packaging Strong,Failed,Amit Sharma,2024-02-15
+TST00469,BATCH698,Packaging,Seal Weak,Failed,Michael Lee,2024-04-04
+TST00470,BATCH269,Quality,Moisture 11%,Passed,Amit Sharma,2024-06-29
+TST00471,BATCH755,Packaging,Packaging Strong,Passed,John Mathews,2024-05-02
+TST00472,BATCH855,Chemical,pH Slightly High,Passed,Michael Lee,2024-05-30
+TST00473,BATCH937,Quality,Roast Dark,Passed,Priya Nair,2024-06-24
+TST00474,BATCH244,Chemical,pH Normal,Failed,Priya Nair,2024-04-28
+TST00475,BATCH159,Packaging,Packaging Strong,Passed,John Mathews,2024-02-26
+TST00476,BATCH456,Chemical,pH Slightly High,Failed,Amit Sharma,2024-01-06
+TST00477,BATCH321,Quality,Moisture 11%,Failed,Amit Sharma,2024-03-09
+TST00478,BATCH560,Quality,Freshness Low,Passed,Sara Khan,2024-03-22
+TST00479,BATCH728,Quality,Freshness Optimal,Failed,Michael Lee,2024-03-30
+TST00480,BATCH617,Chemical,pH Slightly High,Passed,Sara Khan,2024-06-06
+TST00481,BATCH679,Quality,Freshness Optimal,Failed,John Mathews,2024-01-23
+TST00482,BATCH969,Chemical,No contaminants,Passed,John Mathews,2024-04-13
+TST00483,BATCH607,Taste,Flavor Bitter,Passed,Sara Khan,2024-03-07
+TST00484,BATCH589,Chemical,No contaminants,Failed,Michael Lee,2024-03-31
+TST00485,BATCH105,Chemical,pH Normal,Failed,Priya Nair,2024-06-18
+TST00486,BATCH936,Packaging,Label Misaligned,Failed,John Mathews,2024-04-06
+TST00487,BATCH770,Chemical,pH Normal,Passed,John Mathews,2024-02-07
+TST00488,BATCH194,Chemical,No contaminants,Passed,Amit Sharma,2024-01-31
+TST00489,BATCH902,Taste,Flavor Balanced,Failed,John Mathews,2024-04-20
+TST00490,BATCH732,Taste,Aftertaste Clean,Failed,Amit Sharma,2024-03-03
+TST00491,BATCH788,Chemical,pH Normal,Failed,Sara Khan,2024-01-09
+TST00492,BATCH542,Quality,Roast Dark,Failed,Amit Sharma,2024-02-14
+TST00493,BATCH291,Packaging,Seal Intact,Passed,Priya Nair,2024-05-18
+TST00494,BATCH275,Taste,Flavor Bitter,Failed,John Mathews,2024-02-09
+TST00495,BATCH894,Taste,Flavor Bitter,Passed,Sara Khan,2024-04-22
+TST00496,BATCH395,Packaging,Seal Intact,Passed,Michael Lee,2024-02-09
+TST00497,BATCH640,Packaging,Label Misaligned,Failed,Michael Lee,2024-04-02
+TST00498,BATCH314,Quality,Moisture 13%,Passed,John Mathews,2024-05-08
+TST00499,BATCH723,Taste,Too Sweet,Passed,Sara Khan,2024-04-15
+TST00500,BATCH917,Packaging,Label Misaligned,Passed,John Mathews,2024-01-21
