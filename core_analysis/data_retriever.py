@@ -1,88 +1,321 @@
-import streamlit as st
-from pymongo import MongoClient
+"""
+Data Retriever Module for AI-CDP
+Handles MongoDB Atlas connections and data retrieval with proper schema mapping
+"""
+
+import os
 import pandas as pd
-import numpy as np # Needed for safe numeric conversion
+from pymongo import MongoClient
+from datetime import datetime, timedelta
+import streamlit as st
 
-# The database name is explicitly set
-DB_NAME = "Starbucks"
 
-@st.cache_resource 
-def get_mongo_client():
-    """Initializes and caches the MongoDB client connection."""
-    try:
-        # Fetch the URI securely from Streamlit's secrets
-        uri = st.secrets["MONGO_URI"]
-        client = MongoClient(uri)
-        # Test connection by running a simple command
-        client.admin.command('ping') 
-        return client
-    except Exception as e:
-        # Display a custom error message for the user
-        st.error(f"FATAL ERROR: Could not connect to MongoDB. Check URI and IP Whitelisting. Details: {e}")
-        return None
+class DataRetriever:
+    """
+    Centralized data retrieval class with explicit schema mapping
+    Maps disparate MongoDB collection schemas to unified analysis-ready format
+    """
 
-@st.cache_data(ttl=60) 
-def fetch_all_data():
-    """Fetches all data, cleans, and standardizes field names."""
-    client = get_mongo_client()
-    if client is None:
-        return pd.DataFrame()
-
-    db = client[DB_NAME]
-    
-    # Mapping to standardize the key fields upon retrieval and handle type conversion
-    FIELD_MAPPING = {
-        # Standardized column names are used for cross-domain analysis in the AI engine
-        "Manufacturing": {"Quantity_Produced": "Quantity_Produced", "Defects": "Defects", "Machine_ID": "Line_ID", "timestamp": "timestamp", "Product": "SKU"},
-        "Testing": {"Passed/Failed": "Pass_Fail_Status", "Batch_ID": "Batch_ID", "timestamp": "timestamp"},
-        "Sales": {"Total_Amount": "Revenue", "Quantity": "Quantity", "SKU": "SKU", "timestamp": "timestamp"},
-        "Field": {"Inventory_Level": "Inventory_Level", "Daily_Consumption": "Daily_Consumption", "Date": "timestamp", "Low_Stock_Alerts": "Alerts"}
-    }
-    
-    all_records = []
-    
-    for coll_name, mapping in FIELD_MAPPING.items():
+    def __init__(self):
+        """Initialize MongoDB connection using Streamlit secrets or environment variables"""
         try:
-            cursor = db[coll_name].find({})
-            df_collection = pd.DataFrame(list(cursor))
-            
-            if not df_collection.empty:
-                # 1. Clean up (Drop Mongo _id and non-mapped columns)
-                if '_id' in df_collection.columns:
-                    df_collection = df_collection.drop(columns=['_id'])
-                
-                # 2. Rename and standardize fields based on the mapping
-                df_collection = df_collection.rename(columns={k: v for k, v in mapping.items() if k in df_collection.columns})
-                
-                # 3. Add 'Domain' column
-                df_collection['Domain'] = coll_name
-                
-                # 4. Convert timestamp
-                if 'timestamp' in df_collection.columns:
-                    df_collection['timestamp'] = pd.to_datetime(df_collection['timestamp'], errors='coerce')
-                
-                # 5. Type Conversion for critical numeric fields (using NumPy for efficiency)
-                for col in ['Revenue', 'Quantity', 'Defects', 'Inventory_Level', 'Daily_Consumption']:
-                    if col in df_collection.columns:
-                        df_collection[col] = pd.to_numeric(df_collection[col], errors='coerce').fillna(0)
-                
-                all_records.append(df_collection)
-                
-        except Exception as e:
-            st.warning(f"Error fetching data from collection '{coll_name}': {e}")
-            
-    if all_records:
-        # Concatenate all data into the Single Source of Truth DataFrame
-        combined_df = pd.concat(all_records, ignore_index=True)
-        # Sort by timestamp for proper time-series analysis
-        combined_df = combined_df.sort_values('timestamp', ascending=False).reset_index(drop=True)
-        return combined_df
-        
-    return pd.DataFrame()
+            # Try Streamlit secrets first (for deployment)
+            if hasattr(st, 'secrets') and 'mongodb' in st.secrets:
+                mongo_uri = st.secrets['mongodb']['uri']
+                db_name = st.secrets['mongodb']['database']
+            else:
+                # Fallback to environment variables
+                mongo_uri = os.getenv('MONGODB_URI')
+                db_name = os.getenv('MONGODB_DATABASE', 'ai_cdp')
 
-@st.cache_data
-def get_unique_skus(df):
-    """Retrieves a list of all unique SKUs."""
-    if df.empty or 'SKU' not in df.columns:
-        return []
-    return sorted(df['SKU'].dropna().unique().tolist())
+            self.client = MongoClient(mongo_uri)
+            self.db = self.client[db_name]
+
+            # Test connection
+            self.client.admin.command('ping')
+
+        except Exception as e:
+            st.error(f"MongoDB Connection Error: {str(e)}")
+            raise
+
+    def _convert_to_datetime(self, df, date_column):
+        """
+        Safely convert date/timestamp columns to pandas datetime
+
+        Args:
+            df: DataFrame to process
+            date_column: Name of the column to convert
+
+        Returns:
+            DataFrame with converted datetime column
+        """
+        if date_column in df.columns:
+            try:
+                df[date_column] = pd.to_datetime(df[date_column], errors='coerce')
+            except Exception:
+                pass
+        return df
+
+    def _safe_numeric_conversion(self, df, columns):
+        """
+        Safely convert columns to numeric, filling NaN with 0
+
+        Args:
+            df: DataFrame to process
+            columns: List of column names to convert
+
+        Returns:
+            DataFrame with converted numeric columns
+        """
+        for col in columns:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+        return df
+
+    def get_field_data(self, start_date=None, end_date=None):
+        """
+        Retrieve Field/Inventory data with proper schema mapping
+
+        Schema Mapping:
+        - Date -> timestamp (unified datetime field)
+        - All numeric fields validated
+
+        Args:
+            start_date: Start date for filtering (optional)
+            end_date: End date for filtering (optional)
+
+        Returns:
+            DataFrame with mapped Field data
+        """
+        try:
+            collection = self.db['Field']
+
+            # Build query filter
+            query = {}
+            if start_date and end_date:
+                query['Date'] = {
+                    '$gte': start_date,
+                    '$lte': end_date
+                }
+
+            # Fetch data
+            cursor = collection.find(query)
+            df = pd.DataFrame(list(cursor))
+
+            if df.empty:
+                return pd.DataFrame()
+
+            # Drop MongoDB _id field
+            if '_id' in df.columns:
+                df = df.drop('_id', axis=1)
+
+            # CRITICAL MAPPING: Date -> timestamp
+            if 'Date' in df.columns:
+                df['timestamp'] = df['Date']
+                df = self._convert_to_datetime(df, 'timestamp')
+
+            # Ensure numeric conversions
+            numeric_columns = [
+                'Inventory_Level',
+                'Low_Stock_Alerts',
+                'Daily_Consumption'
+            ]
+            df = self._safe_numeric_conversion(df, numeric_columns)
+
+            return df
+
+        except Exception as e:
+            st.error(f"Error retrieving Field data: {str(e)}")
+            return pd.DataFrame()
+
+    def get_manufacturing_data(self, start_date=None, end_date=None):
+        """
+        Retrieve Manufacturing data with proper schema mapping
+
+        Schema Mapping:
+        - Machine_ID -> Line_ID (unified machine identifier)
+        - Product -> SKU (unified product identifier)
+        - timestamp remains timestamp
+
+        Args:
+            start_date: Start date for filtering (optional)
+            end_date: End date for filtering (optional)
+
+        Returns:
+            DataFrame with mapped Manufacturing data
+        """
+        try:
+            collection = self.db['Manufacturing']
+
+            # Build query filter
+            query = {}
+            if start_date and end_date:
+                query['timestamp'] = {
+                    '$gte': start_date,
+                    '$lte': end_date
+                }
+
+            # Fetch data
+            cursor = collection.find(query)
+            df = pd.DataFrame(list(cursor))
+
+            if df.empty:
+                return pd.DataFrame()
+
+            # Drop MongoDB _id field
+            if '_id' in df.columns:
+                df = df.drop('_id', axis=1)
+
+            # CRITICAL MAPPINGS
+            if 'Machine_ID' in df.columns:
+                df['Line_ID'] = df['Machine_ID']
+
+            if 'Product' in df.columns:
+                df['SKU'] = df['Product']
+
+            # Convert timestamp
+            df = self._convert_to_datetime(df, 'timestamp')
+
+            # Ensure numeric conversions
+            numeric_columns = [
+                'Quantity_Produced',
+                'Defects'
+            ]
+            df = self._safe_numeric_conversion(df, numeric_columns)
+
+            return df
+
+        except Exception as e:
+            st.error(f"Error retrieving Manufacturing data: {str(e)}")
+            return pd.DataFrame()
+
+    def get_sales_data(self, start_date=None, end_date=None):
+        """
+        Retrieve Sales data with proper schema mapping
+
+        Schema Mapping:
+        - Total_Amount -> Revenue (unified revenue field)
+        - timestamp remains timestamp
+
+        Args:
+            start_date: Start date for filtering (optional)
+            end_date: End date for filtering (optional)
+
+        Returns:
+            DataFrame with mapped Sales data
+        """
+        try:
+            collection = self.db['Sales']
+
+            # Build query filter
+            query = {}
+            if start_date and end_date:
+                query['timestamp'] = {
+                    '$gte': start_date,
+                    '$lte': end_date
+                }
+
+            # Fetch data
+            cursor = collection.find(query)
+            df = pd.DataFrame(list(cursor))
+
+            if df.empty:
+                return pd.DataFrame()
+
+            # Drop MongoDB _id field
+            if '_id' in df.columns:
+                df = df.drop('_id', axis=1)
+
+            # CRITICAL MAPPING: Total_Amount -> Revenue
+            if 'Total_Amount' in df.columns:
+                df['Revenue'] = df['Total_Amount']
+
+            # Convert timestamp
+            df = self._convert_to_datetime(df, 'timestamp')
+
+            # Ensure numeric conversions
+            numeric_columns = [
+                'Revenue',
+                'Total_Amount',
+                'Quantity'
+            ]
+            df = self._safe_numeric_conversion(df, numeric_columns)
+
+            return df
+
+        except Exception as e:
+            st.error(f"Error retrieving Sales data: {str(e)}")
+            return pd.DataFrame()
+
+    def get_testing_data(self, start_date=None, end_date=None):
+        """
+        Retrieve Testing/Quality data with proper schema mapping
+
+        Schema Mapping:
+        - Passed/Failed -> Pass_Fail_Status (unified status field)
+        - timestamp remains timestamp
+
+        Args:
+            start_date: Start date for filtering (optional)
+            end_date: End date for filtering (optional)
+
+        Returns:
+            DataFrame with mapped Testing data
+        """
+        try:
+            collection = self.db['Testing']
+
+            # Build query filter
+            query = {}
+            if start_date and end_date:
+                query['timestamp'] = {
+                    '$gte': start_date,
+                    '$lte': end_date
+                }
+
+            # Fetch data
+            cursor = collection.find(query)
+            df = pd.DataFrame(list(cursor))
+
+            if df.empty:
+                return pd.DataFrame()
+
+            # Drop MongoDB _id field
+            if '_id' in df.columns:
+                df = df.drop('_id', axis=1)
+
+            # CRITICAL MAPPING: Passed/Failed -> Pass_Fail_Status
+            if 'Passed/Failed' in df.columns:
+                df['Pass_Fail_Status'] = df['Passed/Failed']
+
+            # Convert timestamp
+            df = self._convert_to_datetime(df, 'timestamp')
+
+            return df
+
+        except Exception as e:
+            st.error(f"Error retrieving Testing data: {str(e)}")
+            return pd.DataFrame()
+
+    def get_all_data(self, start_date=None, end_date=None):
+        """
+        Retrieve all domain data with unified schema mapping
+
+        Args:
+            start_date: Start date for filtering (optional)
+            end_date: End date for filtering (optional)
+
+        Returns:
+            Dictionary containing all mapped DataFrames
+        """
+        return {
+            'field': self.get_field_data(start_date, end_date),
+            'manufacturing': self.get_manufacturing_data(start_date, end_date),
+            'sales': self.get_sales_data(start_date, end_date),
+            'testing': self.get_testing_data(start_date, end_date)
+        }
+
+    def close(self):
+        """Close MongoDB connection"""
+        if self.client:
+            self.client.close()
