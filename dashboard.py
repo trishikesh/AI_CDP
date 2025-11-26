@@ -1,6 +1,6 @@
 """
 AI-Powered Central Data Platform - Main Dashboard
-Professional BI-style interface with AI Chatbot
+Professional BI-style interface with dedicated AI Chatbot page
 """
 
 import streamlit as st
@@ -20,7 +20,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for professional BI aesthetic + Chat styling
+# Custom CSS - Light Blue Sidebar with Dark Blue Tabs
 st.markdown("""
 <style>
     /* Main background and fonts */
@@ -69,10 +69,52 @@ st.markdown("""
         font-weight: 500;
     }
     
-    /* Sidebar */
+    /* LIGHT BLUE SIDEBAR with DARK BLUE TABS */
     section[data-testid="stSidebar"] {
-        background-color: #ffffff;
-        border-right: 2px solid #e0e0e0;
+        background: linear-gradient(180deg, #e3f2fd 0%, #bbdefb 100%);
+        border-right: 2px solid #90caf9;
+    }
+    
+    /* Sidebar headings - Dark Blue */
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        color: #0d47a1 !important;
+        font-weight: 700;
+    }
+    
+    /* Sidebar text - Dark color for readability */
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] span {
+        color: #1565c0 !important;
+        font-weight: 500;
+    }
+    
+    /* Navigation Tab Buttons - DARK BLUE */
+    section[data-testid="stSidebar"] .stButton button {
+        width: 100%;
+        background-color: #1565c0;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-weight: 600;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        margin-bottom: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    section[data-testid="stSidebar"] .stButton button:hover {
+        background-color: #0d47a1;
+        transform: translateX(5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    
+    /* Active page highlight */
+    section[data-testid="stSidebar"] .stButton button:active {
+        background-color: #0a3d91;
     }
     
     /* Tabs */
@@ -99,49 +141,47 @@ st.markdown("""
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
-    /* Chat Container */
-    .chat-container {
-        height: 400px;
+    /* AI Chatbot Page Styling */
+    .chat-page-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .chat-history-container {
+        height: 600px;
         overflow-y: auto;
-        padding: 15px;
+        padding: 20px;
         background-color: #f8f9fa;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #dee2e6;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        border: 2px solid #dee2e6;
     }
     
     /* Chat Message - User */
     .chat-message-user {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
         color: white;
-        padding: 12px 16px;
+        padding: 14px 18px;
         border-radius: 18px 18px 4px 18px;
-        margin: 8px 0;
-        margin-left: 20%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin: 10px 0;
+        margin-left: 25%;
+        box-shadow: 0 2px 8px rgba(21, 101, 192, 0.3);
         word-wrap: break-word;
+        font-size: 15px;
     }
     
     /* Chat Message - Assistant */
     .chat-message-assistant {
         background-color: #ffffff;
         color: #212529;
-        padding: 12px 16px;
+        padding: 14px 18px;
         border-radius: 18px 18px 18px 4px;
-        margin: 8px 0;
-        margin-right: 20%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        border: 1px solid #e0e0e0;
+        margin: 10px 0;
+        margin-right: 25%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border: 2px solid #e3f2fd;
         word-wrap: break-word;
-    }
-    
-    /* Chat Input */
-    .chat-input-container {
-        position: sticky;
-        bottom: 0;
-        background-color: white;
-        padding: 10px 0;
-        border-top: 1px solid #dee2e6;
+        font-size: 15px;
     }
     
     /* Timestamp */
@@ -152,16 +192,44 @@ st.markdown("""
         text-align: right;
     }
     
+    /* Chat message timestamp for user messages */
+    .chat-message-user .chat-timestamp {
+        color: rgba(255,255,255,0.8);
+    }
+    
     /* AI Badge */
     .ai-badge {
         display: inline-block;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
         color: white;
-        padding: 4px 12px;
+        padding: 6px 14px;
         border-radius: 12px;
         font-size: 12px;
         font-weight: 600;
         margin-bottom: 10px;
+    }
+    
+    /* Chat input styling */
+    .chat-input-section {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        border: 2px solid #e3f2fd;
+    }
+    
+    /* Divider */
+    hr {
+        margin: 1.5rem 0;
+        border: none;
+        height: 1px;
+        background-color: #dee2e6;
+    }
+    
+    /* Date input in sidebar */
+    section[data-testid="stSidebar"] .stDateInput label {
+        color: #0d47a1 !important;
+        font-weight: 600;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -178,6 +246,8 @@ if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 if 'chat_data_loaded' not in st.session_state:
     st.session_state.chat_data_loaded = False
+if 'chat_full_df' not in st.session_state:
+    st.session_state.chat_full_df = None
 
 
 def initialize_connections():
@@ -216,81 +286,126 @@ def render_chat_message(message, is_user=True):
         st.markdown(f"""
         <div class="chat-message-assistant">
             {message['text']}
-            <div class="chat-timestamp">AI • {timestamp}</div>
+            <div class="chat-timestamp">AI Assistant • {timestamp}</div>
         </div>
         """, unsafe_allow_html=True)
 
 
-def render_ai_chatbot_sidebar():
-    """Render AI Analysis chatbot in sidebar"""
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("## 🤖 AI Analysis")
-    st.sidebar.markdown('<div class="ai-badge">✨ Powered by Gemini</div>', unsafe_allow_html=True)
+def render_ai_chatbot_page():
+    """Render the dedicated AI Chatbot page"""
+    st.title("🤖 AI Analysis Assistant")
+    st.markdown('<div class="ai-badge">✨ Powered by Google Gemini AI</div>', unsafe_allow_html=True)
+    st.markdown("##### Ask questions about your data and get instant insights with visualizations")
     
-    # Load data button for chat
-    if not st.session_state.chat_data_loaded:
-        if st.sidebar.button("📊 Connect to Live Data", use_container_width=True):
-            with st.spinner("Loading real-time data from MongoDB..."):
-                # Load last 30 days of data
-                end_date = datetime.now()
-                start_date = end_date - timedelta(days=30)
-                
-                st.session_state.chat_full_df = st.session_state.data_retriever.fetch_all_data(
-                    start_date, end_date
-                )
-                
-                if st.session_state.chat_full_df is not None and not st.session_state.chat_full_df.empty:
-                    st.session_state.chat_data_loaded = True
-                    st.sidebar.success(f"✅ Loaded {len(st.session_state.chat_full_df)} records")
-                    
-                    # Add welcome message
-                    st.session_state.chat_history.append({
-                        'type': 'assistant',
-                        'text': f"👋 Hi! I'm connected to your MongoDB database. I have access to {len(st.session_state.chat_full_df)} records from the last 30 days. Ask me anything about your Sales, Manufacturing, Testing, or Field data!",
-                        'timestamp': datetime.now(),
-                        'chart': None
-                    })
-                else:
-                    st.sidebar.error("❌ No data available")
-    else:
-        st.sidebar.success("🟢 Connected to MongoDB")
-        if st.sidebar.button("🔄 Refresh Data", use_container_width=True):
-            st.session_state.chat_data_loaded = False
+    # Data connection status
+    col1, col2, col3 = st.columns([2, 1, 1])
+    
+    with col1:
+        if st.session_state.chat_data_loaded and st.session_state.chat_full_df is not None:
+            st.success(f"🟢 Connected to MongoDB | {len(st.session_state.chat_full_df)} records loaded")
+        else:
+            st.warning("⚠️ Not connected to data source")
+    
+    with col2:
+        if not st.session_state.chat_data_loaded:
+            if st.button("📊 Load Data", use_container_width=True, type="primary"):
+                with st.spinner("Loading real-time data from MongoDB..."):
+                    try:
+                        end_date = datetime.now()
+                        start_date = end_date - timedelta(days=30)
+                        
+                        st.session_state.chat_full_df = st.session_state.data_retriever.fetch_all_data(
+                            start_date, end_date
+                        )
+                        
+                        if st.session_state.chat_full_df is not None and not st.session_state.chat_full_df.empty:
+                            st.session_state.chat_data_loaded = True
+                            
+                            # Add welcome message
+                            st.session_state.chat_history.append({
+                                'type': 'assistant',
+                                'text': f"👋 **Welcome!** I'm your AI Analysis Assistant.\n\n📊 **Connected to MongoDB**\n- Records loaded: **{len(st.session_state.chat_full_df)}**\n- Date range: Last 30 days\n- Domains: Sales, Manufacturing, Testing, Field\n\n💡 **Try asking:**\n- 'Show me sales revenue trends'\n- 'What are the defect rates by production line?'\n- 'Which stores have low inventory?'\n- 'Show testing pass rates'",
+                                'timestamp': datetime.now(),
+                                'chart': None
+                            })
+                            st.rerun()
+                        else:
+                            st.error("❌ No data available for the selected period")
+                    except Exception as e:
+                        st.error(f"Error loading data: {str(e)}")
+        else:
+            if st.button("🔄 Refresh Data", use_container_width=True):
+                st.session_state.chat_data_loaded = False
+                st.session_state.chat_full_df = None
+                st.rerun()
+    
+    with col3:
+        if st.button("🗑️ Clear Chat", use_container_width=True):
+            st.session_state.chat_history = []
             st.rerun()
     
+    st.markdown("---")
+    
     # Chat history display
-    st.sidebar.markdown("### 💬 Chat")
+    st.markdown('<div class="chat-history-container">', unsafe_allow_html=True)
     
-    # Chat container
-    chat_container = st.sidebar.container()
+    if st.session_state.chat_history:
+        for idx, msg in enumerate(st.session_state.chat_history):
+            render_chat_message(msg, is_user=(msg['type'] == 'user'))
+            
+            # Display chart if available
+            if msg.get('chart') is not None:
+                st.plotly_chart(msg['chart'], use_container_width=True, key=f"chat_chart_{idx}")
+    else:
+        st.info("""
+        ### 👋 How can I help you today?
+        
+        I can help you analyze your business data across multiple domains:
+        
+        **📈 Sales & Revenue**
+        - "Show me total revenue for last month"
+        - "Which products have the highest sales?"
+        
+        **🔧 Manufacturing & Quality**
+        - "What are the defect rates by production line?"
+        - "Show manufacturing trends"
+        
+        **📦 Inventory & Field**
+        - "Which stores are running low on inventory?"
+        - "Show inventory levels over time"
+        
+        **🧪 Testing & Quality Assurance**
+        - "What's the test pass rate?"
+        - "Show failed tests by batch"
+        
+        **Get started by loading data above!**
+        """)
     
-    with chat_container:
-        # Display chat history
-        if st.session_state.chat_history:
-            for msg in st.session_state.chat_history:
-                render_chat_message(msg, is_user=(msg['type'] == 'user'))
-                
-                # Display chart if available
-                if msg.get('chart') is not None:
-                    st.plotly_chart(msg['chart'], use_container_width=True, key=f"chat_chart_{msg['timestamp']}")
-        else:
-            st.sidebar.info("💡 Start a conversation! Try asking:\n- 'Show sales trends'\n- 'What's the defect rate?'\n- 'Show inventory levels'")
+    st.markdown('</div>', unsafe_allow_html=True)
     
-    # Chat input
-    st.sidebar.markdown("---")
+    # Chat input section
+    st.markdown('<div class="chat-input-section">', unsafe_allow_html=True)
     
-    with st.sidebar.form(key='chat_form', clear_on_submit=True):
-        user_input = st.text_input(
-            "Ask me anything...",
-            placeholder="e.g., Show me revenue trends",
-            label_visibility="collapsed"
-        )
-        submit_button = st.form_submit_button("Send 📤", use_container_width=True)
+    with st.form(key='chat_input_form', clear_on_submit=True):
+        col1, col2 = st.columns([5, 1])
+        
+        with col1:
+            user_input = st.text_input(
+                "Your Question",
+                placeholder="Ask me anything about your data...",
+                label_visibility="collapsed"
+            )
+        
+        with col2:
+            st.markdown("<br>", unsafe_allow_html=True)
+            submit_button = st.form_submit_button("Send 📤", use_container_width=True, type="primary")
+    
+    st.markdown('</div>', unsafe_allow_html=True)
     
     # Process chat input
     if submit_button and user_input:
         if not st.session_state.chat_data_loaded:
-            st.sidebar.error("⚠️ Please connect to live data first!")
+            st.error("⚠️ Please load data first by clicking the 'Load Data' button above!")
         else:
             # Add user message to history
             st.session_state.chat_history.append({
@@ -301,18 +416,15 @@ def render_ai_chatbot_sidebar():
             })
             
             # Process with AI
-            with st.spinner("🤖 AI is thinking..."):
+            with st.spinner("🤖 AI is analyzing your query..."):
                 # Prepare chat history for context
-                chat_context = [
-                    {
-                        'user': msg['text'],
-                        'assistant': st.session_state.chat_history[i+1]['text'] 
-                            if i+1 < len(st.session_state.chat_history) 
-                            else ''
-                    }
-                    for i, msg in enumerate(st.session_state.chat_history)
-                    if msg['type'] == 'user'
-                ]
+                chat_context = []
+                for i in range(0, len(st.session_state.chat_history) - 1, 2):
+                    if i + 1 < len(st.session_state.chat_history):
+                        chat_context.append({
+                            'user': st.session_state.chat_history[i]['text'],
+                            'assistant': st.session_state.chat_history[i + 1].get('text', '')
+                        })
                 
                 response_text, fig = st.session_state.ai_engine.process_chat_query(
                     user_input,
@@ -329,11 +441,6 @@ def render_ai_chatbot_sidebar():
                 })
             
             st.rerun()
-    
-    # Clear chat button
-    if st.sidebar.button("🗑️ Clear Chat", use_container_width=True):
-        st.session_state.chat_history = []
-        st.rerun()
 
 
 def render_home_overview(data_dict, results):
@@ -798,7 +905,6 @@ def render_inventory_dashboard(data_dict, results):
     # Days to depletion by store
     st.markdown("### Days to Depletion by Store")
     if not filtered_field.empty and 'Store_ID' in filtered_field.columns:
-        # Calculate days to depletion for each store
         store_summary = filtered_field.groupby('Store_ID').agg({
             'Inventory_Level': 'mean',
             'Daily_Consumption': 'mean'
@@ -974,201 +1080,8 @@ def render_testing_dashboard(data_dict, results):
         )
 
 
-# Add legacy analysis functions to ai_engine for compatibility
-def analyze_sales(sales_df):
-    """Legacy sales analysis function"""
-    if sales_df.empty:
-        return {
-            'total_revenue': 0,
-            'total_profit': 0,
-            'profit_margin': 0,
-            'revenue_trend': pd.DataFrame(),
-            'top_products': pd.DataFrame()
-        }
-
-    if 'Revenue' not in sales_df.columns:
-        return {
-            'total_revenue': 0,
-            'total_profit': 0,
-            'profit_margin': 0,
-            'revenue_trend': pd.DataFrame(),
-            'top_products': pd.DataFrame()
-        }
-
-    sales_df['Profit'] = sales_df['Revenue'] * 0.40
-    total_revenue = sales_df['Revenue'].sum()
-    total_profit = sales_df['Profit'].sum()
-    profit_margin = (total_profit / total_revenue * 100) if total_revenue > 0 else 0
-
-    revenue_trend = pd.DataFrame()
-    if 'timestamp' in sales_df.columns:
-        sales_df['Date'] = pd.to_datetime(sales_df['timestamp']).dt.date
-        revenue_trend = sales_df.groupby('Date').agg({
-            'Revenue': 'sum',
-            'Profit': 'sum'
-        }).reset_index()
-        revenue_trend = revenue_trend.sort_values('Date')
-
-    top_products = pd.DataFrame()
-    if 'SKU' in sales_df.columns:
-        top_products = sales_df.groupby('SKU').agg({
-            'Revenue': 'sum',
-            'Quantity': 'sum',
-            'Profit': 'sum'
-        }).reset_index()
-        top_products = top_products.sort_values('Revenue', ascending=False).head(10)
-
-    return {
-        'total_revenue': total_revenue,
-        'total_profit': total_profit,
-        'profit_margin': profit_margin,
-        'revenue_trend': revenue_trend,
-        'top_products': top_products
-    }
-
-
-def analyze_quality(manufacturing_df):
-    """Legacy quality analysis function"""
-    if manufacturing_df.empty:
-        return {
-            'avg_defect_rate': 0,
-            'total_defects': 0,
-            'total_produced': 0,
-            'defect_trend': pd.DataFrame(),
-            'line_performance': pd.DataFrame(),
-            'anomalies': []
-        }
-
-    manufacturing_df['Defect_Rate'] = 0
-    if 'Quantity_Produced' in manufacturing_df.columns and 'Defects' in manufacturing_df.columns:
-        mask = manufacturing_df['Quantity_Produced'] > 0
-        manufacturing_df.loc[mask, 'Defect_Rate'] = (
-            manufacturing_df.loc[mask, 'Defects'] / 
-            manufacturing_df.loc[mask, 'Quantity_Produced'] * 100
-        )
-
-    total_produced = manufacturing_df['Quantity_Produced'].sum()
-    total_defects = manufacturing_df['Defects'].sum()
-    avg_defect_rate = (total_defects / total_produced * 100) if total_produced > 0 else 0
-
-    defect_trend = pd.DataFrame()
-    if 'timestamp' in manufacturing_df.columns:
-        manufacturing_df['Date'] = pd.to_datetime(manufacturing_df['timestamp']).dt.date
-        daily_stats = manufacturing_df.groupby('Date').agg({
-            'Quantity_Produced': 'sum',
-            'Defects': 'sum'
-        }).reset_index()
-        daily_stats['Defect_Rate'] = (
-            daily_stats['Defects'] / daily_stats['Quantity_Produced'] * 100
-        ).fillna(0)
-        defect_trend = daily_stats.sort_values('Date')
-
-    line_performance = pd.DataFrame()
-    anomalies = []
-    if 'Line_ID' in manufacturing_df.columns:
-        line_stats = manufacturing_df.groupby('Line_ID').agg({
-            'Quantity_Produced': 'sum',
-            'Defects': 'sum'
-        }).reset_index()
-        line_stats['Defect_Rate'] = (
-            line_stats['Defects'] / line_stats['Quantity_Produced'] * 100
-        ).fillna(0)
-        line_performance = line_stats.sort_values('Defect_Rate', ascending=False)
-        anomalies = line_stats[line_stats['Defect_Rate'] > 5]['Line_ID'].tolist()
-
-    return {
-        'avg_defect_rate': avg_defect_rate,
-        'total_defects': total_defects,
-        'total_produced': total_produced,
-        'defect_trend': defect_trend,
-        'line_performance': line_performance,
-        'anomalies': anomalies
-    }
-
-
-def analyze_inventory(field_df):
-    """Legacy inventory analysis function"""
-    if field_df.empty:
-        return {
-            'total_inventory': 0,
-            'low_stock_alerts': 0,
-            'avg_days_to_depletion': 0,
-            'critical_stores': pd.DataFrame(),
-            'inventory_trend': pd.DataFrame()
-        }
-
-    field_df['Days_to_Depletion'] = 0
-    if 'Inventory_Level' in field_df.columns and 'Daily_Consumption' in field_df.columns:
-        mask = field_df['Daily_Consumption'] > 0
-        field_df.loc[mask, 'Days_to_Depletion'] = (
-            field_df.loc[mask, 'Inventory_Level'] / 
-            field_df.loc[mask, 'Daily_Consumption']
-        )
-
-    field_df['Days_to_Depletion'] = field_df['Days_to_Depletion'].replace([float('inf'), -float('inf')], 999)
-
-    total_inventory = field_df['Inventory_Level'].sum()
-    low_stock_alerts = field_df['Low_Stock_Alerts'].sum()
-    avg_days_to_depletion = field_df[field_df['Days_to_Depletion'] < 999]['Days_to_Depletion'].mean()
-
-    critical_stores = pd.DataFrame()
-    if 'Store_ID' in field_df.columns:
-        critical_mask = field_df['Days_to_Depletion'] < 7
-        critical_stores = field_df[critical_mask][
-            ['Store_ID', 'Inventory_Level', 'Daily_Consumption', 'Days_to_Depletion']
-        ].sort_values('Days_to_Depletion')
-
-    inventory_trend = pd.DataFrame()
-    if 'timestamp' in field_df.columns:
-        field_df['Date'] = pd.to_datetime(field_df['timestamp']).dt.date
-        daily_inventory = field_df.groupby('Date').agg({
-            'Inventory_Level': 'sum',
-            'Low_Stock_Alerts': 'sum'
-        }).reset_index()
-        inventory_trend = daily_inventory.sort_values('Date')
-
-    return {
-        'total_inventory': total_inventory,
-        'low_stock_alerts': low_stock_alerts,
-        'avg_days_to_depletion': avg_days_to_depletion if not pd.isna(avg_days_to_depletion) else 0,
-        'critical_stores': critical_stores,
-        'inventory_trend': inventory_trend
-    }
-
-
-def analyze_testing(testing_df):
-    """Legacy testing analysis function"""
-    if testing_df.empty:
-        return {
-            'total_tests': 0,
-            'pass_rate': 0,
-            'failed_tests': 0
-        }
-
-    total_tests = len(testing_df)
-    failed_tests = 0
-    pass_rate = 0
-
-    if 'Pass_Fail_Status' in testing_df.columns:
-        failed_tests = (testing_df['Pass_Fail_Status'].str.lower() == 'failed').sum()
-        pass_rate = ((total_tests - failed_tests) / total_tests * 100) if total_tests > 0 else 0
-
-    return {
-        'total_tests': total_tests,
-        'pass_rate': pass_rate,
-        'failed_tests': failed_tests
-    }
-
-
-# Add legacy methods to AIEngine class
-AIEngine.analyze_sales = analyze_sales
-AIEngine.analyze_quality = analyze_quality
-AIEngine.analyze_inventory = analyze_inventory
-AIEngine.analyze_testing = analyze_testing
-
-
 def main():
-    """Main application with sidebar navigation and AI chatbot"""
+    """Main application with sidebar navigation"""
     
     # Initialize connections
     if not initialize_connections():
@@ -1179,64 +1092,76 @@ def main():
         st.markdown("# 📊 AI-CDP")
         st.markdown("### Navigation")
         
-        # Navigation buttons
-        if st.button("🏠 Home", use_container_width=True):
+        # Navigation buttons - DARK BLUE TABS
+        if st.button("🏠 Home", use_container_width=True, key="nav_home"):
             st.session_state.current_page = 'Home'
+            st.rerun()
         
-        if st.button("📈 Sales", use_container_width=True):
+        if st.button("📈 Sales", use_container_width=True, key="nav_sales"):
             st.session_state.current_page = 'Sales'
+            st.rerun()
         
-        if st.button("🔧 Manufacturing", use_container_width=True):
+        if st.button("🔧 Manufacturing", use_container_width=True, key="nav_mfg"):
             st.session_state.current_page = 'Manufacturing'
+            st.rerun()
         
-        if st.button("📦 Inventory", use_container_width=True):
+        if st.button("📦 Inventory", use_container_width=True, key="nav_inv"):
             st.session_state.current_page = 'Inventory'
+            st.rerun()
         
-        if st.button("🧪 Testing", use_container_width=True):
+        if st.button("🧪 Testing", use_container_width=True, key="nav_test"):
             st.session_state.current_page = 'Testing'
+            st.rerun()
+        
+        # AI CHATBOT TAB
+        if st.button("🤖 AI Assistant", use_container_width=True, key="nav_ai"):
+            st.session_state.current_page = 'AI_Chatbot'
+            st.rerun()
         
         st.markdown("---")
         
-        # Global filters (for all pages)
-        st.markdown("### 🔍 Global Filters")
-        
-        date_range = st.date_input(
-            "Date Range",
-            value=(
-                datetime.now() - timedelta(days=30),
-                datetime.now()
-            ),
-            max_value=datetime.now(),
-            key="global_date_range"
-        )
-        
-        # AI CHATBOT SECTION
-        render_ai_chatbot_sidebar()
-    
-    # Load data with date filters
-    with st.spinner("Loading data..."):
-        start_date = datetime.combine(date_range[0], datetime.min.time()) if len(date_range) > 0 else None
-        end_date = datetime.combine(date_range[1], datetime.max.time()) if len(date_range) > 1 else None
-        
-        data_dict = st.session_state.data_retriever.get_all_data(start_date, end_date)
-        results = {
-            'sales': analyze_sales(data_dict['sales']),
-            'quality': analyze_quality(data_dict['manufacturing']),
-            'inventory': analyze_inventory(data_dict['field']),
-            'testing': analyze_testing(data_dict['testing'])
-        }
+        # Global filters (for dashboard pages only)
+        if st.session_state.current_page != 'AI_Chatbot':
+            st.markdown("### 🔍 Global Filters")
+            
+            date_range = st.date_input(
+                "Date Range",
+                value=(
+                    datetime.now() - timedelta(days=30),
+                    datetime.now()
+                ),
+                max_value=datetime.now(),
+                key="global_date_range"
+            )
+        else:
+            st.markdown("### 🤖 AI Assistant")
+            st.info("💡 **Tip:** Ask natural language questions about your data to get instant insights!")
     
     # Render appropriate page
-    if st.session_state.current_page == 'Home':
-        render_home_overview(data_dict, results)
-    elif st.session_state.current_page == 'Sales':
-        render_sales_dashboard(data_dict, results)
-    elif st.session_state.current_page == 'Manufacturing':
-        render_manufacturing_dashboard(data_dict, results)
-    elif st.session_state.current_page == 'Inventory':
-        render_inventory_dashboard(data_dict, results)
-    elif st.session_state.current_page == 'Testing':
-        render_testing_dashboard(data_dict, results)
+    if st.session_state.current_page == 'AI_Chatbot':
+        # AI Chatbot Page - No data loading needed
+        render_ai_chatbot_page()
+    else:
+        # Dashboard pages - Load data
+        with st.spinner("Loading data..."):
+            date_range = st.session_state.get('global_date_range', (datetime.now() - timedelta(days=30), datetime.now()))
+            start_date = datetime.combine(date_range[0], datetime.min.time()) if len(date_range) > 0 else None
+            end_date = datetime.combine(date_range[1], datetime.max.time()) if len(date_range) > 1 else None
+            
+            data_dict = st.session_state.data_retriever.get_all_data(start_date, end_date)
+            results = st.session_state.ai_engine.run_all_analyses(data_dict)
+        
+        # Render dashboard pages
+        if st.session_state.current_page == 'Home':
+            render_home_overview(data_dict, results)
+        elif st.session_state.current_page == 'Sales':
+            render_sales_dashboard(data_dict, results)
+        elif st.session_state.current_page == 'Manufacturing':
+            render_manufacturing_dashboard(data_dict, results)
+        elif st.session_state.current_page == 'Inventory':
+            render_inventory_dashboard(data_dict, results)
+        elif st.session_state.current_page == 'Testing':
+            render_testing_dashboard(data_dict, results)
 
 
 if __name__ == "__main__":
