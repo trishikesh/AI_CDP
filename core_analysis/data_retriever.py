@@ -1,6 +1,6 @@
 """
 Data Retriever Module for AI-CDP
-Handles MongoDB Atlas connections and data retrieval with robust schema mapping
+Handles MongoDB Atlas connections and data retrieval with proper schema mapping
 """
 
 import os
@@ -122,9 +122,6 @@ class DataRetriever:
             ]
             df = self._safe_numeric_conversion(df, numeric_columns)
 
-            # Add domain identifier
-            df['domain'] = 'Field'
-
             return df
 
         except Exception as e:
@@ -186,17 +183,6 @@ class DataRetriever:
             ]
             df = self._safe_numeric_conversion(df, numeric_columns)
 
-            # Calculate defect rate
-            if 'Quantity_Produced' in df.columns and 'Defects' in df.columns:
-                mask = df['Quantity_Produced'] > 0
-                df['Defect_Rate'] = 0
-                df.loc[mask, 'Defect_Rate'] = (
-                    df.loc[mask, 'Defects'] / df.loc[mask, 'Quantity_Produced'] * 100
-                )
-
-            # Add domain identifier
-            df['domain'] = 'Manufacturing'
-
             return df
 
         except Exception as e:
@@ -255,13 +241,6 @@ class DataRetriever:
             ]
             df = self._safe_numeric_conversion(df, numeric_columns)
 
-            # Calculate profit (40% margin)
-            if 'Revenue' in df.columns:
-                df['Profit'] = df['Revenue'] * 0.40
-
-            # Add domain identifier
-            df['domain'] = 'Sales'
-
             return df
 
         except Exception as e:
@@ -312,57 +291,15 @@ class DataRetriever:
             # Convert timestamp
             df = self._convert_to_datetime(df, 'timestamp')
 
-            # Add domain identifier
-            df['domain'] = 'Testing'
-
             return df
 
         except Exception as e:
             st.error(f"Error retrieving Testing data: {str(e)}")
             return pd.DataFrame()
 
-    def fetch_all_data(self, start_date=None, end_date=None):
-        """
-        Retrieve all domain data and combine into a single unified DataFrame
-        
-        This is the primary method for the conversational AI interface
-
-        Args:
-            start_date: Start date for filtering (optional)
-            end_date: End date for filtering (optional)
-
-        Returns:
-            Single unified DataFrame with all data and proper schema mapping
-        """
-        # Fetch all domain data
-        sales_df = self.get_sales_data(start_date, end_date)
-        manufacturing_df = self.get_manufacturing_data(start_date, end_date)
-        testing_df = self.get_testing_data(start_date, end_date)
-        field_df = self.get_field_data(start_date, end_date)
-
-        # Combine all DataFrames
-        all_dfs = []
-        
-        if not sales_df.empty:
-            all_dfs.append(sales_df)
-        if not manufacturing_df.empty:
-            all_dfs.append(manufacturing_df)
-        if not testing_df.empty:
-            all_dfs.append(testing_df)
-        if not field_df.empty:
-            all_dfs.append(field_df)
-
-        if not all_dfs:
-            return pd.DataFrame()
-
-        # Concatenate all data
-        unified_df = pd.concat(all_dfs, ignore_index=True, sort=False)
-
-        return unified_df
-
     def get_all_data(self, start_date=None, end_date=None):
         """
-        Retrieve all domain data as separate DataFrames (legacy method for compatibility)
+        Retrieve all domain data with unified schema mapping
 
         Args:
             start_date: Start date for filtering (optional)
