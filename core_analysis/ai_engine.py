@@ -273,3 +273,112 @@ class AIEngine:
             'inventory': self.analyze_inventory(data_dict.get('field', pd.DataFrame())),
             'testing': self.analyze_testing(data_dict.get('testing', pd.DataFrame()))
         }
+    def process_chat_query(self, user_message, full_df, chat_history=None):
+        """
+        Process chatbot conversation with context awareness
+        
+        Args:
+            user_message: User's chat message
+            full_df: Complete unified DataFrame from MongoDB
+            chat_history: Previous conversation history
+            
+        Returns:
+            Tuple of (response_text, plotly_figure)
+        """
+        if not self.api_key:
+            return "❌ Gemini API key not configured. Please add GEMINI_API_KEY to secrets.toml", None
+
+        # Build context from chat history
+        context = ""
+        if chat_history:
+            context = "\n\nPrevious Conversation:\n"
+            for msg in chat_history[-3:]:  # Last 3 messages for context
+                context += f"User: {msg['user']}\nAssistant: {msg['assistant']}\n"
+
+        # Get data summary for context
+        data_summary = ""
+        if full_df is not None and not full_df.empty:
+            domains = full_df['domain'].unique().tolist() if 'domain' in full_df.columns else []
+            date_range = ""
+            if 'timestamp' in full_df.columns:
+                min_date = full_df['timestamp'].min()
+                max_date = full_df['timestamp'].max()
+                date_range = f"from {min_date.strftime('%Y-%m-%d')} to {max_date.strftime('%Y-%m-%d')}"
+            
+            data_summary = f"""
+Available Data:
+- Total Records: {len(full_df)}
+- Domains: {', '.join(domains)}
+- Date Range: {date_range}
+"""
+
+        # Construct chat prompt
+        chat_prompt = f"""
+{self.data_schema}
+
+{data_summary}
+
+{context}
+
+You are an AI assistant for a business intelligence dashboard. You have access to real-time data from MongoDB covering Sales, Manufacturing, Testing, and Field/Inventory operations.
+
+User's Question: "{user_message}"
+
+Your task is to:
+1. Understand the user's question
+2. Determine if visualization is needed
+3. If visualization is needed, return JSON with analysis details
+4. If it's a conversational question, provide a helpful text response
+
+If the question requires data analysis and visualization, respond with JSON:
+{{
+    "requires_visualization": true,
+    "analysis_type": "sales_revenue | manufacturing_quality | testing | field_inventory",
+    "filters": {{
+        "time_range": "last week | last month | all",
+        "domain": "Sales | Manufacturing | Testing | Field",
+        "sku": "product_code or null",
+        "line_id": "line_identifier or null",
+        "store_id": "store_identifier or null"
+    }},
+    "visualization_type": "line_chart | bar_chart | area_chart | pie_chart",
+    "explanation": "Brief explanation of what you'll show"
+}}
+
+If it's a general question or greeting, respond with:
+{{
+    "requires_visualization": false,
+    "response": "Your conversational response here"
+}}
+
+Respond with JSON only:
+"""
+
+        # Call Gemini API
+        parsed_response = self._call_gemini_api(chat_prompt)
+
+        if not parsed_response:
+            return "❌ Failed to process your question. Please try again.", None
+
+        # Check if visualization is required
+        requires_viz = parsed_response.get('requires_visualization', False)
+
+        if not requires_viz:
+            # Return conversational response
+            response_text = parsed_response.get('response', 'I understand your question. How can I help you with data analysis?')
+            return response_text, None
+
+        # Process visualization request
+        explanation = parsed_response.get('explanation', 'Analyzing your data...')
+        filters = parsed_response.get('filters', {})
+        analysis_type = parsed_response.get('analysis_type', '')
+        visualization_type = parsed_response.get('visualization_type', 'bar_chart')
+
+        # Apply filters and execute analysis
+        filtered_df = self._apply_filters(full_df, filters)
+        insight, fig = self._execute_analysis(filtered_df, analysis_type, visualization_type)
+
+        # Combine explanation with insight
+        full_response = f"💡 {explanation}\n\n{insight}"
+
+        return full_response, fig
