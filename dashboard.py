@@ -112,11 +112,6 @@ st.markdown("""
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
     
-    /* Active page highlight */
-    section[data-testid="stSidebar"] .stButton button:active {
-        background-color: #0a3d91;
-    }
-    
     /* Tabs */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
@@ -148,7 +143,7 @@ st.markdown("""
     }
     
     .chat-history-container {
-        height: 600px;
+        height: 500px;
         overflow-y: auto;
         padding: 20px;
         background-color: #f8f9fa;
@@ -226,10 +221,14 @@ st.markdown("""
         background-color: #dee2e6;
     }
     
-    /* Date input in sidebar */
-    section[data-testid="stSidebar"] .stDateInput label {
-        color: #0d47a1 !important;
-        font-weight: 600;
+    /* Filter section on each page */
+    .filter-section {
+        background: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 2px solid #e3f2fd;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -244,8 +243,6 @@ if 'current_page' not in st.session_state:
     st.session_state.current_page = 'Home'
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
-if 'chat_data_loaded' not in st.session_state:
-    st.session_state.chat_data_loaded = False
 if 'chat_full_df' not in st.session_state:
     st.session_state.chat_full_df = None
 
@@ -297,52 +294,65 @@ def render_ai_chatbot_page():
     st.markdown('<div class="ai-badge">✨ Powered by Google Gemini AI</div>', unsafe_allow_html=True)
     st.markdown("##### Ask questions about your data and get instant insights with visualizations")
     
-    # Data connection status
-    col1, col2, col3 = st.columns([2, 1, 1])
+    # DATE RANGE FILTER ON AI PAGE
+    st.markdown('<div class="filter-section">', unsafe_allow_html=True)
     
-    with col1:
-        if st.session_state.chat_data_loaded and st.session_state.chat_full_df is not None:
-            st.success(f"🟢 Connected to MongoDB | {len(st.session_state.chat_full_df)} records loaded")
-        else:
-            st.warning("⚠️ Not connected to data source")
+    filter_cols = st.columns([3, 2, 1])
     
-    with col2:
-        if not st.session_state.chat_data_loaded:
-            if st.button("📊 Load Data", use_container_width=True, type="primary"):
-                with st.spinner("Loading real-time data from MongoDB..."):
-                    try:
+    with filter_cols[0]:
+        ai_date_range = st.date_input(
+            "📅 Select Date Range for Analysis",
+            value=(
+                datetime.now() - timedelta(days=30),
+                datetime.now()
+            ),
+            max_value=datetime.now(),
+            key="ai_date_range"
+        )
+    
+    with filter_cols[1]:
+        if st.button("📊 Load Data", use_container_width=True, type="primary", key="ai_load_data"):
+            with st.spinner("Loading real-time data from MongoDB..."):
+                try:
+                    if len(ai_date_range) == 2:
+                        start_date = datetime.combine(ai_date_range[0], datetime.min.time())
+                        end_date = datetime.combine(ai_date_range[1], datetime.max.time())
+                    else:
                         end_date = datetime.now()
                         start_date = end_date - timedelta(days=30)
-                        
-                        st.session_state.chat_full_df = st.session_state.data_retriever.fetch_all_data(
-                            start_date, end_date
-                        )
-                        
-                        if st.session_state.chat_full_df is not None and not st.session_state.chat_full_df.empty:
-                            st.session_state.chat_data_loaded = True
-                            
-                            # Add welcome message
-                            st.session_state.chat_history.append({
-                                'type': 'assistant',
-                                'text': f"👋 **Welcome!** I'm your AI Analysis Assistant.\n\n📊 **Connected to MongoDB**\n- Records loaded: **{len(st.session_state.chat_full_df)}**\n- Date range: Last 30 days\n- Domains: Sales, Manufacturing, Testing, Field\n\n💡 **Try asking:**\n- 'Show me sales revenue trends'\n- 'What are the defect rates by production line?'\n- 'Which stores have low inventory?'\n- 'Show testing pass rates'",
-                                'timestamp': datetime.now(),
-                                'chart': None
-                            })
-                            st.rerun()
-                        else:
-                            st.error("❌ No data available for the selected period")
-                    except Exception as e:
-                        st.error(f"Error loading data: {str(e)}")
-        else:
-            if st.button("🔄 Refresh Data", use_container_width=True):
-                st.session_state.chat_data_loaded = False
-                st.session_state.chat_full_df = None
-                st.rerun()
+                    
+                    st.session_state.chat_full_df = st.session_state.data_retriever.fetch_all_data(
+                        start_date, end_date
+                    )
+                    
+                    if st.session_state.chat_full_df is not None and not st.session_state.chat_full_df.empty:
+                        # Add welcome message
+                        st.session_state.chat_history = [{
+                            'type': 'assistant',
+                            'text': f"👋 **Welcome!** I'm your AI Analysis Assistant.\n\n📊 **Data Loaded Successfully**\n- Records: **{len(st.session_state.chat_full_df):,}**\n- Date range: **{ai_date_range[0]}** to **{ai_date_range[1]}**\n- Domains: Sales, Manufacturing, Testing, Field\n\n💡 **Try asking:**\n- 'Show me sales revenue trends'\n- 'What are the defect rates by production line?'\n- 'Which stores have low inventory?'\n- 'Show testing pass rates'",
+                            'timestamp': datetime.now(),
+                            'chart': None
+                        }]
+                        st.success(f"✅ Loaded {len(st.session_state.chat_full_df):,} records!")
+                        st.rerun()
+                    else:
+                        st.error("❌ No data available for the selected date range")
+                except Exception as e:
+                    st.error(f"Error loading data: {str(e)}")
     
-    with col3:
-        if st.button("🗑️ Clear Chat", use_container_width=True):
+    with filter_cols[2]:
+        if st.button("🗑️ Clear", use_container_width=True, key="ai_clear_chat"):
             st.session_state.chat_history = []
+            st.session_state.chat_full_df = None
             st.rerun()
+    
+    st.markdown('</div>', unsafe_allow_html=True)
+    
+    # Data connection status
+    if st.session_state.chat_full_df is not None and not st.session_state.chat_full_df.empty:
+        st.success(f"🟢 Connected to MongoDB | {len(st.session_state.chat_full_df):,} records loaded")
+    else:
+        st.info("⚠️ No data loaded. Select a date range and click 'Load Data' to begin.")
     
     st.markdown("---")
     
@@ -404,7 +414,7 @@ def render_ai_chatbot_page():
     
     # Process chat input
     if submit_button and user_input:
-        if not st.session_state.chat_data_loaded:
+        if st.session_state.chat_full_df is None or st.session_state.chat_full_df.empty:
             st.error("⚠️ Please load data first by clicking the 'Load Data' button above!")
         else:
             # Add user message to history
@@ -1087,7 +1097,7 @@ def main():
     if not initialize_connections():
         st.stop()
     
-    # Sidebar Navigation
+    # Sidebar Navigation - Minimal (No Date Range)
     with st.sidebar:
         st.markdown("# 📊 AI-CDP")
         st.markdown("### Navigation")
@@ -1117,36 +1127,42 @@ def main():
         if st.button("🤖 AI Assistant", use_container_width=True, key="nav_ai"):
             st.session_state.current_page = 'AI_Chatbot'
             st.rerun()
+    
+    # Render appropriate page
+    if st.session_state.current_page == 'AI_Chatbot':
+        # AI Chatbot Page - Has its own date range filter
+        render_ai_chatbot_page()
+    else:
+        # Dashboard pages - Each has its own date range filter on the page
+        st.markdown('<div class="filter-section">', unsafe_allow_html=True)
+        st.markdown("#### 📅 Date Range Filter")
         
-        st.markdown("---")
-        
-        # Global filters (for dashboard pages only)
-        if st.session_state.current_page != 'AI_Chatbot':
-            st.markdown("### 🔍 Global Filters")
-            
+        date_cols = st.columns([3, 1])
+        with date_cols[0]:
             date_range = st.date_input(
-                "Date Range",
+                "Select Date Range",
                 value=(
                     datetime.now() - timedelta(days=30),
                     datetime.now()
                 ),
                 max_value=datetime.now(),
-                key="global_date_range"
+                key=f"{st.session_state.current_page}_date_range"
             )
-        else:
-            st.markdown("### 🤖 AI Assistant")
-            st.info("💡 **Tip:** Ask natural language questions about your data to get instant insights!")
-    
-    # Render appropriate page
-    if st.session_state.current_page == 'AI_Chatbot':
-        # AI Chatbot Page - No data loading needed
-        render_ai_chatbot_page()
-    else:
-        # Dashboard pages - Load data
+        
+        with date_cols[1]:
+            st.markdown("<br>", unsafe_allow_html=True)
+            load_data_btn = st.button("Load Data", use_container_width=True, type="primary", key=f"{st.session_state.current_page}_load")
+        
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Load data
         with st.spinner("Loading data..."):
-            date_range = st.session_state.get('global_date_range', (datetime.now() - timedelta(days=30), datetime.now()))
-            start_date = datetime.combine(date_range[0], datetime.min.time()) if len(date_range) > 0 else None
-            end_date = datetime.combine(date_range[1], datetime.max.time()) if len(date_range) > 1 else None
+            if len(date_range) == 2:
+                start_date = datetime.combine(date_range[0], datetime.min.time())
+                end_date = datetime.combine(date_range[1], datetime.max.time())
+            else:
+                end_date = datetime.now()
+                start_date = end_date - timedelta(days=30)
             
             data_dict = st.session_state.data_retriever.get_all_data(start_date, end_date)
             results = st.session_state.ai_engine.run_all_analyses(data_dict)
