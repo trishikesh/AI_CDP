@@ -400,18 +400,18 @@ else:
     with col2:
         
         st.markdown("""
-        ### Get Started
+        Get Started
         
         1. **Select a date range** in the sidebar
         2. **Click 'Refresh Data'** to load real-time data from MongoDB
         3. **Explore insights** across all business domains
         
-        #### Available Dashboards:
-        - **💰 Sales:** Revenue trends, top products, profit analysis
-        - **🔧 Manufacturing:** Quality metrics, defect rates, production lines
-        - **🧪 Testing:** Pass rates, failed tests, quality assurance
-        - **📦 Inventory:** Stock levels, low stock alerts, consumption trends
-        - **🤖 AI Assistant:** Ask questions and get instant insights
+        Available Dashboards:
+        - ** Sales:** Revenue trends, top products, profit analysis
+        - ** Manufacturing:** Quality metrics, defect rates, production lines
+        - ** Testing:** Pass rates, failed tests, quality assurance
+        - ** Inventory:** Stock levels, low stock alerts, consumption trends
+        - ** AI Assistant:** Ask questions and get instant insights
         
         Navigate using the sidebar to explore specific domains!
         """)
