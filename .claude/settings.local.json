@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(powershell -Command \"Get-Content ''d:\\NewData\\Projects\\Projects\\AI_CDP\\dashboard.py''\")",
+      "Bash(powershell -Command \"Get-Content ''d:\\NewData\\Projects\\Projects\\AI_CDP\\core_analysis\\data_retriever.py''\")",
+      "Bash(powershell -Command \"Get-Content ''d:\\NewData\\Projects\\Projects\\AI_CDP\\core_analysis\\ai_engine.py''\")",
+      "Bash(powershell -Command:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
